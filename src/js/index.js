@@ -1,1 +1,3 @@
-import popper from 'popper.js';
+import swiper from 'swiper';
+
+document.addEventListener('DOMContentLoaded', function() {});
