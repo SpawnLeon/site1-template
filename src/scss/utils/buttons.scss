@@ -1,0 +1,21 @@
+@import 'vars.scss';
+.btn--clear {
+  background: none;
+  margin: 0;
+  padding: 0;
+  border: none;
+  line-height: inherit;
+  outline: none;
+  cursor: pointer;
+  text-decoration: none;
+  display: inline-block;
+}
+.btn {
+  &:hover,
+  &:active,
+  &:focus {
+  }
+
+  &:active {
+  }
+}
