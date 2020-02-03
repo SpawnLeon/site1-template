@@ -1,6 +1,9 @@
 @import 'utils/common';
 @import '_header';
 @import '_footer';
+@import '_main-slider';
+
+@import '~/node_modules/swiper/css/swiper.min.css';
 
 html {
   line-height: $mainLineHeight;
@@ -41,7 +44,7 @@ h6 {
 
 a {
   text-decoration: none;
-  color: $default-color;
+  color: inherit;
 }
 button {
   cursor: pointer;
@@ -98,16 +101,115 @@ section,
   }
 }
 
-/*------------------------------------*\
-    #EXAMPLE BLOCK TITLE
-\*------------------------------------*/
-
-// Modules
-// @import "modules/my-module.scss";
-
 .page {
   &__header {
   }
   &__footer {
   }
 }
+
+/*------------------------------------*\
+    #CATALOG CATEGORIES BLOCK START
+\*------------------------------------*/
+
+.catalog-categories {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 -35px -65px;
+
+  &__item {
+  }
+}
+.item-catalog-category {
+  flex: 0 1 calc(100% / 3 - 70px);
+  margin: 0 35px 65px;
+  display: flex;
+  align-items: center;
+  background-color: #f3f3f3;
+  padding: 45px 200px 45px 35px;
+  position: relative;
+  height: 217px;
+
+  &__count {
+    font-weight: 500;
+    color: #666666;
+  }
+
+  &__title {
+    font-weight: 600;
+    font-size: 32px;
+    line-height: 29px;
+  }
+
+  &__more {
+    color: #c02d33;
+    font-weight: 500;
+    text-decoration: underline;
+    margin-top: 45px;
+
+    &:hover,
+    &:focus,
+    &:active {
+      text-decoration: none;
+    }
+  }
+  &__image {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: auto;
+    display: block;
+    max-height: 100%;
+  }
+}
+
+/*------------------------------------*\
+    #CATALOG CATEGORIES BLOCK END
+\*------------------------------------*/
+
+/*------------------------------------*\
+    #ADVANTAGES BLOCK START
+\*------------------------------------*/
+
+.advantages-block {
+  background-color: #00672f;
+  color: #fff;
+
+  &__container {
+    display: flex;
+    padding: 45px 0;
+    justify-content: space-between;
+  }
+
+  &__item {
+    display: flex;
+    align-items: center;
+    padding-right: 50px;
+  }
+}
+
+.item-advantage {
+  &__icon {
+    margin-right: 30px;
+  }
+
+  &__content {
+  }
+
+  &__title {
+    font-weight: 600;
+    font-size: 22px;
+    line-height: 1.125;
+  }
+
+  &__text {
+    font-size: 14px;
+    color: #efefef;
+    margin-top: 3px;
+    line-height: 1.214;
+  }
+}
+
+/*------------------------------------*\
+    #ADVANTAGES BLOCK END
+\*------------------------------------*/

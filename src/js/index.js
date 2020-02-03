@@ -1,3 +1,8 @@
-import swiper from 'swiper';
+import Swiper from 'swiper';
 
-document.addEventListener('DOMContentLoaded', function() {});
+
+document.addEventListener('DOMContentLoaded', () => {
+  const mainSlider = new Swiper('.main-slider__container', {
+    loop: true,
+  });
+});

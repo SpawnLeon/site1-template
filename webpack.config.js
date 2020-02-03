@@ -29,6 +29,7 @@ const config = {
   entry: ['./src/js/index.js', './src/scss/style.scss'],
   output: {
     filename: './js/bundle.js',
+    publicPath: '',
   },
   devtool: 'source-map',
   mode: 'production',

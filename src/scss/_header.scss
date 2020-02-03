@@ -198,15 +198,6 @@
     align-items: center;
     justify-content: space-between;
   }
-
-  &__search {
-  }
-
-  &__links {
-  }
-
-  &__cart {
-  }
 }
 .search-block {
   position: relative;
@@ -271,6 +262,10 @@
   display: flex;
   padding: 12px 15px;
   align-items: center;
+
+  &__icon {
+    margin-right: 15px;
+  }
 
   &__count {
     background: #ffffff;
