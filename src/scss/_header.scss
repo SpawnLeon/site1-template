@@ -19,6 +19,8 @@
   }
 
   &__logo {
+    max-height: 135px;
+    color: #040300;
   }
 
   &__nav {
@@ -41,11 +43,10 @@
   display: flex;
   align-items: center;
   margin-right: 15px;
-  max-height: 135px;
 
   &__image {
     padding: 10px 22px 10px 22px;
-    background: $primary-color;
+    background: $primaryColor;
     box-shadow: 2px 0px 4px rgba(0, 0, 0, 0.15);
     margin-right: 19px;
     align-self: flex-start;
@@ -61,7 +62,6 @@
     line-height: 59px;
     letter-spacing: -0.02em;
     font-feature-settings: 'pnum' on, 'lnum' on;
-    color: #040300;
     white-space: nowrap;
   }
 
@@ -243,12 +243,12 @@
     &:hover,
     &:focus,
     &:active {
-      color: $primary-color;
+      color: $primaryColor;
     }
     &:hover svg,
     &:focus svg,
     &:active svg {
-      fill: $primary-color;
+      fill: $primaryColor;
     }
   }
 }

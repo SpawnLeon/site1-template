@@ -8,16 +8,15 @@ $mainFontWeight          : 400;
 $mainLineHeight          : 1.3;
 
 $containerGutter         : 15px;
-$desktopWidth            : 1800px + $containerGutter;
-$smDesktopWidth          : 980px + $containerGutter;
-$tableWidth              : 768px + $containerGutter;
-$phoneWidth              : 480px + $containerGutter;
-$smPhoneWidth            : 320px + $containerGutter;
+$desktopWidth            : 1800px + $containerGutter * 2;
+$smDesktopWidth          : 980px + $containerGutter * 2;
+$tableWidth              : 768px + $containerGutter * 2;
+$phoneWidth              : 480px + $containerGutter * 2;
+$smPhoneWidth            : 320px + $containerGutter * 2;
 
 
 // Main color
-$default-color           : #333333;
-$primary-color           : #c02d33;
+$primaryColor           : #c02d33;
 
 
 $success-color           : #26de81;

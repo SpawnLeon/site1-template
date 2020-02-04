@@ -1,5 +1,160 @@
 @import 'utils/common';
 
 .footer {
-  background-color: $mainFontColor;
+  background-color: $primaryColor;
+  padding: 40px 0;
+  color: #fff;
+
+  &__container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .logo {
+    &__promo {
+      color: #fff;
+    }
+
+    &__image {
+      box-shadow: none;
+      margin-right: 15px;
+      padding: 0;
+    }
+  }
+}
+
+.footer {
+  &__menu {
+    column-count: 2;
+    column-gap: 25px;
+  }
+}
+.footer-menu {
+  &__item {
+  }
+
+  &__link {
+    font-weight: bold;
+    margin-top: 8px;
+    display: inline-block;
+  }
+}
+
+.footer {
+  &__contacts {
+  }
+}
+.contacts-footer {
+  font-style: normal;
+  &__title {
+    font-weight: bold;
+  }
+
+  &__inner {
+    display: flex;
+  }
+
+  &__phones {
+    margin-top: 8px;
+  }
+
+  &__email {
+    font-size: 12px;
+  }
+
+  &__address {
+    font-size: 12px;
+  }
+
+  &__privacy-policy {
+    text-decoration: underline;
+    font-size: 12px;
+
+    &:hover,
+    &:focus,
+    &:active {
+      text-decoration: none;
+    }
+  }
+  &__email-address {
+    margin-top: 13px;
+    max-width: 220px;
+  }
+  &__address {
+    margin-top: 6px;
+  }
+}
+.phone-footer {
+  display: block;
+  margin-top: 8px;
+  margin-right: 20px;
+}
+.footer {
+  &__information {
+  }
+
+  &__logo {
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 1;
+    grid-row-end: 2;
+    margin-right: 0;
+  }
+}
+.info-footer {
+  font-size: 12px;
+  display: grid;
+  grid-template-columns: 320px 429px;
+  grid-gap: 25px 50px;
+  flex: 0 1 0;
+
+  &__copyright {
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 2;
+    grid-row-end: 3;
+  }
+  &__offer-cookie {
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 1;
+    grid-row-end: 2;
+    max-width: 410px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+  }
+  &__offer {
+  }
+
+  &__cooke {
+    margin-top: 10px;
+    margin-top: 10px;
+  }
+
+  &__development {
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 2;
+    grid-row-end: 3;
+
+    img {
+      display: inline;
+      vertical-align: top;
+    }
+  }
+}
+.logo {
+  &__image {
+  }
+
+  &__text {
+  }
+
+  &__brand {
+  }
+
+  &__promo {
+  }
 }

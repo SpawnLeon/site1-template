@@ -30,7 +30,7 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   background-color: #fff;
-  color: $default-color;
+  color: $mainFontColor;
 }
 
 h1,
@@ -45,6 +45,7 @@ h6 {
 a {
   text-decoration: none;
   color: inherit;
+  text-decoration-skip-ink: none;
 }
 button {
   cursor: pointer;
@@ -129,6 +130,13 @@ section,
   padding: 45px 200px 45px 35px;
   position: relative;
   height: 217px;
+  transition: $transition;
+
+  &:hover,
+  &:focus,
+  &:active {
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.25);
+  }
 
   &__count {
     font-weight: 500;
@@ -212,4 +220,107 @@ section,
 
 /*------------------------------------*\
     #ADVANTAGES BLOCK END
+\*------------------------------------*/
+
+/*------------------------------------*\
+    #PROMO BLOCKS START
+\*------------------------------------*/
+
+.promo-blocks {
+  display: flex;
+  margin: 0 -35px;
+  flex-wrap: wrap;
+
+  &__item {
+    box-shadow: 25px 25px 0 0 #e1e1e1;
+    margin: 0 35px;
+    flex: 0 0 calc(100% / 3 - 70px);
+  }
+}
+.item-promo {
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: 470px;
+  padding: 350px 35px 30px;
+
+  &--delivery {
+    background-image: url(../img/bg-promo-1.jpg);
+  }
+
+  &--sizes {
+    background-image: url(../img/bg-promo-2.jpg);
+  }
+
+  &--night {
+    background-image: url(../img/bg-promo-3.jpg);
+  }
+
+  &__header {
+  }
+
+  &__title {
+    font-weight: 600;
+    font-size: 32px;
+    color: #ffffff;
+    line-height: 1.083;
+  }
+
+  &__text {
+    font-weight: 500;
+    font-size: 16px;
+    color: #eeeeee;
+    margin-top: 4px;
+  }
+
+  &__more {
+    font-weight: 500;
+    color: #c02d33;
+    transition: $transition;
+    padding: 5px 15px;
+    background-color: #fff;
+    margin-top: 20px;
+    display: inline-block;
+
+    &:hover,
+    &:focus,
+    &:active {
+      color: #fff;
+      padding: 5px 15px;
+      background-color: $primaryColor;
+    }
+  }
+}
+
+/*------------------------------------*\
+    #PROMO BLOCKS END
+\*------------------------------------*/
+
+/*------------------------------------*\
+    #ABOUT BLOCK START
+\*------------------------------------*/
+
+.about-block {
+  background-repeat: no-repeat;
+  background-image: url(../img/bg-about.jpg);
+  background-position: right center;
+  padding: 60px 0;
+
+  &__title {
+    font-weight: 600;
+    font-size: 32px;
+    line-height: 39px;
+    text-transform: uppercase;
+    color: #0d0d0d;
+    max-width: 820px;
+  }
+
+  &__text {
+    padding: 30px 30px 30px 0;
+    max-width: 1060px;
+    background-color: #fff;
+  }
+}
+
+/*------------------------------------*\
+    #ABOUT BLOCK END
 \*------------------------------------*/
