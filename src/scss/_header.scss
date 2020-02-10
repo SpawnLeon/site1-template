@@ -37,6 +37,7 @@
   }
 
   &__catalog-menu {
+    margin-left: 10%;
   }
 }
 .logo {
@@ -157,6 +158,7 @@
 }
 .callback-btn {
   text-decoration: underline;
+  text-align-last: left;
 
   &::hover,
   &::focus,

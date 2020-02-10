@@ -94,7 +94,7 @@ const config = {
   },
   plugins: [
     new MiniCssExtractPlugin({
-      filename: './css/style.bundle.css',
+      filename: './template_styles.css',
     }),
     new CopyWebpackPlugin([
       {
@@ -114,14 +114,14 @@ const config = {
         to: './uploads',
       },
     ]),
-    new ImageminPlugin({
-      plugins: [
-        imageminMozjpeg({
-          quality: 80,
-          progressive: true,
-        }),
-      ],
-    }),
+    // new ImageminPlugin({
+    //   plugins: [
+    //     imageminMozjpeg({
+    //       quality: 80,
+    //       progressive: true,
+    //     }),
+    //   ],
+    // }),
   ].concat(htmlPlugins),
 };
 
