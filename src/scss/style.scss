@@ -347,7 +347,7 @@ section,
 .main-content {
   flex: 1 1 auto;
   padding-bottom: 50px;
-  max-width: calc(100% - 400px);
+  max-width: calc(100% - 398px);
 }
 /*------------------------------------*\
     #MAIN END
@@ -744,8 +744,6 @@ section,
   margin-right: 5px;
   position: relative;
 
-
-
   &::after {
     content: '';
     display: block;
@@ -779,4 +777,40 @@ section,
 
 /*------------------------------------*\
     #SORTING BLOCK END 
+\*------------------------------------*/
+
+/*------------------------------------*\
+    #BOTTOM MENU START 
+\*------------------------------------*/
+
+.bottom-menu {
+  background-color: #f1f1f1;
+  // .bottom-menu__inner
+  &__inner {
+    max-width: 1470px;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    display: flex;
+    flex-wrap: wrap;
+  }
+  // .bottom-menu__link
+  &__link {
+    font-size: 16px;
+    line-height: 1.25;
+    letter-spacing: -0.02em;
+    color: #333333;
+    position: relative;
+    padding: 0 15px 0 18px;
+    display: block;
+    margin-bottom: 15px;
+    flex: 1 1 calc(100% / 4);
+
+    span {
+      color: #eabc7a;
+    }
+  }
+}
+
+/*------------------------------------*\
+    #BOTTOM MENU END 
 \*------------------------------------*/
