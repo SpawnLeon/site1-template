@@ -345,8 +345,25 @@ _.template(require('./../includes/header.html').default)(data) %>
       </ul>
 
 
-      <h1 class="page__title">Двуспальные кровати</h1>
 
+
+      <h1 class="page__title">Двуспальные кровати</h1>
+      <div class="catalog-list__sorting sorting-block">
+        <div class="sorting-block__title">
+          Сортировать по:
+        </div>
+        <div class="sorting-block__inner">
+          <button class="sorting-block__btn button-sorting button-sorting--active">
+            цене
+          </button>
+          <button class="sorting-block__btn button-sorting button-sorting--asc">
+            названию
+          </button>
+          <button class="sorting-block__btn button-sorting button-sorting--desc">
+            новизне
+          </button>
+        </div>
+      </div>
       <div class="catalog-list">
 
         <article class="catalog-list__item product-teaser">
