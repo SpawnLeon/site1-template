@@ -1035,22 +1035,6 @@ section,
     #CATALOG DETAIL START 
 \*------------------------------------*/
 
-.catalog-detail {
-  // .catalog-detail__info
-  &__info {
-  }
-}
-.information-detail-card {
-  // .information-detail-card__header
-  &__header {
-  }
-  // .information-detail-card__title
-  &__title {
-  }
-  // .information-detail-card__rating
-  &__rating {
-  }
-}
 .page {
   // .page__title
   &__title {
@@ -1107,19 +1091,21 @@ section,
   // .card-prices__inner
   &__inner {
     display: flex;
-   
   }
+
   // .card-prices__add-info
   &__add-info {
     font-size: 11px;
     line-height: 1.3;
     margin-left: 25px;
+    flex: 1 1 0;
   }
 }
 .card-price {
   font-weight: bold;
   font-size: 38px;
   letter-spacing: -0.02em;
+  flex: 0 0 auto;
 
   // .card-price--old
   &--old {
@@ -1127,6 +1113,100 @@ section,
     font-size: 30px;
     text-decoration-line: line-through;
     margin-right: 15px;
+    position: relative;
+    top: 9px;
+  }
+}
+
+.catalog-detail {
+  // .catalog-detail__inner
+  &__inner {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  // .catalog-detail__image
+  &__image {
+    flex: 1 1 auto;
+    max-width: 674px;
+  }
+  // .catalog-detail__info
+  &__info {
+  }
+}
+.information-detail-card {
+  flex: 1 1 0;
+
+  // .information-detail-card__header
+  &__header {
+  }
+  // .information-detail-card__title
+  &__title {
+  }
+  // .information-detail-card__rating
+  &__rating {
+  }
+}
+
+.card-sizes-table {
+  // .card-sizes-table__row
+  &__row {
+    font-size: 13px;
+    display: flex;
+    padding: 4px 15px 3px;
+
+    &:nth-child(even) {
+      background-color: #f4f4f4;
+    }
+
+    // .card-sizes-table__row--header
+    &--header,
+    &--footer {
+      background-color: #ffc800;
+      font-size: 14px;
+    }
+    &--header {
+      div {
+        flex-basis: calc(100% / 2 - 27px);
+        flex-grow: 0;
+      }
+    }
+  }
+  // .card-sizes-table__col
+  &__col {
+    flex: 1 1 0;
+    padding: 0 3px;
+    white-space: nowrap;
+
+    &:last-child {
+      flex: 0 0 0;
+    }
+
+    // .card-sizes-table__col--price
+    &--price {
+      font-weight: 500;
+      letter-spacing: -0.02em;
+      font-feature-settings: 'tnum' on, 'lnum' on;
+
+      color: #0d0d0d;
+    }
+    // .card-sizes-table__col--custom-size
+    &--custom-size {
+      flex-basis: 100%;
+    }
+  }
+  // .card-sizes-table__btn
+  &__btn {
+    text-decoration-line: underline;
+    color: #c02d33;
+    font-size: 13px;
+  }
+
+  // .card-sizes-table__custom-size
+  &__custom-size {
+    background-color: #ffc800;
+    border-bottom: 1px solid #333333;
+    width: 100%;
+    padding: 0;
   }
 }
 

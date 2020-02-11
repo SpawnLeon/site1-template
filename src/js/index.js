@@ -17,7 +17,7 @@ const responseMenu = (menuSelector) => {
     [...menuChildren].forEach((menuItem) => {
       menuItemsWidth += menuItem.offsetWidth;
 
-      if (menuItemsWidth > menuWidth) {        
+      if (menuItemsWidth > menuWidth) {
         hiddenMenuItemsList.appendChild(menuItem);
       }
     });
@@ -41,5 +41,28 @@ document.addEventListener('DOMContentLoaded', () => {
       nextEl: '.bottom-slider__button--next',
     },
   });
+
+  const catalogDetailNavSlider = new Swiper(
+    '.catalog-detail-nav-slider__container',
+    {
+      loop: true,
+      slidesPerView: 3,
+      loopedSlides: 3,
+      spaceBetween: 5,
+      
+      freeMode: true,
+      navigation: {
+        prevEl: '.catalog-detail-slide__btn--prev',
+        nextEl: '.catalog-detail-slide__btn--next',
+      },
+    },
+  );
+  const catalogDetailSlider = new Swiper('.catalog-detail-slider__container', {
+    loop: true,
+    thumbs: {
+      swiper: catalogDetailNavSlider,
+    },
+  });
+
   responseMenu('.catalog-menu');
 });
