@@ -1,0 +1,156 @@
+<% var data = { title: "Каталог", }; %> <%=
+_.template(require('./../includes/header.html').default)(data) %>
+<div class="container">
+  <div class="main-content-wrapper">
+    <%= _.template(require('./../includes/sidebar.html').default)() %>
+    <main class="main-content">
+
+
+
+      <%= _.template(require('./../includes/breadcrumbs.html').default)() %>
+
+
+
+      <article class="catalog-detail" itemscope itemtype="http://schema.org/ItemList">
+        <div class="catalog-detail__scheme-org scheme-org" hidden>
+          <img alt="Photo of product" itemprop="image" src="https://deisus-m.ru/uploads/catalog-detail-slider/1.jpg">
+          <div itemprop="offers" itemscope itemtype="http://schema.org/Offer">
+            <meta itemprop="name" content="Двуспальная кровать Кровать Амина-М">
+            <meta itemprop="sku" content="80295323">
+            <link itemprop="url" href="https://deisus-m.ru/catalog/product-1.html">
+            <meta itemprop="availability" content="https://schema.org/InStock">
+            <meta itemprop="priceCurrency" content="RUB">
+            <span itemprop="price">4399 р.</span>
+          </div>
+        </div>
+
+
+
+
+
+        <div class="catalog-detail__image">
+          <div class="catalog-detail-slider">
+            <div class="swiper-container catalog-detail-slider__container">
+              <div class="swiper-wrapper catalog-detail-slider__wrapper">
+
+                <div class="swiper-slide catalog-detail-slide__slide slide-catalog-detail-slider">
+                  <img src="uploads/catalog-detail-slider/1.jpg" title="" alt=""
+                    class="slide-catalog-detail-slider__image">
+                </div>
+                <div class="swiper-slide catalog-detail-slide__slide slide-catalog-detail-slider">
+                  <img src="uploads/catalog-detail-slider/2.jpg" title="" alt=""
+                    class="slide-catalog-detail-slider__image">
+                </div>
+                <div class="swiper-slide catalog-detail-slide__slide slide-catalog-detail-slider">
+                  <img src="uploads/catalog-detail-slider/3.jpg" title="" alt=""
+                    class="slide-catalog-detail-slider__image">
+                </div>
+                <div class="swiper-slide catalog-detail-slide__slide slide-catalog-detail-slider">
+                  <img src="uploads/catalog-detail-slider/4.jpg" title="" alt=""
+                    class="slide-catalog-detail-slider__image">
+                </div>
+                <div class="swiper-slide catalog-detail-slide__slide slide-catalog-detail-slider">
+                  <img src="uploads/catalog-detail-slider/5.jpg" title="" alt=""
+                    class="slide-catalog-detail-slider__image">
+                </div>
+                <div class="swiper-slide catalog-detail-slide__slide slide-catalog-detail-slider">
+                  <img src="uploads/catalog-detail-slider/6.jpg" title="" alt=""
+                    class="slide-catalog-detail-slider__image">
+                </div>
+
+              </div>
+            </div>
+          </div>
+
+
+          <div class="catalog-detail-nav-slider">
+            <div class="swiper-container catalog-detail-nav-slider__container">
+              <div class="swiper-wrapper catalog-detail-nav-slider__wrapper">
+
+                <div class="swiper-slide catalog-detail-slide__slide slide-catalog-detail-nav-slider">
+                  <img src="uploads/catalog-detail-nav-slider/1.jpg" title="" alt=""
+                    class="slide-catalog-detail-nav-slider__image">
+                </div>
+                <div class="swiper-slide catalog-detail-slide__slide slide-catalog-detail-nav-slider">
+                  <img src="uploads/catalog-detail-nav-slider/2.jpg" title="" alt=""
+                    class="slide-catalog-detail-nav-slider__image">
+                </div>
+                <div class="swiper-slide catalog-detail-slide__slide slide-catalog-detail-nav-slider">
+                  <img src="uploads/catalog-detail-nav-slider/3.jpg" title="" alt=""
+                    class="slide-catalog-detail-nav-slider__image">
+                </div>
+                <div class="swiper-slide catalog-detail-slide__slide slide-catalog-detail-nav-slider">
+                  <img src="uploads/catalog-detail-nav-slider/4.jpg" title="" alt=""
+                    class="slide-catalog-detail-nav-slider__image">
+                </div>
+                <div class="swiper-slide catalog-detail-slide__slide slide-catalog-detail-nav-slider">
+                  <img src="uploads/catalog-detail-nav-slider/5.jpg" title="" alt=""
+                    class="slide-catalog-detail-nav-slider__image">
+                </div>
+                <div class="swiper-slide catalog-detail-slide__slide slide-catalog-detail-nav-slider">
+                  <img src="uploads/catalog-detail-nav-slider/6.jpg" title="" alt=""
+                    class="slide-catalog-detail-nav-slider__image">
+                </div>
+
+              </div>
+            </div>
+          </div>
+
+          <div class="catalog-detail__info information-detail-card">
+            <header class="information-detail-card__header">
+              <h1 class="page__title  information-detail-card__title">Двуспальная кровать Кровать Амина-М</h1>
+
+
+              <div class="information-detail-card__rating rating">
+                <div class="rating__inner">
+                  <div class="rating__item rating__item--active"><svg class="rating__icon">
+                      <use xlink:href="#i-rating-star"></use>
+                    </svg></div>
+                  <div class="rating__item rating__item--active"><svg class="rating__icon">
+                      <use xlink:href="#i-rating-star"></use>
+                    </svg></div>
+                  <div class="rating__item rating__item--active"><svg class="rating__icon">
+                      <use xlink:href="#i-rating-star"></use>
+                    </svg></div>
+                  <div class="rating__item"><svg class="rating__icon">
+                      <use xlink:href="#i-rating-star"></use>
+                    </svg></div>
+                  <div class="rating__item"><svg class="rating__icon">
+                      <use xlink:href="#i-rating-star"></use>
+                    </svg></div>
+                </div>
+                <div class="rating__text">
+                  на основе 138 оценок
+                </div>
+              </div>
+
+
+              <div class="information-detail-card__prices card-prices">
+
+                <div class="card-prices__inner">
+                  <div class="card-price card-price--old">17990 ₽</div>
+                  <div class="card-price">16990 ₽</div>
+                </div>
+
+                <div class="card-prices__add-info">
+                  Цена указана для кровати с размером спального места (указан ниже) в стандартной комплектации без
+                  стоимости матраса и без стоимости подкроватных ящиков!
+                </div>
+              </div>
+
+
+            </header>
+
+
+
+          </div>
+
+
+
+        </div>
+      </article>
+    </main>
+  </div>
+</div>
+
+<%= _.template(require('./../includes/footer.html').default)(data) %>

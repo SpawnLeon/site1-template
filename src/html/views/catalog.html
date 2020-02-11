@@ -1,42 +1,12 @@
 <% var data = { title: "Каталог", }; %> <%=
 _.template(require('./../includes/header.html').default)(data) %>
 <div class="container">
-  <div class="main-content-wrapper">  
+  <div class="main-content-wrapper">
     <%= _.template(require('./../includes/sidebar.html').default)() %>
     <main class="main-content">
-      <div class="catalog-slider">
-        <div class="swiper-container catalog-slider__container">
-          <div class="swiper-wrapper catalog-slider__wrapper">
-            <div class="swiper-slide catalog-slider__slide slide-catalog-slider">
-              <div class="slide-catalog-slider__inner">
-                <img src="uploads/catalog-slider/1.jpg" title="" alt="" class="slide-catalog-slider__image">
-              </div>
-            </div>
-            <div class="swiper-slide catalog-slider__slide slide-catalog-slider">
-              <div class="slide-catalog-slider__inner">
-                <img src="uploads/catalog-slider/1.jpg" title="" alt="" class="slide-catalog-slider__image">
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
 
-
-      <ul class="breadcrumbs" itemscope itemtype="http://schema.org/BreadcrumbList">
-        <li class="breadcrumbs__item" itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem">
-          <a class="breadcrumbs__link" itemprop="item" href="https://example.com/dresses">
-            <span class="breadcrumbs__name" itemprop="name">Кровати и матрасы </span></a>
-          <meta itemprop="position" content="1" />
-        </li>
-        <li class="breadcrumbs__item" itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem">
-          <a class="breadcrumbs__link" itemprop="item" href="https://example.com/dresses">
-            <span class="breadcrumbs__name" itemprop="name">Двуспальные матрасы</span></a>
-          <meta itemprop="position" content="2" />
-        </li>
-      </ul>
-
-
-
+      <%= _.template(require('./../includes/catalog-slider.html').default)() %>
+      <%= _.template(require('./../includes/breadcrumbs.html').default)() %>
 
       <h1 class="page__title">Двуспальные кровати</h1>
       <div class="catalog-list__sorting sorting-block">

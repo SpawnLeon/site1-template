@@ -1,10 +1,10 @@
+@import '~/node_modules/swiper/css/swiper.min.css';
+
 @import 'utils/reset';
 @import 'utils/common';
 @import '_header';
 @import '_footer';
 @import '_main-slider';
-
-@import '~/node_modules/swiper/css/swiper.min.css';
 
 html {
   line-height: $mainLineHeight;
@@ -53,13 +53,39 @@ a {
 button {
   cursor: pointer;
 }
+
+p {
+  margin: 0.625rem 0;
+}
 ul,
 li {
   margin: 0;
   padding: 0;
   list-style-type: none;
 }
-
+// responsitive iframe
+[style*='--aspect-ratio'] > :first-child {
+  width: 100%;
+}
+[style*='--aspect-ratio'] > img {
+  height: auto;
+}
+@supports (--custom: property) {
+  [style*='--aspect-ratio'] {
+    position: relative;
+  }
+  [style*='--aspect-ratio']::before {
+    content: '';
+    display: block;
+    padding-bottom: calc(100% / ((var(--aspect-ratio))));
+  }
+  [style*='--aspect-ratio'] > :first-child {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+  }
+}
 section,
 .section {
   position: relative;
@@ -121,6 +147,63 @@ section,
 .main-content-wrapper {
   display: flex;
 }
+
+.hidden-menu-items {
+  position: relative;
+
+  .hidden-menu {
+    opacity: 0;
+    visibility: hidden;
+    position: absolute;
+    padding: 15px 20px;
+    background-color: #fff;
+    z-index: 5;
+    top: 31px;
+    left: 50%;
+    transform: translateX(-50%);
+    transition: $transition;
+    display: block;
+
+    &:hover {
+      display: block;
+      opacity: 1;
+      visibility: visible;
+    }
+  }
+  &__btn {
+    width: 27px;
+    height: 16px;
+    position: relative;
+    top: 0;
+    display: block;
+
+    & > span {
+      width: 100%;
+      height: 2px;
+      background-color: $primaryColor;
+      display: block;
+      position: absolute;
+    }
+    & > span:nth-child(1) {
+      top: 0;
+    }
+    & > span:nth-child(2) {
+      top: 7px;
+    }
+    & > span:nth-child(3) {
+      top: 14px;
+    }
+
+    &--open + .hidden-menu,
+    &:hover + .hidden-menu,
+    &:focus + .hidden-menu,
+    &:active + .hidden-menu {
+      opacity: 1;
+      visibility: visible;
+    }
+  }
+}
+
 /*------------------------------------*\
     #CATALOG CATEGORIES BLOCK START
 \*------------------------------------*/
@@ -128,7 +211,7 @@ section,
 .catalog-categories {
   display: flex;
   flex-wrap: wrap;
-  margin: 0 -35px -65px;
+  margin: 65px -35px 15px;
 
   &__item {
   }
@@ -139,7 +222,7 @@ section,
   display: flex;
   align-items: center;
   background-color: #f3f3f3;
-  padding: 45px 200px 45px 35px;
+  padding: 45px 270px 45px 35px;
   position: relative;
   height: 217px;
   transition: $transition;
@@ -239,7 +322,10 @@ section,
 /*------------------------------------*\
     #PROMO BLOCKS START
 \*------------------------------------*/
-
+.container--promo-blocks {
+  margin-top: 80px;
+  margin-bottom: 105px;
+}
 .promo-blocks {
   display: flex;
   margin: 0 -35px;
@@ -318,7 +404,7 @@ section,
   background-repeat: no-repeat;
   background-image: url(../img/bg-about.jpg);
   background-position: right center;
-  padding: 60px 0;
+  margin: 105px 0 60px;
 
   &__title {
     font-weight: 600;
@@ -879,4 +965,171 @@ section,
 
 /*------------------------------------*\
     #BOTTOM SLIDER END 
+\*------------------------------------*/
+
+/*------------------------------------*\
+    #FACTORY START 
+\*------------------------------------*/
+
+.factory {
+  margin: 80px 0;
+
+  // .factory__container
+  &__container {
+    display: flex;
+    align-items: center;
+  }
+  // .factory__video-container
+  &__video-container {
+    flex: 0 0 890px;
+  }
+  // .factory__video
+  &__video {
+  }
+  // .factory__title
+  &__title {
+    font-weight: 600;
+    font-size: 32px;
+    letter-spacing: -0.02em;
+    text-transform: uppercase;
+    color: #0d0d0d;
+    padding-left: 60px;
+    line-height: 1.0833;
+  }
+  // .factory__text
+  &__text {
+    background-color: #ffffff;
+    box-shadow: 0px 10px 50px rgba(0, 0, 0, 0.05);
+    padding: 60px;
+    margin-top: 25px;
+  }
+  // .factory__more
+  &__more {
+    border: 3px solid #c02d33;
+    border-radius: 1px;
+    background-color: #fff;
+    transition: $transition;
+    font-weight: 600;
+    font-size: 22px;
+    letter-spacing: -0.02em;
+    text-transform: uppercase;
+    color: $primaryColor;
+    padding: 20px 120px;
+    margin-top: 35px;
+    display: inline-block;
+
+    &:hover,
+    &:focus,
+    &:active {
+      color: #fff;
+      background-color: $primaryColor;
+    }
+  }
+}
+
+/*------------------------------------*\
+    #FACTORY END 
+\*------------------------------------*/
+
+/*------------------------------------*\
+    #CATALOG DETAIL START 
+\*------------------------------------*/
+
+.catalog-detail {
+  // .catalog-detail__info
+  &__info {
+  }
+}
+.information-detail-card {
+  // .information-detail-card__header
+  &__header {
+  }
+  // .information-detail-card__title
+  &__title {
+  }
+  // .information-detail-card__rating
+  &__rating {
+  }
+}
+.page {
+  // .page__title
+  &__title {
+  }
+}
+.rating {
+  display: flex;
+  align-items: center;
+
+  // .rating__inner
+  &__inner {
+    display: flex;
+  }
+  // .rating__item
+  &__item {
+    cursor: pointer;
+    margin: 0 2px;
+
+    svg {
+      fill: #fff;
+    }
+    // .rating__item--active
+    &:hover,
+    &--active {
+      svg {
+        fill: #ffc800;
+      }
+    }
+  }
+  // .rating__icon
+  &__icon {
+    width: 25px;
+    height: 25px;
+  }
+  // .rating__text
+  &__text {
+    font-size: 14px;
+    color: #8c8c8c;
+    margin-left: 10px;
+  }
+}
+
+.information-detail-card {
+  // .information-detail-card__prices
+  &__prices {
+  }
+}
+.card-prices {
+  background-color: #ffc800;
+  padding: 10px 20px;
+  display: flex;
+  align-items: center;
+
+  // .card-prices__inner
+  &__inner {
+    display: flex;
+   
+  }
+  // .card-prices__add-info
+  &__add-info {
+    font-size: 11px;
+    line-height: 1.3;
+    margin-left: 25px;
+  }
+}
+.card-price {
+  font-weight: bold;
+  font-size: 38px;
+  letter-spacing: -0.02em;
+
+  // .card-price--old
+  &--old {
+    font-weight: normal;
+    font-size: 30px;
+    text-decoration-line: line-through;
+    margin-right: 15px;
+  }
+}
+
+/*------------------------------------*\
+    #CATALOG DETAIL END 
 \*------------------------------------*/
