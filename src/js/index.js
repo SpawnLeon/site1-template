@@ -1,3 +1,8 @@
+'use strict';
+
+import $ from 'jquery';
+window.jQuery = $;
+require('@fancyapps/fancybox');
 import Swiper from 'swiper';
 
 const responseMenu = (menuSelector) => {
@@ -51,7 +56,7 @@ document.addEventListener('DOMContentLoaded', () => {
       slidesPerView: 3,
       loopedSlides: 3,
       spaceBetween: 5,
-      
+
       freeMode: true,
       navigation: {
         prevEl: '.catalog-detail-slide__btn--prev',
@@ -64,6 +69,21 @@ document.addEventListener('DOMContentLoaded', () => {
     thumbs: {
       swiper: catalogDetailNavSlider,
     },
+  });
+
+  document.querySelectorAll('.tab-certificate__title').forEach((el) => {
+    el.addEventListener('click', () => {
+      event.preventDefault();
+      el.classList.toggle('tab-certificate__title--open');      
+      el.nextElementSibling.classList.toggle('tab-certificate__content--open');
+    });
+  });
+  document.querySelectorAll('.tab-materials__title').forEach((el) => {
+    el.addEventListener('click', () => {
+      event.preventDefault();
+      el.classList.toggle('tab-materials__title--open');      
+      el.nextElementSibling.classList.toggle('materials__content--open');
+    });
   });
 
   responseMenu('.catalog-menu');

@@ -2,19 +2,25 @@
   display: flex;
   font-size: 14px;
 
-  // .page-delivery__add-info
-  &__add-info {
-    column-count: 2;
-    column-width: 70px;
-  }
+  // .page-delivery__map
   &__map {
     flex: 0 1 842px;
     margin-left: 75px;
   }
+
+  // .page-delivery__texts
   &__texts {
     flex: 1 1 0;
   }
 }
+
+
+.delivery-info {
+  margin-top: 30px;
+  column-count: 2;
+  column-gap: 25px;
+}
+
 .add-info-delivery {
   margin-bottom: 30px;
   position: relative;

@@ -1,0 +1,66 @@
+<% var data = { title: "Каталог", }; %> <%=
+_.template(require('./../includes/header.html').default)(data) %>
+<div class="container">
+  <div class="main-content-wrapper">
+    <main class="main-content">
+      <%= _.template(require('./../includes/breadcrumbs.html').default)() %>
+      <h1 class="page__title">Доставка</h1>
+      <div class="page-certificates">
+        <div class="certificates">
+          <div class="certificates__tab tab-certificate">
+            <div class="tab-certificate__title tab-certificate__title--open">ИП свидетельства</div>
+            <div class="tab-certificate__content tab-certificate__content--open">
+              <div class="tab-certificate__content-inner">
+                <a data-fancybox="gallery" href="../../uploads/certifacates/1.jpg"
+                  class="tab-certificate__item certificate">
+                  <img src="../../uploads/certifacates/1.jpg">
+                </a>
+                <a data-fancybox="gallery" href="../../uploads/certifacates/1.jpg"
+                class="tab-certificate__item certificate"> 
+                <img src="../../uploads/certifacates/1.jpg">
+              </a>
+              </div>
+            </div>
+          </div>
+          
+          <div class="certificates__tab tab-certificate">
+            <div class="tab-certificate__title">Сертификаты</div>
+            <div class="tab-certificate__content">
+              <div class="tab-certificate__content-inner">
+                <a data-fancybox="gallery" href="../../uploads/certifacates/1.jpg"
+                  class="tab-certificate__item certificate">
+                  <img src="../../uploads/certifacates/1.jpg">
+                </a>
+                <a data-fancybox="gallery" href="../../uploads/certifacates/1.jpg"
+                class="tab-certificate__item certificate"> 
+                <img src="../../uploads/certifacates/1.jpg">
+              </a>
+              </div>
+            </div>
+          </div>
+
+          <div class="certificates__tab tab-certificate">
+            <div class="tab-certificate__title">Дипломы и благодарности: </div>
+            <div class="tab-certificate__content">
+              <div class="tab-certificate__content-inner">
+                <a data-fancybox="gallery" href="../../uploads/certifacates/1.jpg"
+                  class="tab-certificate__item certificate">
+                  <img src="../../uploads/certifacates/1.jpg">
+                </a>
+                <a data-fancybox="gallery" href="../../uploads/certifacates/1.jpg"
+                class="tab-certificate__item certificate"> 
+                <img src="../../uploads/certifacates/1.jpg">
+              </a>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+
+      </div>
+    </main>
+  </div>
+</div>
+
+<%= _.template(require('./../includes/footer.html').default)(data) %>

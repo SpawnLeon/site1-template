@@ -1,11 +1,15 @@
 @import '~/node_modules/swiper/css/swiper.min.css';
+@import '~/node_modules/@fancyapps/fancybox/dist/jquery.fancybox.css';
 
+@import 'utils/mixins';
+@import 'utils/vars';
 @import 'utils/reset';
-@import 'utils/common';
+@import 'utils/buttons';
 @import '_header';
 @import '_footer';
 @import '_main-slider';
 @import 'pages/delivery';
+@import 'pages/certificates'; 
 
 html {
   line-height: $mainLineHeight;
@@ -142,7 +146,7 @@ section,
     font-weight: 900;
     font-size: 26px;
     letter-spacing: -0.02em;
-    margin: 25px 0;
+    margin: 20px 0;
   }
 }
 .main-content-wrapper {
@@ -434,7 +438,6 @@ section,
 .main-content {
   flex: 1 1 auto;
   padding-bottom: 50px;
-
 }
 .sidebar + .main-content {
   max-width: calc(100% - 398px);
