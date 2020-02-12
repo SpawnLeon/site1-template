@@ -78,13 +78,13 @@ document.addEventListener('DOMContentLoaded', () => {
       el.nextElementSibling.classList.toggle('tab-certificate__content--open');
     });
   });
-  document.querySelectorAll('.tab-materials__title').forEach((el) => {
+  document.querySelectorAll('.tab-material__title').forEach((el) => {
     el.addEventListener('click', () => {
       event.preventDefault();
-      el.classList.toggle('tab-materials__title--open');      
-      el.nextElementSibling.classList.toggle('materials__content--open');
+      el.classList.toggle('tab-material__title--open');      
+      el.nextElementSibling.classList.toggle('tab-material__content--open');
     });
-  });
+  }); 
 
   responseMenu('.catalog-menu');
 });
