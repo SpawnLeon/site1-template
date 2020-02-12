@@ -230,18 +230,30 @@ _.template(require('./../includes/header.html').default)(data) %>
                 </div>
               </div>
             </div>
+
+
+            <div class="information-detail-card__actions detail-card-actions">
+              <button type="button" aria-label="Купить в один клик"
+                class="detail-card-actions__item action-detail-card  action-detail-card--buy-1-click btn--clear">
+                Купить в один клик
+              </button>
+              <button type="button" aria-label="В корзину"
+                class="detail-card-actions__item action-detail-card  action-detail-card--buy btn--clear">
+                В корзину
+              </button>
+            </div>
           </div>
 
 
 
         </div>
+
+
+
+
+      </article>
+    </main>
   </div>
-
-
-
-  </article>
-  </main>
-</div>
 </div>
 
 <%= _.template(require('./../includes/footer.html').default)(data) %>

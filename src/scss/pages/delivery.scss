@@ -1,0 +1,43 @@
+.page-delivery {
+  display: flex;
+  font-size: 14px;
+
+  // .page-delivery__add-info
+  &__add-info {
+    column-count: 2;
+    column-width: 70px;
+  }
+  &__map {
+    flex: 0 1 842px;
+    margin-left: 75px;
+  }
+  &__texts {
+    flex: 1 1 0;
+  }
+}
+.add-info-delivery {
+  margin-bottom: 30px;
+  position: relative;
+  padding-left: 50px;
+
+  // .add-info-delivery__icon
+  &__icon {
+    width: 29px;
+    height: 29px;
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+
+  // .add-info-delivery__title
+  &__title {
+    font-weight: 600;
+    font-size: 24px;
+  }
+  // .page-deliver__texts
+  &__texts {
+  }
+  // .add-info-delivery__text
+  &__text {
+  }
+}

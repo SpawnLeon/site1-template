@@ -29,9 +29,11 @@ const responseMenu = (menuSelector) => {
 document.addEventListener('DOMContentLoaded', () => {
   const mainSlider = new Swiper('.main-slider__container', {
     loop: true,
+    slidesPerView: 1,
   });
   const catalogSlider = new Swiper('.catalog-slider__container', {
     loop: true,
+    slidesPerView: 1,
   });
   const bottomSlider = new Swiper('.bottom-slider__container', {
     loop: true,

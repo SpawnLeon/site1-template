@@ -5,6 +5,7 @@
 @import '_header';
 @import '_footer';
 @import '_main-slider';
+@import 'pages/delivery';
 
 html {
   line-height: $mainLineHeight;
@@ -433,6 +434,9 @@ section,
 .main-content {
   flex: 1 1 auto;
   padding-bottom: 50px;
+
+}
+.sidebar + .main-content {
   max-width: calc(100% - 398px);
 }
 /*------------------------------------*\
@@ -663,7 +667,7 @@ section,
     background: $primaryColor;
     border: 1px solid $primaryColor;
     box-sizing: border-box;
-    border-radius: 1x;
+    border-radius: 1px;
     transition: $transition;
     font-size: 20px;
     line-height: 1.2;
@@ -1207,6 +1211,44 @@ section,
     border-bottom: 1px solid #333333;
     width: 100%;
     padding: 0;
+  }
+}
+
+.action-detail-card {
+  background: $primaryColor;
+  border: 1px solid $primaryColor;
+  box-sizing: border-box;
+  border-radius: 1px;
+  transition: $transition;
+  font-size: 20px;
+  line-height: 1.2;
+  padding: 8px 20px 10px;
+  color: #fff;
+  display: inline-block;
+
+  &:hover,
+  &:focus,
+  &:active {
+    background-color: #fff;
+    color: $primaryColor;
+  }
+
+  // .action-detail-card--buy-1-click
+  &--buy-1-click {
+    background-color: #fff;
+    color: $primaryColor;
+
+    &:hover,
+    &:focus,
+    &:active {
+      background-color: $primaryColor;
+      color: #fff;
+    }
+  }
+}
+.btn {
+  // .btn--clear
+  &--clear {
   }
 }
 
