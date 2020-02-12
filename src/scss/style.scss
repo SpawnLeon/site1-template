@@ -7,10 +7,12 @@
 @import 'utils/buttons';
 @import '_header';
 @import '_footer';
+@import '_forms';
 @import '_main-slider';
 @import 'pages/delivery';
 @import 'pages/certificates'; 
 @import 'pages/materials';  
+@import 'pages/reviews';  
 
 html {
   line-height: $mainLineHeight;
