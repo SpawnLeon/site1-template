@@ -1,0 +1,19 @@
+.works-list {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 -20px 0;
+
+  // .works-list__item
+  &__item {
+    margin: 0 20px 50px;
+    width: calc(100% / 4 - 40px);
+  }
+}
+.work-teaser {
+  // .work-teaser__inner
+  &__inner {
+  }
+  // .work-teaser__image
+  &__image {
+  }
+}
