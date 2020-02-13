@@ -1,0 +1,80 @@
+<% var data = { title: "Каталог", }; %> <%=
+_.template(require('./../includes/header.html').default)(data) %>
+<div class="container">
+  <div class="main-content-wrapper">
+    <main class="main-content">
+      <%= _.template(require('./../includes/breadcrumbs.html').default)() %>
+      <h1 class="page__title">Контакты</h1>
+
+
+      <div class="page-contacts">
+        <div class="page-contacts__row">
+
+          <div class="page-contacts-block-wrapper">
+            <div class="page-contacts__contacts page-contacts-block">
+              <div class="page-contacts__title">
+                Телефоны:
+              </div>
+              <div class="page-contacts-block__item">
+                +7 (499) 348-11-64
+              </div>
+              <div class="page-contacts-block__item">
+                +7 (960) 735-81-51 - <span>отдел продаж</span>
+              </div>
+              <div class="page-contacts-block__item">
+                +7 (499) 348-11-64 - <span>организационные вопросы</span>
+              </div>
+              <div class="page-contacts-block__item">
+                +7 (905) 142-44-22 - <span>организационные вопросы</span>
+                <a href="viber://add?number=74993481164"
+                  class="page-contacts-block__icon page-contacts-block__icon--viber"></a>
+                <a href="whatsapp://send/?phone=+74993481164"
+                  class="page-contacts-block__icon page-contacts-block__icon--wa"></a>
+              </div>
+              <div class="page-contacts-block__item">
+                +7 (960) 735-81-51
+                <a href="viber://add?number=79051424422"
+                  class="page-contacts-block__icon page-contacts-block__icon--viber"></a>
+                <a href="whatsapp://send/?phone=+79051424422"
+                  class="page-contacts-block__icon page-contacts-block__icon--wa"></a>
+              </div>
+            </div>
+
+            <div class="page-contacts__contacts page-contacts-block ">
+              <div class="page-contacts__title">
+                E-mail:
+              </div>
+              <div class="page-contacts-block__item">
+                main@deisus-m.ru
+              </div>
+            </div>
+
+            <div class="page-contacts__contacts page-contacts-block page-contacts-block--bottom">
+
+              <div class="page-contacts-block__item">
+                Внимание! <span> Цены в магазинах наших партнеров могут отличаться от цен, представленных на сайте</span>
+                <span class="page-contacts-block__link">deisus-m.ru</span>
+              </div>
+            </div>
+          </div>
+          <div class="page-contacts__form">
+            form here
+          </div>
+        </div>
+
+        <div class="page-contacts__row">
+
+          22222222222222222222222 
+        </div>
+        <div class="page-contacts__row">
+
+          3333333333333333
+        </div>
+      </div>
+
+
+    </main>
+  </div>
+</div>
+
+<%= _.template(require('./../includes/footer.html').default)(data) %>

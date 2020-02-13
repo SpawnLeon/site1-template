@@ -39,7 +39,7 @@
   }
   // .form__item
   &__item {
-    margin: 15px 0; 
+    margin: 15px 0;
   }
   // .form__footer
   &__footer {
@@ -54,7 +54,7 @@
     background-color: $primaryColor;
     border: 1px solid $primaryColor;
     border-radius: 1px;
-    padding: 9px 15px 9px;
+    padding: 9px 15px 8px;
     font-weight: 600;
     font-size: 18px;
     letter-spacing: -0.02em;
@@ -73,6 +73,33 @@
 }
 
 .item-form {
+  &__custom-checkbox::before,
+  &__custom-checkbox::after {
+    content: '';
+    display: block;
+    background-color: $primaryColor;
+    position: absolute;
+    transition: $transition;
+    height: 1px;
+    opacity: 0;
+  }
+  &__custom-checkbox::before {
+    width: 5px;
+    transform: rotate(44deg);
+    top: 7px;
+    left: 2px;
+  }
+  &__custom-checkbox::after {
+    width: 8px;
+    transform: rotate(-56deg);
+    top: 5px;
+    left: 4px;
+  }
+  &__field--checkbox:checked + &__custom-checkbox::before,
+  &__field--checkbox:checked + &__custom-checkbox::after {
+    opacity: 1;
+  }
+
   // .item-form--text
   &--text {
   }
@@ -81,7 +108,6 @@
   }
   // .item-form--textarea
   &--textarea {
-    
   }
   // .item-form--agree
   &--agree {
@@ -93,7 +119,7 @@
   &__label {
     font-weight: 600;
     font-size: 14px;
-    color: #333333;    
+    color: #333333;
 
     &--agree {
       font-weight: 400;
@@ -132,5 +158,14 @@
   }
   // .item-form__custom-checkbox
   &__custom-checkbox {
+    background-color: #ffffff;
+    border: 1px solid $primaryColor;
+    border-radius: 1px;
+    width: 14px;
+    height: 14px;
+    display: inline-block;
+    position: relative;
+    margin-right: 2px;
+    top: 1px;
   }
 }

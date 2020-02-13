@@ -1,0 +1,32 @@
+.page-contacts__title {
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 1;
+  color: #0d0d0d;
+  margin-bottom: 15px;
+}
+.page-contacts-block {
+  margin-bottom: 30px;
+}
+.page-contacts-block__item {
+  font-weight: 500;
+  font-size: 14px;
+  color: #333333;
+}
+.page-contacts-block__item span {
+  font-weight: 400;
+}
+.page-contacts-block__icon {
+  display: inline-block;
+  height: 16px;
+  width: 16px;
+  background-size: cover;
+  background-position: 50%;
+  vertical-align: middle;
+}
+.page-contacts-block__icon--viber {
+  background-image: url(../../img/i-viber.svg);
+}
+.page-contacts-block__icon--wa {
+  background-image: url(../../img/i-whatsapp.svg);
+}

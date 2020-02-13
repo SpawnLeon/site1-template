@@ -1,0 +1,63 @@
+.page-contacts {
+}
+
+
+.page-contacts {
+  // .page-contacts__row
+  &__row {
+    display: flex;
+  }
+  // .page-contacts__contacts
+  &__contacts {
+  }
+  // .page-contacts__title
+  &__title {
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 1;
+    color: #0d0d0d;
+    margin-bottom: 15px;
+  }
+}
+.page-contacts-block {
+  margin-bottom: 30px;
+
+  // .page-contacts-block--bottom
+  &--bottom {
+  }
+  // .page-contacts-block__item
+  &__item {
+    font-weight: 500;
+    font-size: 14px;
+    color: #333333;
+
+    span {
+      font-weight: 400;
+    }
+  }
+  // .page-contacts-block__icon
+  &__icon {
+    display: inline-block;
+    height: 16px;
+    width: 16px;
+    background-size: cover;
+    background-position: 50%;
+    vertical-align: middle;
+
+    // .page-contacts-block__icon--viber
+    &--viber {
+      background-image: url(../../img/i-viber.svg);
+    }
+    // .page-contacts-block__icon--wa
+    &--wa {
+      background-image: url(../../img/i-whatsapp.svg);
+    }
+  }
+  // .page-contacts-block__link
+  &__link {
+    font-weight: 500;
+    font-size: 14px;
+    text-decoration-line: underline;
+    color: $primaryColor;
+  }
+}

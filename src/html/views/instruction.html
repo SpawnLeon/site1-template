@@ -1,0 +1,87 @@
+<% var data = { title: "Каталог", }; %> <%=
+_.template(require('./../includes/header.html').default)(data) %>
+<div class="container">
+  <div class="main-content-wrapper">
+    <main class="main-content">
+      <%= _.template(require('./../includes/breadcrumbs.html').default)() %>
+      <h1 class="page__title">Инструкции по сборке кровати</h1>
+      <div class="page-instruction">
+        <p>
+          Фабрика «Дейсус-М» предлагает посетителям сайта большой ассортимент
+          кроватей. Наш каталог товаров предлагает кровати различного: дизайна,
+          размера, комплектации, цвета и др. Кровати найдутся на любой вкус,
+          возраст и достаток! Наш интернет-магазин позволяет не только выбрать и
+          быстро заказать кровать из дерева, но и узнать подробную инструкцию о
+          ее сборке. Приобретая кровати в нашем интернет-магазине вы без особых
+          усилий сможете узнать как ее нужно собирать. Ниже представлены две
+          подробные инструкции о сборке кровати с ящиками и двухъярусной
+          кровати. Пошаговый инструктаж отчетливо отражает каждую деталь в
+          сборке деревянной кровати.
+        </p>
+        <div class="page-instruction__instructions instructions">
+          <div class="instructions__item instruction">
+            <div class="instruction__inner">
+              <div class="instruction__title">
+                Инструкция по сборке кровати в стандартной комплектации
+              </div>
+              <a href="" class="instruction__more">Подробнее</a>
+            </div>
+            <img src="../../uploads/instructions/1.png" alt="" class="instruction__image" />
+          </div>
+
+          <div class="instructions__item instruction">
+            <div class="instruction__inner">
+              <div class="instruction__title">
+                Инструкция по сборке двухъярусной кровати
+              </div>
+              <a href="" class="instruction__more">Подробнее</a>
+            </div>
+            <img src="../../uploads/instructions/2.png" alt="" class="instruction__image" />
+          </div>
+
+          <div class="instructions__item instruction">
+            <div class="instruction__inner">
+              <div class="instruction__title">
+                Схема сборки подъёмного механизма
+              </div>
+              <a href="" class="instruction__more">Подробнее</a>
+            </div>
+            <img src="../../uploads/instructions/3.png" alt="" class="instruction__image" />
+          </div>
+
+          <div class="instructions__item instruction">
+            <div class="instruction__inner">
+              <div class="instruction__title">
+                Инструкция по сборке кровати с ортопедическим основанием
+              </div>
+              <a href="" class="instruction__more">Подробнее</a>
+            </div>
+            <img src="../../uploads/instructions/4.png" alt="" class="instruction__image" />
+          </div>
+
+          <div class="instructions__item instruction">
+            <div class="instruction__inner">
+              <div class="instruction__title">
+                Инструкция по сборке кровати на ламелях
+              </div>
+              <a href="" class="instruction__more">Подробнее</a>
+            </div>
+            <img src="../../uploads/instructions/5.png" alt="" class="instruction__image" />
+          </div>
+
+          <div class="instructions__item instruction">
+            <div class="instruction__inner">
+              <div class="instruction__title">
+                Инструкция по сборке кровати с тремя спинками
+              </div>
+              <a href="" class="instruction__more">Подробнее</a>
+            </div>
+            <img src="../../uploads/instructions/6.png" alt="" class="instruction__image" />
+          </div>
+        </div>
+      </div>
+    </main>
+  </div>
+</div>
+
+<%= _.template(require('./../includes/footer.html').default)(data) %>
