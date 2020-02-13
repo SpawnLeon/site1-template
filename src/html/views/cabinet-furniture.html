@@ -1,0 +1,66 @@
+<% var data = { title: "Корпусная мебель", }; %> <%=
+_.template(require('./../includes/header.html').default)(data) %>
+<div class="container">
+  <div class="main-content-wrapper">
+    <main class="main-content">
+      <%= _.template(require('./../includes/breadcrumbs.html').default)() %>
+      <h1 class="page__title">Корпусная мебель</h1>
+      <div class="page-cabinet-furniture">
+        <div class="catalog-categories">
+          <a href="" title="" class="catalog-categories__item item-catalog-category">
+            <div class="item-catalog-category__content">
+              <div class="item-catalog-category__count">123 товара</div>
+              <div class="item-catalog-category__title">Комоды</div>
+              <div class="item-catalog-category__more">Подробнее</div>
+            </div>
+            <img src="uploads/catalog-categories/cabinet-furniture/1.png" alt="" class="item-catalog-category__image">
+          </a>
+          <a href="" title="" class="catalog-categories__item item-catalog-category">
+            <div class="item-catalog-category__content">
+              <div class="item-catalog-category__count">122 товара</div>
+              <div class="item-catalog-category__title">Прихожие</div>
+              <div class="item-catalog-category__more">Подробнее</div>
+            </div>
+            <img src="uploads/catalog-categories/cabinet-furniture/2.png" alt="" class="item-catalog-category__image">
+          </a>
+          <a href="" title="" class="catalog-categories__item item-catalog-category">
+            <div class="item-catalog-category__content">
+              <div class="item-catalog-category__count">142 товара</div>
+              <div class="item-catalog-category__title">Стенки</div>
+              <div class="item-catalog-category__more">Подробнее</div>
+            </div>
+            <img src="uploads/catalog-categories/cabinet-furniture/3.png" alt="" class="item-catalog-category__image">
+          </a>
+          <a href="" title="" class="catalog-categories__item item-catalog-category">
+            <div class="item-catalog-category__content">
+              <div class="item-catalog-category__count">33 товара</div>
+              <div class="item-catalog-category__title">Тумбы</div>
+              <div class="item-catalog-category__more">Подробнее</div>
+            </div>
+            <img src="uploads/catalog-categories/cabinet-furniture/4.png" alt="" class="item-catalog-category__image">
+          </a>
+          <a href="" title="" class="catalog-categories__item item-catalog-category">
+            <div class="item-catalog-category__content">
+              <div class="item-catalog-category__count">123 товара</div>
+              <div class="item-catalog-category__title">Шкафы</div>
+              <div class="item-catalog-category__more">Подробнее</div>
+            </div>
+            <img src="uploads/catalog-categories/cabinet-furniture/5.png" alt="" class="item-catalog-category__image">
+          </a>
+          <a href="" title="" class="catalog-categories__item item-catalog-category">
+            <div class="item-catalog-category__content">
+              <div class="item-catalog-category__count">123 товара</div>
+              <div class="item-catalog-category__title">Книжные шкафы</div>
+              <div class="item-catalog-category__more">Подробнее</div>
+            </div>
+            <img src="uploads/catalog-categories/cabinet-furniture/6.png" alt="" class="item-catalog-category__image">
+          </a>
+         
+        </div>
+
+      </div>
+    </main>
+  </div>
+</div>
+
+<%= _.template(require('./../includes/footer.html').default)(data) %>
