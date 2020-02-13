@@ -1,0 +1,35 @@
+.articles-list {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 -20px 0;
+
+  // .articles-list__item
+  &__item {
+    margin: 0 20px 50px;
+    width: calc(100% / 4 - 40px);
+  }
+}
+.article-teaser {
+  // .article-teaser__inner
+  &__inner {
+  }
+  // .article-teaser__image
+  &__image {
+  }
+  // .article-teaser__title
+  &__title {
+    font-weight: 500;
+    font-size: 18px;
+    letter-spacing: -0.02em;
+    text-decoration-line: underline;
+    margin-top: 20px;
+    height: 42px;
+    overflow: hidden;
+    display: inline-block;
+    line-height: 1.2222;
+  }
+  // .article-teaser__text
+  &__text {
+    margin-top: 10px;
+  }
+}
