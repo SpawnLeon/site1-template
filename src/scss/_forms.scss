@@ -1,0 +1,136 @@
+.form {
+  max-width: 600px;
+  position: relative;
+  background-color: #f1f1f1;
+  padding: 25px 30px 35px;
+
+  // .form__close
+  &__close {
+    position: absolute;
+    top: 16px;
+    right: 16px;
+
+    .icon {
+      width: 16px;
+      height: 16px;
+    }
+  }
+  // .form__inner
+  &__inner {
+  }
+  // .form__header
+  &__header {
+  }
+  // .form__title
+  &__title {
+    font-weight: 600;
+    font-size: 30px;
+    text-align: center;
+  }
+  // .form__description
+  &__description {
+    font-size: 14px;
+    text-align: center;
+    margin-top: 10px;
+  }
+  // .form__body
+  &__body {
+    margin-top: 20px;
+  }
+  // .form__item
+  &__item {
+    margin: 15px 0; 
+  }
+  // .form__footer
+  &__footer {
+    margin-top: 25px;
+  }
+  // .form__action
+  &__actions {
+    margin-top: 25px;
+  }
+  // .form__submit
+  &__submit {
+    background-color: $primaryColor;
+    border: 1px solid $primaryColor;
+    border-radius: 1px;
+    padding: 9px 15px 9px;
+    font-weight: 600;
+    font-size: 18px;
+    letter-spacing: -0.02em;
+    text-transform: uppercase;
+    transition: $transition;
+    color: #ffffff;
+    width: 100%;
+
+    &:hover,
+    &:focus,
+    &:active {
+      color: $primaryColor;
+      background-color: transparent;
+    }
+  }
+}
+
+.item-form {
+  // .item-form--text
+  &--text {
+  }
+  // .item-form--email
+  &--email {
+  }
+  // .item-form--textarea
+  &--textarea {
+    
+  }
+  // .item-form--agree
+  &--agree {
+    font-size: 12px;
+    line-height: 1.45;
+    letter-spacing: -0.02em;
+  }
+  // .item-form__label
+  &__label {
+    font-weight: 600;
+    font-size: 14px;
+    color: #333333;    
+
+    &--agree {
+      font-weight: 400;
+    }
+  }
+  // .item-form__name
+  &__name {
+  }
+  // .item-form__required
+  &__required {
+    color: $primaryColor;
+  }
+  // .item-form__field
+  &__field {
+    background-color: #fff;
+    border: 1px solid #d1d1d1;
+    border-radius: 3px;
+    padding: 8px 15px 9px;
+    font-weight: 400;
+    width: 100%;
+    margin-top: 10px;
+
+    // .item-form__field--text
+    &--text {
+    }
+    // .item-form__field--email
+    &--email {
+    }
+    // .item-form__field--textarea
+    &--textarea {
+      min-height: 80px;
+    }
+    // .item-form__field--checkbox
+    &--checkbox {
+    }
+  }
+  // .item-form__custom-checkbox
+  &__custom-checkbox {
+  }
+}
