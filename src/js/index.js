@@ -1,4 +1,6 @@
 'use strict';
+import Vue from 'vue';
+window.Vue = Vue;
 
 import $ from 'jquery';
 window.jQuery = $;
@@ -32,6 +34,11 @@ const responseMenu = (menuSelector) => {
 };
 
 document.addEventListener('DOMContentLoaded', () => {
+  // Vue init
+  const app = new Vue({
+    //el: '#app',
+  });
+
   const mainSlider = new Swiper('.main-slider__container', {
     loop: true,
     slidesPerView: 1,
@@ -46,6 +53,17 @@ document.addEventListener('DOMContentLoaded', () => {
     navigation: {
       prevEl: '.bottom-slider__button--prev',
       nextEl: '.bottom-slider__button--next',
+    },
+  });
+
+  const collectionsSlider = new Swiper('.collections-slider__container', {
+    loop: true,
+    slidesPerView: 4,
+    spaceBetween: 24,
+    // Navigation arrows
+    navigation: {
+      prevEl: '.collections-slider__button--prev',
+      nextEl: '.collections-slider__button--next',
     },
   });
 
@@ -74,17 +92,17 @@ document.addEventListener('DOMContentLoaded', () => {
   document.querySelectorAll('.tab-certificate__title').forEach((el) => {
     el.addEventListener('click', () => {
       event.preventDefault();
-      el.classList.toggle('tab-certificate__title--open');      
+      el.classList.toggle('tab-certificate__title--open');
       el.nextElementSibling.classList.toggle('tab-certificate__content--open');
     });
   });
   document.querySelectorAll('.tab-material__title').forEach((el) => {
     el.addEventListener('click', () => {
       event.preventDefault();
-      el.classList.toggle('tab-material__title--open');      
+      el.classList.toggle('tab-material__title--open');
       el.nextElementSibling.classList.toggle('tab-material__content--open');
     });
-  }); 
+  });
 
   responseMenu('.catalog-menu');
 });
