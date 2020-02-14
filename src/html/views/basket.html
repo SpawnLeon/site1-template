@@ -1,0 +1,74 @@
+<% var data = { title: "Корзина ", }; %> <%=
+_.template(require('./../includes/header.html').default)(data) %>
+<div class="container">
+  <div class="main-content-wrapper">
+    <main class="main-content">
+      <%= _.template(require('./../includes/breadcrumbs.html').default)() %>
+      <h1 class="page__title">Корзина</h1>
+      <div class="page-basket">
+        <div class="page-basket__items basket-items">
+          <div class="basket-items__header">
+            <div class="basket-item__col col-basket-item col-basket-item--info">Товар</div>
+            <div class="basket-item__col col-basket-item col-basket-item--price">Цена</div>
+            <div class="basket-item__col col-basket-item col-basket-item--qty">Кол-во</div>
+            <div class="basket-item__col col-basket-item col-basket-item--total">Сумма</div>
+            <div class="basket-item__col col-basket-item col-basket-item--delete">Удалить</div>
+          </div>
+
+          <div class="basket-items__item basket-item">
+            <div class="basket-item__col col-basket-item  col-basket-item--info">
+              <div class="basket-item__product basket-product">
+                <div class="basket-product__image">
+                  <img src="../../uploads/basket/1.png" alt="" />
+                </div>
+                <div class="basket-product__info">
+                  <div class="basket-product__title">
+                    Полутороспальная Кровать Велина-М
+                  </div>
+                  <div class="basket-product__props props-basket-product">
+                    <div class="props-basket-product__item prop-basket-product">
+                      <div class="prop-basket-product__name">Размер:</div>
+                      <div class="prop-basket-product__value">90x200см</div>
+                      <button type="button" aria-label="Редактировать параметры товара"
+                        class="prop-basket-product__btn btn--clear">
+                        <svg class="icon">
+                          <use xlink:href="#i-pencil"></use>
+                        </svg>
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="basket-item__col col-basket-item col-basket-item--price">
+              <div class="col-basket-item__title">Цена</div>
+              12 500 ₽
+            </div>
+            <div class="basket-item__col col-basket-item col-basket-item--qty">
+              <div class="col-basket-item__title">Кол-во</div>
+              <div class="qty">
+                <button class="qty__btn btn--clear" data-qty-down>-</button>
+                <input type="text" value="2" />
+                <button class="qty__btn btn--clear" data-qty-up>+</button>
+              </div>
+            </div>
+            <div class="basket-item__col col-basket-item col-basket-item--total">
+              <div class="col-basket-item__title">Сумма</div>
+              45 000 ₽
+            </div>
+            <div class="basket-item__col col-basket-item col-basket-item--delete">
+              <div class="col-basket-item__title">Удалить</div>
+              <button type="button" aria-label="удалить товар из корзины" class="basket-item__delete">
+                <svg class="icon">
+                  <use xlink:href="#i-form-close"></use>
+                </svg>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+  </div>
+</div>
+
+<%= _.template(require('./../includes/footer.html').default)(data) %>

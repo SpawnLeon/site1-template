@@ -21,21 +21,13 @@
 @import 'pages/cabinet-furniture';
 @import 'pages/articles';
 @import 'pages/works';
+@import 'pages/basket';
 
 html {
   line-height: $mainLineHeight;
   font-size: $mainFontSize;
   color: $mainFontColor;
   height: 100%;
-  @media screen and (max-width: $desktopWidth) {
-    font-size: 16px;
-  }
-  @media screen and (max-width: $tableWidth) {
-    font-size: 15px;
-  }
-  @media screen and (max-width: $phoneWidth) {
-    font-size: 14px;
-  }
 }
 
 body {
@@ -102,20 +94,6 @@ li {
     height: 100%;
   }
 }
-section,
-.section {
-  position: relative;
-  padding: 40px 0;
-  @media screen and (max-width: $desktopWidth) {
-    padding: 36px 0;
-  }
-  @media screen and (max-width: $desktopWidth) {
-    padding: 28px 0;
-  }
-  @media screen and (max-width: $desktopWidth) {
-    padding: 20px 0;
-  }
-}
 
 .wrapper {
   display: flex;
@@ -141,18 +119,29 @@ section,
 
 .container {
   width: 100%;
-  flex: 0 0 auto;
   position: relative;
   margin: 0 auto;
-  max-width: $desktopWidth;
-  @media screen and (max-width: $smDesktopWidth) {
-    max-width: tableWidth;
+  max-width: 1830px;
+  padding: 0 15px;
+
+  @media screen and (max-width: 1440px) {
   }
-  @media screen and (max-width: $tableWidth) {
-    max-width: phoneWidth;
+
+  @media screen and (max-width: 1024px) {
+    max-width: 768px;
+    padding: 0 40px; 
   }
-  @media screen and (max-width: $phoneWidth) {
-    max-width: smPhoneWidth;
+
+  @media screen and (max-width: 768px) {
+  }
+
+  @media screen and (max-width: 425px) {
+  }
+
+  @media screen and (max-width: 375px) {
+  }
+
+  @media screen and (max-width: 320px) {
   }
 }
 
@@ -655,6 +644,8 @@ section,
     #CATALOG SIDEBAR START
 \*------------------------------------*/
 .sidebar {
+  font-size: 16px;
+
   &__menu {
   }
 }

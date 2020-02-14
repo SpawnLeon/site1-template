@@ -1,0 +1,100 @@
+.page-basket {
+  // .page-basket__items
+  &__items {
+  }
+}
+.basket-items {
+  // .basket-items__header
+  &__header {
+    font-weight: 500;
+    font-size: 18px;
+    letter-spacing: -0.02em;
+  }
+  // .basket-items__item
+  &__item {
+  }
+}
+.basket-item {
+  // .basket-item__col
+  &__col {
+  }
+  // .basket-item__product
+  &__product {
+  }
+  // .basket-item__delete
+  &__delete {
+  }
+}
+.col-basket-item {
+  background-color: #f5f5f5;
+  border-radius: 1px;
+  display: flex;
+  padding: 20px;
+
+  // .col-basket-item--info
+  &--info {
+  }
+  // .col-basket-item--price
+  &--price {
+  }
+  // .col-basket-item--qty
+  &--qty {
+  }
+  // .col-basket-item--total
+  &--total {
+    font-size: 16px;
+  }
+  // .col-basket-item--delete
+  &--delete {
+  }
+  // .col-basket-item__title
+  &__title {
+  }
+}
+.basket-product {
+  // .basket-product__image
+  &__image {
+    border: 1px solid #d1d1d1;
+    background-color: #fff;
+  }
+  // .basket-product__info
+  &__info {
+  }
+  // .basket-product__title
+  &__title {
+    font-style: normal;
+    font-weight: bold;
+    font-size: 16px;
+  }
+  // .basket-product__props
+  &__props {
+  }
+}
+.props-basket-product {
+  // .props-basket-product__item
+  &__item {
+  }
+}
+.prop-basket-product {
+  // .prop-basket-product__name
+  &__name {
+  }
+  // .prop-basket-product__value
+  &__value {
+  }
+  // .prop-basket-product__btn
+  &__btn {
+  }
+}
+.btn {
+  // .btn--clear
+  &--clear {
+  }
+}
+.icon {
+}
+.qty {
+  // .qty__btn
+  &__btn {
+  }
+}

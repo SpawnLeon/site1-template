@@ -5,11 +5,26 @@
 }
 
 .header {
+  font-size: 16px;
+
+  // .header__row
   &__row {
+    // .header__row--top
+    &--top {
+      padding: 15px 0;
+    }
+
+    // .header__row--catalog-menu
     &--catalog-menu {
       border-top: 1px solid #ececec;
       border-bottom: 1px solid #ececec;
+
+      @media screen and (max-width: 1024px) {
+        display: none;
+      }
     }
+
+    // .header__row--bottom
     &--bottom {
       background-color: #f1f1f1;
       padding: 15px 0;
@@ -24,6 +39,10 @@
   &__nav {
     &--main-menu {
       align-self: center;
+
+      @media screen and (max-width: 1024px) {
+        display: none;
+      }
     }
   }
 
@@ -50,6 +69,10 @@
     margin-right: 19px;
     align-self: flex-start;
     flex: 0 0 auto;
+
+    @media screen and (max-width: 1024px) {
+      display: none;
+    }
   }
 
   &__text {
@@ -58,20 +81,31 @@
   &__brand {
     font-family: 'Cormorant SC', Arial, Helvetica, sans-serif;
     font-weight: bold;
-    font-size: 48.4571px;
+    font-size: 48px;
     line-height: 59px;
     letter-spacing: -0.02em;
     font-feature-settings: 'pnum' on, 'lnum' on;
     white-space: nowrap;
+
+    @media screen and (max-width: 1024px) {
+      font-size: 26px;
+      line-height: 31px;
+      letter-spacing: 0;
+    }
   }
 
   &__promo {
     font-size: 14px;
     line-height: 17px;
-    letter-spacing: -0.02em;
+    letter-spacing: -0.04em;
     text-transform: uppercase;
     color: #858585;
     white-space: nowrap;
+
+    @media screen and (max-width: 1024px) {
+      font-size: 8px;
+      line-height: 9px;
+    }
   }
 }
 .main-menu {
@@ -103,6 +137,10 @@
 
   &--1 {
     text-align: right;
+
+    @media screen and (max-width: 1024px) {
+      display: none;
+    }
   }
 
   &--2 {
@@ -122,6 +160,10 @@
   }
   &__phone-item {
     white-space: nowrap;
+
+    @media screen and (max-width: 1024px) {
+      display: none;
+    }
   }
   &__phone {
     font-weight: 600;
@@ -207,6 +249,15 @@
   position: relative;
   border: 1px solid #d1d1d1;
   flex: 0 1 710px;
+
+  @media screen and (max-width: 1024px) {
+    display: none;
+
+    &--open {
+      display: block;
+    }
+  }
+
   &__input {
     padding: 16px 20px 17px;
     border-radius: 3px;
@@ -230,6 +281,8 @@
 .header-links {
   font-weight: 600;
   display: flex;
+  margin: 0 auto;
+
   &__item {
     display: flex;
     align-items: center;
@@ -258,6 +311,7 @@
 }
 .header-link {
 }
+
 .cart-block {
   background: #ffffff;
   border: 1px solid #d1d1d1;
@@ -266,6 +320,11 @@
   display: flex;
   padding: 12px 15px;
   align-items: center;
+  min-width: 280px;
+
+  @media screen and (max-width: 1024px) {
+    display: none;
+  }
 
   &__icon {
     margin-right: 15px;
