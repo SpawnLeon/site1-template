@@ -122,18 +122,18 @@ const config = {
 };
 
 module.exports = (env, argv) => {
-  if (argv.mode === 'production') {
-    config.plugins.push(new CleanWebpackPlugin());
-    config.plugins.push(
-      new ImageminPlugin({
-        plugins: [
-          imageminMozjpeg({
-            quality: 80,
-            progressive: true,
-          }),
-        ],
-      }),
-    );
-  }
+  // if (argv.mode === 'production') {
+  //   config.plugins.push(new CleanWebpackPlugin());
+  //   config.plugins.push(
+  //     new ImageminPlugin({
+  //       plugins: [
+  //         imageminMozjpeg({
+  //           quality: 80,
+  //           progressive: true,
+  //         }),
+  //       ],
+  //     }),
+  //   );
+  // }
   return config;
 };

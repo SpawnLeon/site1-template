@@ -37,7 +37,7 @@ const cachingSvgSprite = () => {
   // Storing SVG Sprite in localStorage
 
   var file = 'img/sprite.svg',
-    revision = 14253034459;
+    revision = 142530344619;
 
   if (
     !document.createElementNS ||
