@@ -229,7 +229,38 @@ _.template(require('./../includes/header.html').default)(data) %>
                   </div>
                 </div>
               </div>
-            </div>
+              <div class="card-options__item card-equipments">
+
+                <!-- this will be vue component -->
+                <div class="card-equipments__item equipment-card-block">
+                  <div class="equipment-card-block__title">Выберите комплектацию:</div>
+                  <div class="equipment-card-block__inner">
+                    <div class="equipment-card-block__item equipment-card">
+                      <div class="equipment-card__image">
+                        <div class="equipment-card__title">
+                          Стандартная комплектация
+                        </div>
+                      </div>
+                    </div>
+                    <div class="equipment-card-block__item equipment-card equipment-card--active">
+                      <div class="equipment-card__image">
+                        <div class="equipment-card__title">
+                          Подъемный механизм
+                        </div>
+                      </div>
+                    </div>
+                    <div class="equipment-card-block__item equipment-card">
+                      <div class="equipment-card__image">
+                        <div class="equipment-card__title">
+                          Ортопедическое основание
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                
+              </div>
+            </div> <!-- information-detail-card__options card-options -->
 
 
             <div class="information-detail-card__actions detail-card-actions">

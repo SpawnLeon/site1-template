@@ -448,13 +448,80 @@
     font-size: 14px;
     margin-top: 25px;
   }
-   // .card-tabs__reviews
-   &__reviews {
-     display: flex;
+  // .card-tabs__reviews
+  &__reviews {
+    display: flex;
   }
 }
 /*------------------------------------*\
     #TABS BLOCK END 
 \*------------------------------------*/
 
+/*------------------------------------*\
+    #EQUIPMENT BLOCK START 
+\*------------------------------------*/
 
+.card-options {
+  // .card-options__item
+  &__item {
+  }
+}
+.card-equipments {
+  // .card-equipments__item
+  &__item {
+  }
+}
+.equipment-card-block {
+  // .equipment-card-block__title
+  &__title {
+    font-weight: bold;
+    font-size: 16px;
+  }
+  // .equipment-card-block__in ner
+  &__inner {  
+    display: flex;
+    margin: 10px -5px 0;
+
+  }
+  // .equipment-card-block__item
+  &__item {
+  }
+}
+.equipment-card {
+  background: #ffffff;
+  opacity: 0.5;
+  border: 1px solid #d1d1d1;
+  box-sizing: border-box;
+  border-radius: 1px;
+  box-shadow: 0px 1px 5px rgba(0, 0, 0, 0.05);
+  cursor: pointer;
+  transition: $transition;
+  margin: 0 5px 0;
+
+  // .equipment-card__image
+  &__image {
+  }
+  // .equipment-card__title
+  &__title {
+    font-size: 8px;
+    letter-spacing: -0.02em;
+  }
+
+  // .equipment-card--active
+  &--active {
+    opacity: 0.1;
+
+    // .equipment-card__image
+    &__image {
+    }
+    // .equipment-card__title
+    &__title {
+      font-size: 12px;
+      letter-spacing: -0.02em;
+    }
+  }
+}
+
+/*------------------------------------*\
+    #EQUIPMENT BLOCK END 
+\*------------------------------------*/
