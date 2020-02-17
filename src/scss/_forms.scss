@@ -69,6 +69,10 @@
       color: $primaryColor;
       background-color: transparent;
     }
+
+    &:not(:last-child) {
+      margin-right: 20px;
+    }
   }
 }
 
@@ -167,5 +171,21 @@
     position: relative;
     margin-right: 2px;
     top: 1px;
+  }
+}
+
+.btn {
+  transition: $transition;
+
+  &--not-fill {
+    background-color: transparent;
+    color: $primaryColor;
+
+    &:hover,
+    &:focus,
+    &:active {
+      color: #fff;
+      background-color: $primaryColor;
+    }
   }
 }

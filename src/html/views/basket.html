@@ -104,9 +104,17 @@ _.template(require('./../includes/header.html').default)(data) %>
             <div class="basket-item__col col-basket-item col-basket-item--qty">
               <div class="col-basket-item__title">Кол-во</div>
               <div class="qty">
-                <button class="qty__btn btn--clear" data-qty-down>-</button>
-                <input type="text" value="2" />
-                <button class="qty__btn btn--clear" data-qty-up>+</button>
+                <button type="button" class="qty__btn btn--clear" data-qty-down>
+                  <svg class="icon" viewBox="0 0 14 2">
+                    <use xlink:href="#i-basket-minus"></use>
+                  </svg>
+                </button>
+                <input class="qty__counter" type="text" value="2" />
+                <button type="button" class="qty__btn btn--clear" data-qty-up>
+                  <svg class="icon" viewBox="0 0 14 15">
+                    <use xlink:href="#i-basket-plus"></use>
+                  </svg>
+                </button>
               </div>
             </div>
             <div class="basket-item__col col-basket-item col-basket-item--total">
@@ -116,7 +124,7 @@ _.template(require('./../includes/header.html').default)(data) %>
             <div class="basket-item__col col-basket-item col-basket-item--delete">
               <div class="col-basket-item__title">Удалить</div>
               <button type="button" aria-label="удалить товар из корзины" class="basket-item__delete btn--clear">
-                <svg class="icon">
+                <svg class="icon" viewBox="0 0 30 30">
                   <use xlink:href="#i-basket-delete"></use>
                 </svg>
               </button>
@@ -211,9 +219,17 @@ _.template(require('./../includes/header.html').default)(data) %>
             <div class="basket-item__col col-basket-item col-basket-item--qty">
               <div class="col-basket-item__title">Кол-во</div>
               <div class="qty">
-                <button class="qty__btn btn--clear" data-qty-down>-</button>
-                <input type="text" value="2" />
-                <button class="qty__btn btn--clear" data-qty-up>+</button>
+                <button type="button" class="qty__btn btn--clear" data-qty-down>
+                  <svg class="icon" viewBox="0 0 14 2">
+                    <use xlink:href="#i-basket-minus"></use>
+                  </svg>
+                </button>
+                <input class="qty__counter" type="text" value="2" />
+                <button type="button" class="qty__btn btn--clear" data-qty-up>
+                  <svg class="icon" viewBox="0 0 14 15">
+                    <use xlink:href="#i-basket-plus"></use>
+                  </svg>
+                </button>
               </div>
             </div>
             <div class="basket-item__col col-basket-item col-basket-item--total">
@@ -223,7 +239,7 @@ _.template(require('./../includes/header.html').default)(data) %>
             <div class="basket-item__col col-basket-item col-basket-item--delete">
               <div class="col-basket-item__title">Удалить</div>
               <button type="button" aria-label="удалить товар из корзины" class="basket-item__delete btn--clear">
-                <svg class="icon">
+                <svg class="icon" viewBox="0 0 30 30">
                   <use xlink:href="#i-basket-delete"></use>
                 </svg>
               </button>
@@ -318,9 +334,17 @@ _.template(require('./../includes/header.html').default)(data) %>
             <div class="basket-item__col col-basket-item col-basket-item--qty">
               <div class="col-basket-item__title">Кол-во</div>
               <div class="qty">
-                <button class="qty__btn btn--clear" data-qty-down>-</button>
-                <input type="text" value="2" />
-                <button class="qty__btn btn--clear" data-qty-up>+</button>
+                <button type="button" class="qty__btn btn--clear" data-qty-down>
+                  <svg class="icon" viewBox="0 0 14 2">
+                    <use xlink:href="#i-basket-minus"></use>
+                  </svg>
+                </button>
+                <input class="qty__counter" type="text" value="2" />
+                <button type="button" class="qty__btn btn--clear" data-qty-up>
+                  <svg class="icon" viewBox="0 0 14 15">
+                    <use xlink:href="#i-basket-plus"></use>
+                  </svg>
+                </button>
               </div>
             </div>
             <div class="basket-item__col col-basket-item col-basket-item--total">
@@ -330,10 +354,168 @@ _.template(require('./../includes/header.html').default)(data) %>
             <div class="basket-item__col col-basket-item col-basket-item--delete">
               <div class="col-basket-item__title">Удалить</div>
               <button type="button" aria-label="удалить товар из корзины" class="basket-item__delete btn--clear">
-                <svg class="icon">
+                <svg class="icon" viewBox="0 0 30 30">
                   <use xlink:href="#i-basket-delete"></use>
                 </svg>
               </button>
+            </div>
+          </div>
+          <div class="basket-items__item basket-items--total">
+            Итого 46 000 ₽
+          </div>
+        </div>
+
+        <div class="page-basket__bottom">
+          <div class="page-basket__form">
+            <div class="form form-basket">
+
+              <form action="">
+                <div class="form__inner">
+                  <header class="form__header">
+                    <div class="form__title form__title--basket">Оформление заказа</div>
+                  </header>
+                  <div class="form__body">
+                    <div class="form__item item-form item-form--text">
+                      <label class="item-form__label">
+                        <span class="item-form__name">ФИО:</span>
+                        <input name="" c required type="text" class="item-form__field item-form__field--text">
+                      </label>
+                    </div>
+                    <div class="form__item item-form item-form--email">
+                      <label class="item-form__label">
+                        <span class="item-form__name">Адрес:</span> <span class="item-form__required">*</span>
+                        <input name="" value="" type="email" class="item-form__field item-form__field--email">
+                      </label>
+                    </div>
+                    <div class="form__item item-form item-form--email">
+                      <label class="item-form__label">
+                        <span class="item-form__name">E-Mail:</span> <span class="item-form__required">*</span>
+                        <input name="" value="" type="email" class="item-form__field item-form__field--email">
+                      </label>
+                    </div>
+                    <div class="form__item item-form item-form--textarea">
+                      <label class="item-form__label">
+                        <span class="item-form__name">Адрес доставки:</span> <span class="item-form__required">*</span>
+                        <textarea name="" class="item-form__field item-form__field--textarea"></textarea>
+                      </label>
+                    </div>
+                    <div class="form__item item-form item-form--textarea">
+                      <label class="item-form__label">
+                        <span class="item-form__name">Примечания к заказу:</span> <span
+                          class="item-form__required">*</span>
+                        <textarea name="" class="item-form__field item-form__field--textarea"></textarea>
+                      </label>
+                    </div>
+                  </div>
+                  <footer class="form__footer">
+                    <div class="form__item item-form item-form--agree">
+                      <label class="item-form__label item-form__label--agree">
+                        <input type="checkbox" checked="checked"
+                          class="item-form__field item-form__field--checkbox item-form--agree visually-hidden">
+                        <span class="item-form__custom-checkbox"></span>
+                        Я даю своё согласие на обработку моих персональных данных, в соответствии с Федеральным законом
+                        от
+                        27.07.2006 года №152-ФЗ «О персональных данных», на условиях и для целей, определенных Политикой
+                        конфиденциальности.
+                      </label>
+                    </div>
+                    <div class="form__actions form__actions--basket">
+                      <button type="button" class="form__submit form__submit--continue btn btn--not-fill">
+                        Вернуться к покупкам
+                      </button>
+                      <button type="button" class="form__submit form__submit--checkout btn">
+                        Оформить заказ
+                      </button>
+                    </div>
+                  </footer>
+                </div>
+              </form>
+            </div>
+          </div>
+          <div class="page-basket__info">
+            <div class="page-delivery__add-info delivery-info delivery-info--basket">
+              <div class="add-info-delivery add-info-delivery--basket">
+                <svg class="add-info-delivery__icon">
+                  <use xlink:href="#i-delivery-page-delivery"></use>
+                </svg>
+                <h3 class="add-info-delivery__title">Доставка</h3>
+                <svg class="add-info-delivery__icon">
+                  <use xlink:href="#i-delivery-page-delivery"></use>
+                </svg>
+                <div class="add-info-delivery__text">
+                  <p>
+                    <b>По Москве</b> (внутри МКАД и снаружи МКАД — не более 10км): <br>
+                    До подъезда от 1000₽ до 1500₽. <br>
+                    Ближайшее подмосковье — 1300₽ <br>
+                    Подмосковье — 1500₽ + 25 ₽/км
+                  </p>
+                  <p>
+                    <b>По России:</b> <br>
+                    1. ТК Деловые Линии <br>
+                    2. ТК ПЭК
+                  </p>
+                </div>
+              </div>
+
+              <div class="add-info-delivery add-info-delivery--basket">
+                <svg class="add-info-delivery__icon">
+                  <use xlink:href="#i-delivery-page-payment"></use>
+                </svg>
+                <h3 class="add-info-delivery__title">Оплата</h3>
+                <div class="add-info-delivery__text">
+                  <b>1.</b> Товар оплачивается по факту доставки наличными. <br>
+                  <b>2.</b> Возможна оплата по безналу на расчетный счет по договору (+6% к сумме покупки). <br>
+                  <b>3.</b> Возможна оплата картами по факту доставки через онлайн перевод (терминал не
+                  предоставляется).
+
+                </div>
+              </div>
+              <div class="add-info-delivery add-info-delivery--basket">
+                <svg class="add-info-delivery__icon">
+                  <use xlink:href="#i-delivery-page-lifting"></use>
+                </svg>
+                <h3 class="add-info-delivery__title">Подъём</h3>
+                <div class="add-info-delivery__text">
+                  <p>
+                    <b>Без лифта за этаж:</b> <br>
+                    &nbsp;&nbsp; - Кровать — 100 ₽ <br>
+                    &nbsp;&nbsp; - Комод — 100 ₽ до 200 ₽ <br>
+                    &nbsp;&nbsp; - Тумба — 50 ₽ <br>
+                    &nbsp;&nbsp; - Подъёмный мех., ортопедическое основ. — 200 ₽
+                  </p>
+                  <p>
+                    <b>Без грузового лифта:</b> <br>
+                    &nbsp;&nbsp; - От 600 ₽ до 1500 ₽ (Зависит от объёма заказа)
+                  </p>
+                  <p>
+                    <b>Грузовой лифт:</b> <br>
+                    &nbsp;&nbsp; - От 400 ₽ до 1000 ₽ (Зависит от объёма заказа)
+                  </p>
+                </div>
+              </div>
+
+              <div class="add-info-delivery add-info-delivery--basket">
+                <svg class="add-info-delivery__icon">
+                  <use xlink:href="#i-delivery-page-lifting-assembly"></use>
+                </svg>
+                <h3 class="add-info-delivery__title">Сборка с подъёмом</h3>
+                <div class="add-info-delivery__text">
+                  <p>
+                    <b>Кровать:</b> от 400 ₽ — до 1600 ₽
+                  </p>
+                  <p>
+                    <b>Корпусная мебель с фурнитурой:</b> от 10% до 13% от стоимости изделия (в зависимости от объема)
+                  </p>
+                  <p>
+                    Сборка кухни не предполагает подключение сантехники, врезку мойки и варочной поверхности. <br>
+                    Сборка мебели в день доставки. <br>
+                    Подъем, сборка мебели в день доставки обговаривается с менеджером.
+                  </p>
+                  <p>
+                    <a href="" class="link">Подробнее</a>
+                  </p>
+                </div>
+              </div>
             </div>
           </div>
         </div>

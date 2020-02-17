@@ -10,7 +10,8 @@ const ImageminPlugin = require('imagemin-webpack-plugin').default;
 const imageminMozjpeg = require('imagemin-mozjpeg');
 
 function generateHtmlPlugins(templateDir) {
-  const templateFiles = fs.readdirSync(path.resolve(__dirname, templateDir));
+  let templateFiles = fs.readdirSync(path.resolve(__dirname, templateDir));
+  templateFiles = ['basket.html'];
   return templateFiles.map((item) => {
     const parts = item.split('.');
     const name = parts[0];
@@ -122,18 +123,18 @@ const config = {
 };
 
 module.exports = (env, argv) => {
-  // if (argv.mode === 'production') {
-  //   config.plugins.push(new CleanWebpackPlugin());
-  //   config.plugins.push(
-  //     new ImageminPlugin({
-  //       plugins: [
-  //         imageminMozjpeg({
-  //           quality: 80,
-  //           progressive: true,
-  //         }),
-  //       ],
-  //     }),
-  //   );
-  // }
+  if (argv.mode === 'production') {
+    config.plugins.push(new CleanWebpackPlugin());
+    //   config.plugins.push(
+    //     new ImageminPlugin({
+    //       plugins: [
+    //         imageminMozjpeg({
+    //           quality: 80,
+    //           progressive: true,
+    //         }),
+    //       ],
+    //     }),
+    //   );
+  }
   return config;
 };

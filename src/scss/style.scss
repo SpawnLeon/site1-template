@@ -129,7 +129,7 @@ li {
 
   @media screen and (max-width: 1024px) {
     max-width: 768px;
-    padding: 0 40px; 
+    padding: 0 40px;
   }
 
   @media screen and (max-width: 768px) {
@@ -142,6 +142,20 @@ li {
   }
 
   @media screen and (max-width: 320px) {
+  }
+}
+.link {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 18px;
+  text-decoration-line: underline;
+  color: $primaryColor;
+
+  &:hover,
+  &:focus,
+  &:active {
+    text-decoration-line: none;
   }
 }
 
