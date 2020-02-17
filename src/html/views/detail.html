@@ -1,4 +1,4 @@
-<% var data = { title: "Каталог", }; %> <%=
+<% var data = { title: "Кровать Амина-М", }; %> <%=
 _.template(require('./../includes/header.html').default)(data) %>
 <div class="container">
   <div class="main-content-wrapper">
@@ -234,25 +234,99 @@ _.template(require('./../includes/header.html').default)(data) %>
 
             <div class="information-detail-card__actions detail-card-actions">
               <button type="button" aria-label="Купить в один клик"
-                class="detail-card-actions__item action-detail-card  action-detail-card--buy-1-click btn--clear">
+                class="action-detail-card  action-detail-card--buy-1-click btn btn--not-fill btn--clear">
                 Купить в один клик
               </button>
               <button type="button" aria-label="В корзину"
-                class="detail-card-actions__item action-detail-card  action-detail-card--buy btn--clear">
+                class="action-detail-card  action-detail-card--buy btn btn--clear">
                 В корзину
               </button>
             </div>
           </div>
         </div>
-
       </article>
+
+
+      <div class="catalog-detail__promo-blocks card-promo-blocks">
+        <div class="card-promo-blocks__item card-promo-block card-promo-block--factory">
+          <div class="card-promo-block__text">
+            Мы фабрика, поэтому вы <br>
+            можете заказать у нас <br>
+            мебель по любым <br> индивидуальным <br>
+            размерам!
+          </div>
+        </div>
+        <div class="card-promo-blocks__item card-promo-block card-promo-block--standard">
+          <div class="card-promo-block__title">Что такое стандартная <br> комплектация <br> кровати?</div>
+
+          <a href="" title="" class="card-promo-block__more">Подробнее →</a>
+        </div>
+        <div class="card-promo-blocks__item card-promo-block card-promo-block--video">
+          <div class="card-promo-block__title">Видеоинструкция <br> по сборке <br> кровати</div>
+          <a href="" title="" class="card-promo-block__more">Подробнее →</a>
+        </div>
+        <div class="card-promo-blocks__item card-promo-block card-promo-block--instruction">
+          <div class="card-promo-block__title">Инструкция <br> по сборке <br> кровати</div>
+          <a href="" title="" class="card-promo-block__more">Подробнее →</a>
+        </div>
+      </div> <!-- catalog-detail__promo-blocks card-promo-block -->
+
+
+
+      <div class="catalog-detail__tabs card-tabs tabs" data-is-tab='true'>
+        <div class="tabs__header  card-tabs__header">
+          <div class="tabs__tab card-tabs__tab" data-target="characters" data-tab-active="true">Характеристика</div>
+          <div class="tabs__tab card-tabs__tab" data-target="description">Описание</div>
+          <div class="tabs__tab card-tabs__tab" data-target="colors">Цвета</div>
+          <div class="tabs__tab card-tabs__tab" data-target="delivery-map">Карта доставки</div>
+          <div class="tabs__tab card-tabs__tab" data-target="factory-information">Информация от производителя</div>
+          <div class="tabs__tab card-tabs__tab" data-target="reviews">Отзывы</div>
+        </div>
+
+        <div class="tabs__contents  card-tabs__contents">
+          <div class="tabs__content card-tabs__content" data-source="characters" data-content-active="true"></div>
+          <div class="tabs__content card-tabs__content" data-source="description">
+            <p>
+              Кровать Велина-М — это яркий пример элегантности, красоты и сдержанности. Представленной модели характерны
+              прямые линии, строгие формы и резной узор у изголовья, вносящий изюминку в товар. Изножье у модели
+              маленькое.
+              А если её дополнить высоким матрасом, то создается ощущение его отсутствия. В результате облегчается
+              подход
+              к спальной поверхности с трех сторон.
+
+            </p>
+            <p>
+              Использование натурального, экологичного дерева является залогом долголетия и отличной эксплуатации
+              представленного изделия, а также крепкого и здорового сна его обладателей. Чтобы товар гармонично
+              смотрелся
+              в интерьере, имеется возможность выбрать предпочтительную тонировку.
+            </p>
+          </div>
+          <div class="tabs__content card-tabs__content" data-source="colors"></div>
+          <div class="tabs__content card-tabs__content" data-source="delivery-map"></div>
+          <div class="tabs__content card-tabs__content" data-source="factory-information"></div>
+          <div class="tabs__content card-tabs__content" data-source="reviews"></div>
+        </div>
+      </div> <!-- catalog-detail__tabs card-tabs tabs -->
+
+
+      <div class="catalog-detail__consultation consultation-block">
+        <div class="consultation-block__title">
+          Нужна консультация?
+        </div>
+        <button type="button" class="consultation-block__btn btn">Задать вопрос</button>
+      </div> <!-- catalog-detail__consultation consultation-block -->
+
+
       <section class="collections-block">
         <header class="collections-block__header">
           <h3 class="collections-block__title">Товары из коллекции</h3>
           <a href="" class="collections-block__more">Показать все коллекции</a>
           <div class="collections-slider__nav">
-            <button type="button" class="btn--clear swiper-button-prev collections-slider__button collections-slider__button--prev"></button>
-            <button type="button" class="btn--clear swiper-button-next collections-slider__button collections-slider__button--next"></button>
+            <button type="button"
+              class="btn--clear swiper-button-prev collections-slider__button collections-slider__button--prev"></button>
+            <button type="button"
+              class="btn--clear swiper-button-next collections-slider__button collections-slider__button--next"></button>
           </div>
         </header>
         <div class="collections-block__inner">
@@ -264,17 +338,17 @@ _.template(require('./../includes/header.html').default)(data) %>
               <div class="swiper-wrapper collections-slider__wrapper">
 
                 <div class="swiper-slide collections-slider__slide slide-collections-slider">
-                  <article class="Z product-teaser">
+                  <article class="product-teaser">
                     <div class="product-teaser__inner">
-                      <header class="product-teaser__header">
+                      <a href="" title="Кровать Велина-М" class="product-teaser__header">
                         <div class="product-teaser__sticker sticker sticker--sale">
                           -10%
                         </div>
-                        <a href="" title="" class="product-teaser__image">
+                        <div class="product-teaser__image">
                           <img src="../../uploads/catalog-list/1.png" alt="" />
-                        </a>
-                        <a href="" title="Кровать Велина-М" class="product-teaser__title">Кровать Велина-М</a>
-                      </header>
+                        </div>
+                        <h3 class="product-teaser__title">Кровать Велина-М</h3>
+                      </a>
                       <footer class="product-teaser__footer">
                         <div class="product-teaser__prices">
                           <div class="product-teaser__price">9330 ₽</div>
@@ -282,26 +356,25 @@ _.template(require('./../includes/header.html').default)(data) %>
                             10330 ₽
                           </div>
                         </div>
-                        <button type="button" class="product-teaser__add-to-cart" aria-label="Добавить товар в корзину">
+                        <button type="button" class="product-teaser__add-to-cart">
                           В корзину
                         </button>
                       </footer>
                     </div>
                   </article>
                 </div>
-
                 <div class="swiper-slide collections-slider__slide slide-collections-slider">
-                  <article class="Z product-teaser">
+                  <article class="product-teaser">
                     <div class="product-teaser__inner">
-                      <header class="product-teaser__header">
+                      <a href="" title="Кровать Велина-М" class="product-teaser__header">
                         <div class="product-teaser__sticker sticker sticker--sale">
                           -10%
                         </div>
-                        <a href="" title="" class="product-teaser__image">
+                        <div class="product-teaser__image">
                           <img src="../../uploads/catalog-list/1.png" alt="" />
-                        </a>
-                        <a href="" title="Кровать Велина-М" class="product-teaser__title">Кровать Велина-М</a>
-                      </header>
+                        </div>
+                        <h3 class="product-teaser__title">Кровать Велина-М</h3>
+                      </a>
                       <footer class="product-teaser__footer">
                         <div class="product-teaser__prices">
                           <div class="product-teaser__price">9330 ₽</div>
@@ -309,26 +382,25 @@ _.template(require('./../includes/header.html').default)(data) %>
                             10330 ₽
                           </div>
                         </div>
-                        <button type="button" class="product-teaser__add-to-cart" aria-label="Добавить товар в корзину">
+                        <button type="button" class="product-teaser__add-to-cart">
                           В корзину
                         </button>
                       </footer>
                     </div>
                   </article>
                 </div>
-
                 <div class="swiper-slide collections-slider__slide slide-collections-slider">
-                  <article class="Z product-teaser">
+                  <article class="product-teaser">
                     <div class="product-teaser__inner">
-                      <header class="product-teaser__header">
+                      <a href="" title="Кровать Велина-М" class="product-teaser__header">
                         <div class="product-teaser__sticker sticker sticker--sale">
                           -10%
                         </div>
-                        <a href="" title="" class="product-teaser__image">
+                        <div class="product-teaser__image">
                           <img src="../../uploads/catalog-list/1.png" alt="" />
-                        </a>
-                        <a href="" title="Кровать Велина-М" class="product-teaser__title">Кровать Велина-М</a>
-                      </header>
+                        </div>
+                        <h3 class="product-teaser__title">Кровать Велина-М</h3>
+                      </a>
                       <footer class="product-teaser__footer">
                         <div class="product-teaser__prices">
                           <div class="product-teaser__price">9330 ₽</div>
@@ -336,26 +408,25 @@ _.template(require('./../includes/header.html').default)(data) %>
                             10330 ₽
                           </div>
                         </div>
-                        <button type="button" class="product-teaser__add-to-cart" aria-label="Добавить товар в корзину">
+                        <button type="button" class="product-teaser__add-to-cart">
                           В корзину
                         </button>
                       </footer>
                     </div>
                   </article>
                 </div>
-
                 <div class="swiper-slide collections-slider__slide slide-collections-slider">
-                  <article class="Z product-teaser">
+                  <article class="product-teaser">
                     <div class="product-teaser__inner">
-                      <header class="product-teaser__header">
+                      <a href="" title="Кровать Велина-М" class="product-teaser__header">
                         <div class="product-teaser__sticker sticker sticker--sale">
                           -10%
                         </div>
-                        <a href="" title="" class="product-teaser__image">
+                        <div class="product-teaser__image">
                           <img src="../../uploads/catalog-list/1.png" alt="" />
-                        </a>
-                        <a href="" title="Кровать Велина-М" class="product-teaser__title">Кровать Велина-М</a>
-                      </header>
+                        </div>
+                        <h3 class="product-teaser__title">Кровать Велина-М</h3>
+                      </a>
                       <footer class="product-teaser__footer">
                         <div class="product-teaser__prices">
                           <div class="product-teaser__price">9330 ₽</div>
@@ -363,26 +434,25 @@ _.template(require('./../includes/header.html').default)(data) %>
                             10330 ₽
                           </div>
                         </div>
-                        <button type="button" class="product-teaser__add-to-cart" aria-label="Добавить товар в корзину">
+                        <button type="button" class="product-teaser__add-to-cart">
                           В корзину
                         </button>
                       </footer>
                     </div>
                   </article>
                 </div>
-
                 <div class="swiper-slide collections-slider__slide slide-collections-slider">
-                  <article class="Z product-teaser">
+                  <article class="product-teaser">
                     <div class="product-teaser__inner">
-                      <header class="product-teaser__header">
+                      <a href="" title="Кровать Велина-М" class="product-teaser__header">
                         <div class="product-teaser__sticker sticker sticker--sale">
                           -10%
                         </div>
-                        <a href="" title="" class="product-teaser__image">
+                        <div class="product-teaser__image">
                           <img src="../../uploads/catalog-list/1.png" alt="" />
-                        </a>
-                        <a href="" title="Кровать Велина-М" class="product-teaser__title">Кровать Велина-М</a>
-                      </header>
+                        </div>
+                        <h3 class="product-teaser__title">Кровать Велина-М</h3>
+                      </a>
                       <footer class="product-teaser__footer">
                         <div class="product-teaser__prices">
                           <div class="product-teaser__price">9330 ₽</div>
@@ -390,26 +460,25 @@ _.template(require('./../includes/header.html').default)(data) %>
                             10330 ₽
                           </div>
                         </div>
-                        <button type="button" class="product-teaser__add-to-cart" aria-label="Добавить товар в корзину">
+                        <button type="button" class="product-teaser__add-to-cart">
                           В корзину
                         </button>
                       </footer>
                     </div>
                   </article>
                 </div>
-
                 <div class="swiper-slide collections-slider__slide slide-collections-slider">
-                  <article class="Z product-teaser">
+                  <article class="product-teaser">
                     <div class="product-teaser__inner">
-                      <header class="product-teaser__header">
+                      <a href="" title="Кровать Велина-М" class="product-teaser__header">
                         <div class="product-teaser__sticker sticker sticker--sale">
                           -10%
                         </div>
-                        <a href="" title="" class="product-teaser__image">
+                        <div class="product-teaser__image">
                           <img src="../../uploads/catalog-list/1.png" alt="" />
-                        </a>
-                        <a href="" title="Кровать Велина-М" class="product-teaser__title">Кровать Велина-М</a>
-                      </header>
+                        </div>
+                        <h3 class="product-teaser__title">Кровать Велина-М</h3>
+                      </a>
                       <footer class="product-teaser__footer">
                         <div class="product-teaser__prices">
                           <div class="product-teaser__price">9330 ₽</div>
@@ -417,14 +486,13 @@ _.template(require('./../includes/header.html').default)(data) %>
                             10330 ₽
                           </div>
                         </div>
-                        <button type="button" class="product-teaser__add-to-cart" aria-label="Добавить товар в корзину">
+                        <button type="button" class="product-teaser__add-to-cart">
                           В корзину
                         </button>
                       </footer>
                     </div>
                   </article>
                 </div>
-
 
 
               </div>
@@ -433,7 +501,7 @@ _.template(require('./../includes/header.html').default)(data) %>
 
 
         </div>
-      </section>
+      </section> <!-- collections-block -->
     </main>
   </div>
 </div>

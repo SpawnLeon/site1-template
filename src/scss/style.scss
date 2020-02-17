@@ -10,6 +10,8 @@
 @import '_footer';
 @import '_forms';
 @import '_main-slider';
+@import '_tabs';
+
 @import 'pages/detail';
 @import 'pages/delivery';
 @import 'pages/certificates';
@@ -1119,6 +1121,12 @@ li {
     margin: 0;
     height: auto;
     width: 80px;
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1;
+    cursor: pointer;
 
     &::after {
       content: '';

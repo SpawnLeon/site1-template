@@ -11,7 +11,7 @@ const imageminMozjpeg = require('imagemin-mozjpeg');
 
 function generateHtmlPlugins(templateDir) {
   let templateFiles = fs.readdirSync(path.resolve(__dirname, templateDir));
-  templateFiles = ['basket.html'];
+  templateFiles = ['detail.html'];
   return templateFiles.map((item) => {
     const parts = item.split('.');
     const name = parts[0];

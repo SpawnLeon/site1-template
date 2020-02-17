@@ -176,6 +176,22 @@
 
 .btn {
   transition: $transition;
+  background-color: $primaryColor;
+  border: 1px solid $primaryColor;
+  box-sizing: border-box;
+  border-radius: 1px;
+  font-size: 20px;
+  line-height: 1.2;
+  padding: 8px 20px 10px;
+  color: #fff;
+  display: inline-block;
+
+  &:hover,
+  &:focus,
+  &:active {
+    color: $primaryColor;
+    background-color: transparent;
+  }
 
   &--not-fill {
     background-color: transparent;

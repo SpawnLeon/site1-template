@@ -2,6 +2,8 @@
 // import Vue from 'vue';
 // window.Vue = Vue;
 
+import '../scss/style.scss';
+
 import $ from 'jquery';
 window.jQuery = $;
 require('@fancyapps/fancybox');
@@ -30,6 +32,30 @@ const responseMenu = (menuSelector) => {
     });
 
     menu.appendChild(hiddenMenuItems);
+  });
+};
+
+const createTabs = (tabsSelector) => {
+  document.querySelectorAll(tabsSelector).forEach((tabs) => {
+    const activeTab = tabs.querySelector('[data-tab-active="true"]');
+    const activeContent = tabs.querySelector('[data-content-active="true"]');
+
+    tabs.querySelectorAll('[data-target]').forEach((el) => {
+      el.addEventListener('click', () => {
+        if (activeTab) {
+          activeTab.dataset.tabActive = false;
+        }
+        if (activeContent) {
+          activeContent.dataset.contentActive = false;
+        }      
+        el.dataset.tabActive = true;
+        if (tabs.querySelector(`[data-source="${el.dataset.target}"]`)) {
+          tabs.querySelector(
+            `[data-source="${el.dataset.target}"]`,
+          ).dataset.tabActive = true;
+        }
+      });
+    });
   });
 };
 
@@ -155,4 +181,6 @@ document.addEventListener('DOMContentLoaded', () => {
 
   responseMenu('.catalog-menu');
   cachingSvgSprite();
+
+  createTabs("[data-is-tab='true']");
 });

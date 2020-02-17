@@ -174,34 +174,16 @@
 }
 
 .action-detail-card {
-  background: $primaryColor;
-  border: 1px solid $primaryColor;
-  box-sizing: border-box;
-  border-radius: 1px;
-  transition: $transition;
-  font-size: 20px;
-  line-height: 1.2;
-  padding: 8px 20px 10px;
-  color: #fff;
-  display: inline-block;
-
   &:hover,
   &:focus,
   &:active {
-    background-color: #fff;
-    color: $primaryColor;
   }
 
   // .action-detail-card--buy-1-click
   &--buy-1-click {
-    background-color: #fff;
-    color: $primaryColor;
-
     &:hover,
     &:focus,
     &:active {
-      background-color: $primaryColor;
-      color: #fff;
     }
   }
 }
@@ -295,4 +277,142 @@
 }
 /*------------------------------------*\
     #COLLECTIONS BLOCK END 
+\*------------------------------------*/
+
+/*------------------------------------*\
+    #CARD PROMO BLOCK START 
+\*------------------------------------*/
+
+.catalog-detail {
+  // .catalog-detail__primo-blocks
+  &__promo-blocks {
+    margin-top: 35px;
+  }
+}
+.card-promo-blocks {
+  display: flex;
+  margin-left: -5px;
+  margin-right: -5px;
+  margin-bottom: -10px;
+}
+.card-promo-blocks__item {
+}
+.card-promo-block {
+  margin: 0 5px 10px;
+  flex: 0 0 calc(100% / 4 - 10px);
+  border: 4px solid #00672f;
+  padding: 24px;
+  background-position: right bottom;
+  background-repeat: no-repeat;
+
+  &--factory {
+    border-color: #ffc800;
+    background-image: url(../../img/i-card-promo-blocks-1.png);
+  }
+
+  &--standard {
+    background-image: url(../../img/i-card-promo-blocks-2.png);
+  }
+
+  &--video {
+    background-image: url(../../img/i-card-promo-blocks-3.png);
+  }
+
+  &--instruction {
+    background-image: url(../../img/i-card-promo-blocks-4.png);
+  }
+
+  // .card-promo-block__text
+  &__text {
+    font-weight: 500;
+    font-size: 18px;
+    letter-spacing: -0.02em;
+  }
+
+  // .card-promo-block__more
+  &__more {
+    text-align: center;
+    text-decoration-line: underline;
+    color: #0d0d0d;
+    display: inline-block;
+    margin-top: 17px;
+  }
+  // .card-promo-block__title
+  &__title {
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 29px;
+    letter-spacing: -0.02em;
+  }
+}
+
+/*------------------------------------*\
+    #CARD PROMO BLOCK END 
+\*------------------------------------*/
+
+/*------------------------------------*\
+    #CONSULTATION BLOCK START 
+\*------------------------------------*/
+.catalog-detail {
+  // .catalog-detail__consultation
+  &__consultation {
+    margin-top: 35px;
+  }
+}
+.consultation-block {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #f1f1f1;
+  background-image: url(../../img/bg-consultation.svg);
+  background-repeat: no-repeat;
+  background-position: -15px center;
+  padding: 24px 0;
+  margin-left: -84px;
+
+  // .consultation-block__title
+  &__title {
+    font-weight: 600;
+    font-size: 24px;
+    margin: 5px 25px;
+  }
+  // .consultation-block__btn
+  &__btn {
+    font-size: 14px;
+    text-align: center;
+    letter-spacing: -0.02em;
+    padding: 8px 26px 9px;
+    margin: 5px 25px;
+  }
+}
+
+/*------------------------------------*\
+    #CONSULTATION BLOCK END 
+\*------------------------------------*/
+
+/*------------------------------------*\
+    #TABS BLOCK START 
+\*------------------------------------*/
+
+.catalog-detail {
+  // .catalog-detail__tabs
+  &__tabs {
+  }
+}
+.card-tabs {
+  // .card-tabs__header
+  &__header {
+  }
+  // .card-tabs__tab
+  &__tab {
+  }
+  // .card-tabs__contents
+  &__contents {
+  }
+  // .card-tabs__content
+  &__content {
+  }
+}
+/*------------------------------------*\
+    #TABS BLOCK END 
 \*------------------------------------*/
