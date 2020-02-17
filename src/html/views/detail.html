@@ -275,8 +275,7 @@ _.template(require('./../includes/header.html').default)(data) %>
 
       <div class="catalog-detail__tabs card-tabs tabs" data-is-tab='true'>
         <div class="tabs__header  card-tabs__header">
-          <div class="tabs__tab card-tabs__tab" data-target="characters" data-tab-active="true">Характеристика</div>
-          <div class="tabs__tab card-tabs__tab" data-target="description">Описание</div>
+          <div class="tabs__tab card-tabs__tab" data-target="description" data-tab-active="true">Описание</div>
           <div class="tabs__tab card-tabs__tab" data-target="colors">Цвета</div>
           <div class="tabs__tab card-tabs__tab" data-target="delivery-map">Карта доставки</div>
           <div class="tabs__tab card-tabs__tab" data-target="factory-information">Информация от производителя</div>
@@ -284,13 +283,7 @@ _.template(require('./../includes/header.html').default)(data) %>
         </div>
 
         <div class="tabs__contents  card-tabs__contents">
-          <div class="tabs__content card-tabs__content" data-source="characters" data-content-active="true">
-            <div class="card-tabs__title">Характеристика</div>
-            <div class="card-tabs__inner"></div>
-
-
-          </div>
-          <div class="tabs__content card-tabs__content" data-source="description">
+          <div class="tabs__content card-tabs__content" data-source="description" data-content-active="true">
             <div class="card-tabs__title">Описание</div>
             <div class="card-tabs__inner">
               <p>
@@ -314,7 +307,33 @@ _.template(require('./../includes/header.html').default)(data) %>
           </div>
           <div class="tabs__content card-tabs__content" data-source="colors">
             <div class="card-tabs__title">Цвета</div>
-            <div class="card-tabs__inner"></div>
+            <div class="card-tabs__inner">
+
+              <div class="card-tabs__materials materials">
+                <a data-fancybox="gallery" href="../../uploads/materials/1.jpg" class="tab-material__item material">
+                  <img src="../../uploads/materials/1.jpg">
+                  <div class="material__title">Венге 1</div>
+                </a>
+                <a data-fancybox="gallery" href="../../uploads/materials/2.jpg" class="tab-material__item material">
+                  <img src="../../uploads/materials/2.jpg">
+                  <div class="material__title">Венге 2</div>
+                </a>
+
+                <a data-fancybox="gallery" href="../../uploads/materials/3.jpg" class="tab-material__item material">
+                  <img src="../../uploads/materials/3.jpg">
+                  <div class="material__title">Венге 3</div>
+                </a>
+                <a data-fancybox="gallery" href="../../uploads/materials/4.jpg" class="tab-material__item material">
+                  <img src="../../uploads/materials/4.jpg">
+                  <div class="material__title">Б. Белый с серебряной патиной</div>
+                </a>
+                <a data-fancybox="gallery" href="../../uploads/materials/1.jpg" class="tab-material__item material">
+                  <img src="../../uploads/materials/1.jpg">
+                  <div class="material__title">Венге 1</div>
+                </a>
+              </div>
+
+            </div>
           </div>
           <div class="tabs__content card-tabs__content" data-source="delivery-map">
             <div class="card-tabs__title">Карта доставки</div>
@@ -421,7 +440,70 @@ _.template(require('./../includes/header.html').default)(data) %>
           </div>
           <div class="tabs__content card-tabs__content" data-source="reviews">
             <div class="card-tabs__title">Отзывы</div>
-            <div class="card-tabs__inner"></div>
+            <div class="card-tabs__inner">
+              <div class="card-tabs__reviews">
+                <div class="reviews">
+                  <div class="reviews__list">
+                    <div class="reviews__item review">
+                      <header class="review__header">
+                        <div class="review__date">12.07.2019</div>
+                        <div class="review__author">Юдина Марина Юрьевна</div>
+                      </header>
+                      <div class="review__body">
+                        Заказала комод Антика-М. Осталась очень довольна!!! Комод пришёл хорошо упакованным, без
+                        повреждений,
+                        в
+                        срок. Сделан качественно и красиво! Вообщем полный восторг! Всем рекомендую! Очень ответственный
+                        производитель! Буду обязательно заказывать ещё!
+                      </div>
+                    </div>
+                    <div class="reviews__item review">
+                      <header class="review__header">
+                        <div class="review__date">12.07.2019</div>
+                        <div class="review__author">Алла</div>
+                      </header>
+                      <div class="review__body">
+                        Заказала комод Каприз-М, вчера получила...Он шикарный! Сделан безупречно, ход ящиков плавный,а
+                        благодаря резьбе и глубокому вишневому цвету комод смотрится еще благороднее....
+                      </div>
+                    </div>
+                    <div class="reviews__item review">
+                      <header class="review__header">
+                        <div class="review__date">12.07.2019</div>
+                        <div class="review__author">Юдина Марина Юрьевна</div>
+                      </header>
+                      <div class="review__body">
+                        Искренне рекомендую данных товарищей для заказа мебели. 1. На меня потратили кучу времени, чтобы
+                        рассказать о всех деталях разных кроватей. 2. Заказ исполнили быстро 3. Доставили тоже быстро 4.
+                        По
+                        сравнению с тем дсп-шным ширпотребом за бешеные бабки в сетевых гипермаркетах, цены тут - вообще
+                        подарок. Мне кажется, ребята работают себе в убыток, потому что обычно не бывает быстро,
+                        качественно,
+                        дешево.... А у них все три параметра присутствуют. В общем, рекомендую!
+                      </div>
+                    </div>
+                    <div class="reviews__item review">
+                      <header class="review__header">
+                        <div class="review__date">12.07.2019</div>
+                        <div class="review__author">Юдина Марина Юрьевна</div>
+                      </header>
+                      <div class="review__body">
+                        Заказала комод Антика-М. Осталась очень довольна!!! Комод пришёл хорошо упакованным, без
+                        повреждений,
+                        в
+                        срок. Сделан качественно и красиво! Вообщем полный восторг! Всем рекомендую! Очень ответственный
+                        производитель! Буду обязательно заказывать ещё!
+                      </div>
+                    </div>
+                  </div>
+                  <%= _.template(require('./../includes/pagination.html').default)() %>
+                </div>
+                <div class="reviews-form">
+                  form here
+                </div>
+              </div>
+
+            </div>
           </div>
         </div>
       </div> <!-- catalog-detail__tabs card-tabs tabs -->

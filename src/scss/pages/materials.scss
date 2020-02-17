@@ -45,17 +45,22 @@
   }
   // .tab-material__content-inner
   &__content-inner {
-    display: flex;
-    flex-wrap: wrap;
-    margin: 0 -34px;
   }
   // .tab-material__item
   &__item {
   }
 }
+.materials {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 -34px;
+}
 .material {
   margin: 0 34px 30px;
-  flex: 0 1 169px;
+  flex: 1 1 auto;
+  display: block;
+  max-width: 169px;
+
   img {
     margin-bottom: 15px;
   }
@@ -64,5 +69,4 @@
     text-align: center;
     color: #333333;
   }
- 
 }
