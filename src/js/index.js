@@ -37,22 +37,23 @@ const responseMenu = (menuSelector) => {
 
 const createTabs = (tabsSelector) => {
   document.querySelectorAll(tabsSelector).forEach((tabs) => {
-    const activeTab = tabs.querySelector('[data-tab-active="true"]');
-    const activeContent = tabs.querySelector('[data-content-active="true"]');
-
     tabs.querySelectorAll('[data-target]').forEach((el) => {
       el.addEventListener('click', () => {
+        const activeTab = tabs.querySelector('[data-tab-active="true"]');
+        const activeContent = tabs.querySelector(
+          '[data-content-active="true"]',
+        );
         if (activeTab) {
           activeTab.dataset.tabActive = false;
         }
         if (activeContent) {
           activeContent.dataset.contentActive = false;
-        }      
+        }
         el.dataset.tabActive = true;
         if (tabs.querySelector(`[data-source="${el.dataset.target}"]`)) {
           tabs.querySelector(
             `[data-source="${el.dataset.target}"]`,
-          ).dataset.tabActive = true;
+          ).dataset.contentActive = true;
         }
       });
     });

@@ -397,20 +397,56 @@
 .catalog-detail {
   // .catalog-detail__tabs
   &__tabs {
+    margin-top: 35px;
   }
 }
 .card-tabs {
   // .card-tabs__header
   &__header {
+    display: flex;
+    margin: 0 -5px;
   }
   // .card-tabs__tab
   &__tab {
+    margin: 0 5px;
+    padding: 20px 30px;
+    background-color: #f1f1f1;
+    border-radius: 1px 1px 0px 0px;
+    font-family: Montserrat;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 22px;
+    text-align: center;
+    letter-spacing: -0.02em;
+    color: #0d0d0d;
+    cursor: pointer;
+  }
+
+  [data-tab-active='true'] {
+    background-color: $primaryColor;
+    color: #fff;
   }
   // .card-tabs__contents
   &__contents {
   }
   // .card-tabs__content
   &__content {
+    padding-top: 25px;
+    display: none;
+  }
+  [data-content-active='true'] {
+    display: block;
+  }
+  // .card-tabs__title
+  &__title {
+    font-weight: 600;
+    font-size: 24px;
+    letter-spacing: -0.02em;
+  }
+  // .card-tabs__inner
+  &__inner {
+    font-size: 14px;
+    margin-top: 25px;
   }
 }
 /*------------------------------------*\

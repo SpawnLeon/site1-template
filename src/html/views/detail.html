@@ -284,28 +284,145 @@ _.template(require('./../includes/header.html').default)(data) %>
         </div>
 
         <div class="tabs__contents  card-tabs__contents">
-          <div class="tabs__content card-tabs__content" data-source="characters" data-content-active="true"></div>
-          <div class="tabs__content card-tabs__content" data-source="description">
-            <p>
-              Кровать Велина-М — это яркий пример элегантности, красоты и сдержанности. Представленной модели характерны
-              прямые линии, строгие формы и резной узор у изголовья, вносящий изюминку в товар. Изножье у модели
-              маленькое.
-              А если её дополнить высоким матрасом, то создается ощущение его отсутствия. В результате облегчается
-              подход
-              к спальной поверхности с трех сторон.
+          <div class="tabs__content card-tabs__content" data-source="characters" data-content-active="true">
+            <div class="card-tabs__title">Характеристика</div>
+            <div class="card-tabs__inner"></div>
 
-            </p>
-            <p>
-              Использование натурального, экологичного дерева является залогом долголетия и отличной эксплуатации
-              представленного изделия, а также крепкого и здорового сна его обладателей. Чтобы товар гармонично
-              смотрелся
-              в интерьере, имеется возможность выбрать предпочтительную тонировку.
-            </p>
+
           </div>
-          <div class="tabs__content card-tabs__content" data-source="colors"></div>
-          <div class="tabs__content card-tabs__content" data-source="delivery-map"></div>
-          <div class="tabs__content card-tabs__content" data-source="factory-information"></div>
-          <div class="tabs__content card-tabs__content" data-source="reviews"></div>
+          <div class="tabs__content card-tabs__content" data-source="description">
+            <div class="card-tabs__title">Описание</div>
+            <div class="card-tabs__inner">
+              <p>
+                Кровать Велина-М — это яркий пример элегантности, красоты и сдержанности. Представленной модели
+                характерны
+                прямые линии, строгие формы и резной узор у изголовья, вносящий изюминку в товар. Изножье у модели
+                маленькое.
+                А если её дополнить высоким матрасом, то создается ощущение его отсутствия. В результате облегчается
+                подход
+                к спальной поверхности с трех сторон.
+
+              </p>
+              <p>
+                Использование натурального, экологичного дерева является залогом долголетия и отличной эксплуатации
+                представленного изделия, а также крепкого и здорового сна его обладателей. Чтобы товар гармонично
+                смотрелся
+                в интерьере, имеется возможность выбрать предпочтительную тонировку.
+              </p>
+            </div>
+
+          </div>
+          <div class="tabs__content card-tabs__content" data-source="colors">
+            <div class="card-tabs__title">Цвета</div>
+            <div class="card-tabs__inner"></div>
+          </div>
+          <div class="tabs__content card-tabs__content" data-source="delivery-map">
+            <div class="card-tabs__title">Карта доставки</div>
+            <div class="card-tabs__inner">
+              <img src="../../img/detail-page-map.jpg" alt="">
+            </div>
+          </div>
+          <div class="tabs__content card-tabs__content" data-source="factory-information">
+            <div class="card-tabs__title">Информация от производителя</div>
+            <div class="card-tabs__inner">
+              <div class="catalog-detail__add-info delivery-info">
+                <div class=" delivery-info__item add-info-delivery">
+                  <svg class="add-info-delivery__icon">
+                    <use xlink:href="#i-delivery-page-payment"></use>
+                  </svg>
+                  <h3 class="add-info-delivery__title">Оплата</h3>
+                  <div class="add-info-delivery__text">
+                    <b>1.</b> Товар оплачивается по факту доставки наличными. <br>
+                    <b>2.</b> Возможна оплата по безналу на расчетный счет по договору (+6% к сумме покупки). <br>
+                    <b>3.</b> Возможна оплата картами по факту доставки через онлайн перевод (терминал не
+                    предоставляется).
+                    <img src="../../img/payments.png" alt="">
+                  </div>
+                </div>
+                <div class="add-info-delivery">
+                  <svg class="add-info-delivery__icon">
+                    <use xlink:href="#i-delivery-page-delivery"></use>
+                  </svg>
+                  <h3 class="add-info-delivery__title">Доставка</h3>
+                  <svg class="add-info-delivery__icon">
+                    <use xlink:href="#i-delivery-page-delivery"></use>
+                  </svg>
+                  <div class="add-info-delivery__text">
+                    <p>
+                      <b>По Москве</b> (внутри МКАД и снаружи МКАД — не более 10км): <br>
+                      До подъезда от 1000₽ до 1500₽. <br>
+                      Ближайшее подмосковье — 1300₽ <br>
+                      Подмосковье — 1500₽ + 25 ₽/км
+                    </p>
+                    <p>
+                      <b>По России:</b> <br>
+                      1. ТК Деловые Линии <br>
+                      2. ТК ПЭК
+                    </p>
+                  </div>
+                </div>
+                <div class="add-info-delivery">
+                  <svg class="add-info-delivery__icon">
+                    <use xlink:href="#i-delivery-page-lifting"></use>
+                  </svg>
+                  <h3 class="add-info-delivery__title">Подъём</h3>
+                  <div class="add-info-delivery__text">
+                    <p>
+                      <b>Без лифта за этаж:</b> <br>
+                      &nbsp;&nbsp; - Кровать — 100 ₽ <br>
+                      &nbsp;&nbsp; - Комод — 100 ₽ до 200 ₽ <br>
+                      &nbsp;&nbsp; - Тумба — 50 ₽ <br>
+                      &nbsp;&nbsp; - Подъёмный мех., ортопедическое основ. — 200 ₽
+                    </p>
+                    <p>
+                      <b>Без грузового лифта:</b> <br>
+                      &nbsp;&nbsp; - От 600 ₽ до 1500 ₽ (Зависит от объёма заказа)
+                    </p>
+                    <p>
+                      <b>Грузовой лифт:</b> <br>
+                      &nbsp;&nbsp; - От 400 ₽ до 1000 ₽ (Зависит от объёма заказа)
+                    </p>
+                  </div>
+                </div>
+                <div class="add-info-delivery">
+                  <svg class="add-info-delivery__icon">
+                    <use xlink:href="#i-delivery-page-lifting-assembly"></use>
+                  </svg>
+                  <h3 class="add-info-delivery__title">Сборка с подъёмом</h3>
+                  <div class="add-info-delivery__text">
+                    <p>
+                      <b> Кровати с ортопедической решеткой:</b> от 800 ₽ — до 1300 ₽
+                    </p>
+                    <p><b>Односпальной, полутора, двуспальных кроватей (стандарт):</b> от 400 ₽ — до 800 ₽</p>
+                    <p><b>Кровати с матрацем:</b> от 800 ₽ — до 1300 ₽</p>
+                    <p><b>Подъёмный механизм:</b> 1000 ₽</p>
+                    <p><b>Ортопедическая решётка:</b> 400 ₽</p>
+                    <p><b>Кровати с подъёмным механизмом:</b> от 1200 ₽ — до 1600 ₽</p>
+                    <p><b>Двухъярусной кровати:</b> 1200 ₽</p>
+                    <p><b>Прикручивание ручек на комод:</b> от 150 ₽ — до 300 ₽</p>
+                    <p><b>Прикручивание ручек на тумбу:</b> от 50 ₽ — до 150 ₽</p>
+                    <p><b>Корпусная мебель с фурнитурой:</b> от 10% до 13% от стоимости изделия (в зависимости от
+                      объема)
+                    </p>
+                    <p><b>Туалетный столик:</b> от 500 ₽ — до 1000 ₽</p>
+                    <p><b>Комод свыше 120 размера:</b> от 1000 ₽ — до 1500 ₽</p>
+                    <p><b>Стол письменный:</b> от 800 ₽ — до 1200 ₽</p>
+                    <p><b>Буфет:</b> от 1000 ₽ — до 1800 ₽</p>
+                    <p>
+                      Сборка кухни не предполагает подключение сантехники, врезку мойки и варочной поверхности. <br>
+                      Сборка мебели в день доставки. <br>
+                      Подъем, сборка мебели в день доставки обговаривается с менеджером.
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+          </div>
+          <div class="tabs__content card-tabs__content" data-source="reviews">
+            <div class="card-tabs__title">Отзывы</div>
+            <div class="card-tabs__inner"></div>
+          </div>
         </div>
       </div> <!-- catalog-detail__tabs card-tabs tabs -->
 
