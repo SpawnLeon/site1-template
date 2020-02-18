@@ -44,6 +44,10 @@
   // .information-detail-card__prices
   &__prices {
   }
+
+  // .information-detail-card__options
+  &__options {
+  }
 }
 .card-prices {
   background-color: #ffc800;
@@ -96,6 +100,27 @@
   &__info {
   }
 }
+
+.catalog-detail-nav-slider {
+  // .catalog-detail-nav-slider__container
+  &__container {
+  }
+  // .catalog-detail-nav-slider__wrapper
+  &__wrapper {
+  }
+  // .catalog-detail-nav-slider__slide
+  &__slide {
+    border: 2px solid #d1d1d1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    &.swiper-slide-thumb-active {
+      border-color: #b82b2f;
+    }
+  }
+}
+
 .information-detail-card {
   flex: 1 1 0;
 
@@ -174,6 +199,8 @@
 }
 
 .action-detail-card {
+  margin-top: 15px;
+
   &:hover,
   &:focus,
   &:active {
@@ -462,8 +489,16 @@
 \*------------------------------------*/
 
 .card-options {
+  display: flex;
+  margin: 15px -10px;
+  padding: 15px 0;
+  border-top: 1px solid #f0f0f0;
+  border-bottom: 1px solid #f0f0f0;
+
   // .card-options__item
   &__item {
+    margin: 0 10px;
+    flex: 0 0 calc(100% / 2 - 20px);
   }
 }
 .card-equipments {
@@ -472,56 +507,160 @@
   }
 }
 .equipment-card-block {
+  margin-bottom: 15px;
+
   // .equipment-card-block__title
   &__title {
     font-weight: bold;
     font-size: 16px;
   }
   // .equipment-card-block__in ner
-  &__inner {  
+  &__inner {
     display: flex;
     margin: 10px -5px 0;
-
   }
   // .equipment-card-block__item
   &__item {
   }
+
+  // .equipment-card-block--mattress
+  &--mattress {
+  }
 }
 .equipment-card {
-  background: #ffffff;
+  background: #fff;
   opacity: 0.5;
   border: 1px solid #d1d1d1;
   box-sizing: border-box;
   border-radius: 1px;
-  box-shadow: 0px 1px 5px rgba(0, 0, 0, 0.05);
+  box-shadow: 0 1px 5px rgba(0, 0, 0, 0.05);
   cursor: pointer;
-  transition: $transition;
-  margin: 0 5px 0;
+  transition: all 0.3s;
+  margin: 0 5px;
+  padding: 8px 5px 9px;
+  min-height: 94px;
+  text-align: center;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  position: relative;
+  flex: 1 1 auto;
+  max-width: 90px;
+  flex-direction: column;
+  align-items: center;
+
+  &::before {
+    @include pseudo;
+    height: 8px;
+    width: 8px;
+    position: absolute;
+    right: 8px;
+    top: 8px;
+    border: 2px solid $primaryColor;
+    border-radius: 50%;
+    z-index: 1;
+  }
 
   // .equipment-card__image
   &__image {
+    transform: scale(0.8);
+    margin-top: 12px;
   }
   // .equipment-card__title
   &__title {
-    font-size: 8px;
+    font-size: 9px;
     letter-spacing: -0.02em;
+    margin-top: 5px;
   }
 
   // .equipment-card--active
   &--active {
-    opacity: 0.1;
+    opacity: 1;
+    flex: 1 1 auto;
+    max-width: 160px;
+
+    &::before {
+      background-color: $primaryColor;
+    }
 
     // .equipment-card__image
-    &__image {
+    .equipment-card__image {
+      transform: scale(1);
+      margin-top: 0;
     }
     // .equipment-card__title
-    &__title {
+    .equipment-card__title {
       font-size: 12px;
       letter-spacing: -0.02em;
+      margin-top: 8px;
     }
+  }
+}
+
+.equipment-mattress-card {
+  display: flex;
+  align-items: center;
+  padding: 10px 15px;
+  border: 1px solid #d1d1d1;
+  background-color: #fff;
+  width: 100%;
+
+  // .equipment-mattress-card__image
+  &__image {
+    flex: 0 0 auto;
+  }
+  // .equipment-mattress-card__title
+  &__title {
+    margin-left: 15px;
+    margin-right: 15px;
+    font-size: 12px;
+    line-height: 15px;
+    letter-spacing: -0.02em;
+
+    color: #333333;
+  }
+  // .equipment-mattress-card__help
+  &__help {
+    margin-left: auto;
+    flex: 0 0 auto;
   }
 }
 
 /*------------------------------------*\
     #EQUIPMENT BLOCK END 
+\*------------------------------------*/
+
+/*------------------------------------*\
+    #ACTIONS BLOCK START 
+\*------------------------------------*/
+.information-detail-card {
+  // .information-detail-card__actions
+  &__actions {
+  }
+}
+.detail-card-actions {
+  display: flex;
+  margin: 0 -10px;
+}
+.action-detail-card {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 10px;
+  flex: 0 0 calc(100% / 2 - 20px);
+
+  // .action-detail-card--buy-1-click
+  &--buy-1-click {
+  }
+  // .action-detail-card--buy
+  &--buy {
+  }
+
+  // .action-detail-card__icon
+  &__icon {
+    margin-right: 5px;
+  }
+}
+/*------------------------------------*\
+    #ACTIONS BLOCK START 
 \*------------------------------------*/

@@ -66,27 +66,27 @@ _.template(require('./../includes/header.html').default)(data) %>
               <div class="swiper-container catalog-detail-nav-slider__container">
                 <div class="swiper-wrapper catalog-detail-nav-slider__wrapper">
 
-                  <div class="swiper-slide catalog-detail-slide__slide slide-catalog-detail-nav-slider">
+                  <div class="swiper-slide catalog-detail-nav-slider__slide slide-catalog-detail-nav-slider">
                     <img src="uploads/catalog-detail-nav-slider/1.jpg" title="" alt=""
                       class="slide-catalog-detail-nav-slider__image">
                   </div>
-                  <div class="swiper-slide catalog-detail-slide__slide slide-catalog-detail-nav-slider">
+                  <div class="swiper-slide catalog-detail-nav-slider__slide slide-catalog-detail-nav-slider">
                     <img src="uploads/catalog-detail-nav-slider/2.jpg" title="" alt=""
                       class="slide-catalog-detail-nav-slider__image">
                   </div>
-                  <div class="swiper-slide catalog-detail-slide__slide slide-catalog-detail-nav-slider">
+                  <div class="swiper-slide catalog-detail-nav-slider__slide slide-catalog-detail-nav-slider">
                     <img src="uploads/catalog-detail-nav-slider/3.jpg" title="" alt=""
                       class="slide-catalog-detail-nav-slider__image">
                   </div>
-                  <div class="swiper-slide catalog-detail-slide__slide slide-catalog-detail-nav-slider">
+                  <div class="swiper-slide catalog-detail-nav-slider__slide slide-catalog-detail-nav-slider">
                     <img src="uploads/catalog-detail-nav-slider/4.jpg" title="" alt=""
                       class="slide-catalog-detail-nav-slider__image">
                   </div>
-                  <div class="swiper-slide catalog-detail-slide__slide slide-catalog-detail-nav-slider">
+                  <div class="swiper-slide catalog-detail-nav-slider__slide slide-catalog-detail-nav-slider">
                     <img src="uploads/catalog-detail-nav-slider/5.jpg" title="" alt=""
                       class="slide-catalog-detail-nav-slider__image">
                   </div>
-                  <div class="swiper-slide catalog-detail-slide__slide slide-catalog-detail-nav-slider">
+                  <div class="swiper-slide catalog-detail-nav-slider__slide slide-catalog-detail-nav-slider">
                     <img src="uploads/catalog-detail-nav-slider/6.jpg" title="" alt=""
                       class="slide-catalog-detail-nav-slider__image">
                   </div>
@@ -232,33 +232,87 @@ _.template(require('./../includes/header.html').default)(data) %>
               <div class="card-options__item card-equipments">
 
                 <!-- this will be vue component -->
-                <div class="card-equipments__item equipment-card-block">
+                <div class=" __item equipment-card-block">
                   <div class="equipment-card-block__title">Выберите комплектацию:</div>
                   <div class="equipment-card-block__inner">
                     <div class="equipment-card-block__item equipment-card">
                       <div class="equipment-card__image">
-                        <div class="equipment-card__title">
-                          Стандартная комплектация
-                        </div>
+                        <img src="../../img/equipment/1.png" alt="Стандартная комплектация">
+                      </div>
+                      <div class="equipment-card__title">
+                        Стандартная<br>комплектация
                       </div>
                     </div>
                     <div class="equipment-card-block__item equipment-card equipment-card--active">
                       <div class="equipment-card__image">
-                        <div class="equipment-card__title">
-                          Подъемный механизм
-                        </div>
+                        <img src="../../img/equipment/2.png" alt="Подъемный механизм">
+                      </div>
+                      <div class="equipment-card__title">
+                        Подъемный<br>механизм
                       </div>
                     </div>
                     <div class="equipment-card-block__item equipment-card">
                       <div class="equipment-card__image">
-                        <div class="equipment-card__title">
-                          Ортопедическое основание
-                        </div>
+                        <img src="../../img/equipment/3.png" alt="Ортопедическое основание">
+                      </div>
+                      <div class="equipment-card__title">
+                        Ортопедическое<br>основание
                       </div>
                     </div>
                   </div>
                 </div>
-                
+
+                <div class="card-equipments__item equipment-card-block">
+                  <div class="equipment-card-block__title">Прикроватные ящики:</div>
+                  <div class="equipment-card-block__inner">
+                    <div class="equipment-card-block__item equipment-card equipment-card--active">
+                      <div class="equipment-card__image">
+                        <img src="../../img/equipment/4.png" alt="Стандартная комплектация">
+                      </div>
+                      <div class="equipment-card__title">
+                        Без ящиков
+                      </div>
+                    </div>
+                    <div class="equipment-card-block__item equipment-card">
+                      <div class="equipment-card__image">
+                        <img src="../../img/equipment/5.png" alt="Подъемный механизм">
+                      </div>
+                      <div class="equipment-card__title">
+                        1 ящик <br>
+                        <b>+ 2500 ₽</b>
+                      </div>
+                    </div>
+                    <div class="equipment-card-block__item equipment-card">
+                      <div class="equipment-card__image">
+                        <img src="../../img/equipment/6.png" alt="Ортопедическое основание">
+                      </div>
+                      <div class="equipment-card__title">
+                        2 ящика <br>
+                        <b>+ 3000 ₽</b>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="card-equipments__item equipment-card-block equipment-card-block--mattress">
+                  <div class="equipment-card-block__title">Выберите матрас:</div>
+                  <div class="equipment-card-block__inner">
+                    <div class="equipment-card-block__item equipment-mattress-card">
+                      <div class="equipment-mattress-card__image">
+                        <img src="../../uploads/equipment-mattress/1.png" alt="">
+                      </div>
+                      <div class="equipment-mattress-card__title">
+                        Классик <b>+ 4400₽</b>
+                      </div>
+                      <div class="equipment-mattress-card__help btn--clear">
+                        <svg class="icon" width="18" height="18">
+                          <use xlink:href="#i-help"></use>
+                        </svg>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
               </div>
             </div> <!-- information-detail-card__options card-options -->
 
@@ -270,6 +324,9 @@ _.template(require('./../includes/header.html').default)(data) %>
               </button>
               <button type="button" aria-label="В корзину"
                 class="action-detail-card  action-detail-card--buy btn btn--clear">
+                <svg class="action-detail-card__icon" width="23" height="19">
+                  <use xlink:href=" #i-cart-button"></use>
+                </svg>
                 В корзину
               </button>
             </div>
@@ -341,25 +398,25 @@ _.template(require('./../includes/header.html').default)(data) %>
             <div class="card-tabs__inner">
 
               <div class="card-tabs__materials materials">
-                <a data-fancybox="gallery" href="../../uploads/materials/1.jpg" class="tab-material__item material">
-                  <img src="../../uploads/materials/1.jpg">
+                <a data-fancybox="gallery" href="uploads/materials/1.jpg" class="tab-material__item material">
+                  <img src="uploads/materials/1.jpg">
                   <div class="material__title">Венге 1</div>
                 </a>
-                <a data-fancybox="gallery" href="../../uploads/materials/2.jpg" class="tab-material__item material">
-                  <img src="../../uploads/materials/2.jpg">
+                <a data-fancybox="gallery" href="uploads/materials/2.jpg" class="tab-material__item material">
+                  <img src="uploads/materials/2.jpg">
                   <div class="material__title">Венге 2</div>
                 </a>
 
-                <a data-fancybox="gallery" href="../../uploads/materials/3.jpg" class="tab-material__item material">
-                  <img src="../../uploads/materials/3.jpg">
+                <a data-fancybox="gallery" href="uploads/materials/3.jpg" class="tab-material__item material">
+                  <img src="uploads/materials/3.jpg">
                   <div class="material__title">Венге 3</div>
                 </a>
-                <a data-fancybox="gallery" href="../../uploads/materials/4.jpg" class="tab-material__item material">
-                  <img src="../../uploads/materials/4.jpg">
+                <a data-fancybox="gallery" href="uploads/materials/4.jpg" class="tab-material__item material">
+                  <img src="uploads/materials/4.jpg">
                   <div class="material__title">Б. Белый с серебряной патиной</div>
                 </a>
-                <a data-fancybox="gallery" href="../../uploads/materials/1.jpg" class="tab-material__item material">
-                  <img src="../../uploads/materials/1.jpg">
+                <a data-fancybox="gallery" href="uploads/materials/1.jpg" class="tab-material__item material">
+                  <img src="uploads/materials/1.jpg">
                   <div class="material__title">Венге 1</div>
                 </a>
               </div>

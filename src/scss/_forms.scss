@@ -186,22 +186,39 @@
   color: #fff;
   display: inline-block;
 
+  svg {
+    fill: #fff;
+    transition: $transition; 
+  }
+
   &:hover,
   &:focus,
   &:active {
     color: $primaryColor;
     background-color: transparent;
+
+    svg {
+      fill: $primaryColor;
+    }
   }
 
   &--not-fill {
     background-color: transparent;
     color: $primaryColor;
 
+    svg {
+      fill: $primaryColor;
+    }
+
     &:hover,
     &:focus,
     &:active {
       color: #fff;
       background-color: $primaryColor;
+
+      svg {
+        fill: #fff;;
+      }
     }
   }
 }

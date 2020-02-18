@@ -1,13 +1,13 @@
 'use strict';
-// import Vue from 'vue';
-// window.Vue = Vue;
+import Vue from 'vue';
+window.Vue = Vue;
 
 import '../scss/style.scss';
 
 import $ from 'jquery';
 window.jQuery = $;
-require('@fancyapps/fancybox');
-import Swiper from 'swiper';
+require('@fancyapps/fancybox'); 
+import Swiper from 'swiper'; 
 
 const responseMenu = (menuSelector) => {
   document.querySelectorAll(menuSelector).forEach((menu) => {
@@ -64,7 +64,7 @@ const cachingSvgSprite = () => {
   // Storing SVG Sprite in localStorage
 
   var file = 'img/sprite.svg',
-    revision = 5;
+    revision = 6;
 
   if (
     !document.createElementNS ||
@@ -88,7 +88,7 @@ const cachingSvgSprite = () => {
     data = localStorage.getItem('inlineSVGdata');
     if (data) {
       insert();
-      return true;
+      //return true;
     }
   }
 

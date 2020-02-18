@@ -1,13 +1,21 @@
 const path = require('path');
 const fs = require('fs');
+
+const HtmlWebpackPlugin = require('html-webpack-plugin');
 const { CleanWebpackPlugin } = require('clean-webpack-plugin');
 const CopyWebpackPlugin = require('copy-webpack-plugin');
-const HtmlWebpackPlugin = require('html-webpack-plugin');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
-const TerserPlugin = require('terser-webpack-plugin');
+const TerserWebpackPlugin = require('terser-webpack-plugin');
+const OptimizeCssAssetsWebpackPlugin = require('optimize-css-assets-webpack-plugin');
 
 const ImageminPlugin = require('imagemin-webpack-plugin').default;
 const imageminMozjpeg = require('imagemin-mozjpeg');
+
+const isDev = process.env.NODE_ENV === 'development';
+const isProd = !isDev;
+
+console.log(`development - ${isDev}`);
+console.log(`production - ${isProd}`);
 
 function generateHtmlPlugins(templateDir) {
   let templateFiles = fs.readdirSync(path.resolve(__dirname, templateDir));
@@ -19,10 +27,26 @@ function generateHtmlPlugins(templateDir) {
     return new HtmlWebpackPlugin({
       filename: `${name}.html`,
       template: path.resolve(__dirname, `${templateDir}/${name}.${extension}`),
-      inject: false,
     });
   });
 }
+
+const optimization = () => {
+  const config = {
+    splitChunks: {
+      chunks: 'all',
+    },
+  };
+
+  if (isProd) {
+    config.minimizer = [
+      new OptimizeCssAssetsWebpackPlugin(),
+      new TerserWebpackPlugin(),
+    ];
+  }
+
+  return config;
+};
 
 const htmlPlugins = generateHtmlPlugins('./src/html/views');
 
@@ -32,16 +56,9 @@ const config = {
     filename: './js/bundle.js',
     publicPath: '',
   },
-  devtool: 'source-map',
-  mode: 'production',
-  optimization: {
-    minimizer: [
-      new TerserPlugin({
-        sourceMap: true,
-        extractComments: true,
-      }),
-    ],
-  },
+  devtool: isDev ? 'source-map' : '',
+  mode: 'development',
+  optimization: optimization(),
   devServer: {
     hot: true,
     port: 8080,
@@ -54,7 +71,9 @@ const config = {
         use: [
           {
             loader: MiniCssExtractPlugin.loader,
-            options: {},
+            options: {
+              hmr: isDev,
+            },
           },
           {
             loader: 'css-loader',
@@ -122,19 +141,19 @@ const config = {
   ].concat(htmlPlugins),
 };
 
-module.exports = (env, argv) => {
-  if (argv.mode === 'production') {
+module.exports = (env, argv) => { 
+  if (isProd) {
     config.plugins.push(new CleanWebpackPlugin());
-    //   config.plugins.push(
-    //     new ImageminPlugin({
-    //       plugins: [
-    //         imageminMozjpeg({
-    //           quality: 80,
-    //           progressive: true,
-    //         }),
-    //       ],
-    //     }),
-    //   );
+    config.plugins.push(
+      new ImageminPlugin({
+        plugins: [
+          imageminMozjpeg({
+            quality: 80,
+            progressive: true,
+          }),
+        ],
+      }),
+    );
   }
   return config;
 };
