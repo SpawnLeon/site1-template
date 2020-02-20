@@ -19,7 +19,7 @@ console.log(`production - ${isProd}`);
 
 function generateHtmlPlugins(templateDir) {
   let templateFiles = fs.readdirSync(path.resolve(__dirname, templateDir));
-  //templateFiles = ['detail.html'];
+  templateFiles = ['article.html'];
   return templateFiles.map((item) => {
     const parts = item.split('.');
     const name = parts[0];
@@ -60,6 +60,7 @@ const config = {
   mode: 'development',
   optimization: optimization(),
   devServer: {
+    contentBase: './dist',
     hot: true,
     port: 8080,
   },
@@ -141,7 +142,7 @@ const config = {
   ].concat(htmlPlugins),
 };
 
-module.exports = (env, argv) => { 
+module.exports = (env, argv) => {
   if (isProd) {
     config.plugins.push(new CleanWebpackPlugin());
     config.plugins.push(
