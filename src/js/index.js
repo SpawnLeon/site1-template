@@ -6,8 +6,8 @@ import '../scss/style.scss';
 
 import $ from 'jquery';
 window.jQuery = $;
-require('@fancyapps/fancybox'); 
-import Swiper from 'swiper'; 
+require('@fancyapps/fancybox');
+import Swiper from 'swiper';
 
 const responseMenu = (menuSelector) => {
   document.querySelectorAll(menuSelector).forEach((menu) => {
@@ -180,6 +180,14 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   });
 
+  document
+    .querySelector('.js__catalog-menu-btn')
+    .addEventListener('click', function() {
+      event.preventDefault();
+      this.classList.toggle('catalog-menu-btn--open');
+    });
+
+  responseMenu('.main-menu');
   responseMenu('.catalog-menu');
   cachingSvgSprite();
 

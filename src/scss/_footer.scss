@@ -1,5 +1,3 @@
-
-
 .footer {
   font-size: 16px;
 
@@ -33,6 +31,9 @@
   }
 }
 .footer-menu {
+  margin: 0;
+  padding: 0;
+
   &__item {
   }
 
@@ -109,7 +110,7 @@
   display: grid;
   grid-template-columns: 320px 429px;
   grid-gap: 25px 50px;
-  flex: 0 1 0;
+  flex: 0 1 0; 
 
   &__copyright {
     grid-column-start: 1;
