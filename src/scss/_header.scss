@@ -65,6 +65,10 @@
   margin-right: 15px;
   flex: 0 0 auto;
 
+  @media screen and (max-width: 1024px) {
+    margin: 0 auto;
+  }
+
   &__image {
     padding: 10px 22px 10px 22px;
     background: $primaryColor;
@@ -295,20 +299,35 @@
   font-weight: 600;
   display: flex;
   margin: 0 auto;
+  white-space: nowrap;
+  letter-spacing: -0.02em;
 
   &__item {
     display: flex;
     align-items: center;
     transition: $transition;
 
+    @media screen and (max-width: 768px) {
+      font-size: 14px;
+    }
+
     & svg {
       margin-right: 12px;
       fill: #333;
       transition: $transition;
+      flex-shrink: 0;
+
+      @media screen and (max-width: 768px) {
+        margin-right: 8px;
+      }
     }
 
     &:not(:last-child) {
       margin-right: 65px;
+
+      @media screen and (max-width: 767px) {
+        margin-right: 20px;
+      }
     }
     &:hover,
     &:focus,
@@ -379,10 +398,9 @@
   &__mobile-block {
     display: none;
 
-    &> *:not(:last-child) {
+    & > *:not(:last-child) {
       padding-right: 15px;
     }
-
 
     @media screen and (max-width: 1024px) {
       display: flex;
@@ -400,7 +418,7 @@
   align-items: center;
   box-sizing: content-box;
   width: 30px;
-  height: 25px; 
+  height: 25px;
   background: 0 0;
   border: 0;
   -webkit-user-select: none;

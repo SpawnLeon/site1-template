@@ -31,6 +31,8 @@ html {
   font-size: $mainFontSize;
   color: $mainFontColor;
   height: 100%;
+  max-width: 100vw;
+  overflow-x: hidden;
 }
 
 body {
@@ -131,6 +133,9 @@ p {
 
   @media screen and (max-width: 768px) {
   }
+  @media screen and (max-width: 767px) {
+    padding: 0 20px;
+  }
 
   @media screen and (max-width: 425px) {
   }
@@ -184,17 +189,19 @@ p {
     background-color: #fff;
     z-index: 5;
     top: 31px;
-    left: 50%;
+    left: 9999px;
     transform: translateX(-50%);
     transition: $transition;
     display: block;
 
     &:hover {
+      left: 50%;
       display: block;
       opacity: 1;
       visibility: visible;
     }
   }
+
   &__btn {
     width: 27px;
     height: 16px;
@@ -392,6 +399,14 @@ p {
   flex-wrap: wrap;
   margin: 65px -35px 15px;
 
+  @media screen and (max-width: 1800px) {
+    margin: 30px -10px 15px;
+  }
+
+  @media screen and (max-width: 600px) {
+    margin: 20px -20px 15px;
+  }
+
   &__item {
   }
 }
@@ -405,6 +420,29 @@ p {
   position: relative;
   height: 217px;
   transition: $transition;
+  overflow: hidden;
+
+  @media screen and (max-width: 1800px) {
+    padding-right: 35px;
+    margin: 0 10px 20px;
+    flex-basis: calc(100% / 3 - 20px);
+  }
+  @media screen and (max-width: 1200px) {
+    flex-basis: calc(100% / 2 - 20px);
+    padding: 20px 150px 20px 15px;
+  }
+  @media screen and (max-width: 1024px) {
+    height: 130px;
+  }
+  @media screen and (max-width: 767px) {
+    height: 130px;
+    padding-right: 35px;
+  }
+  @media screen and (max-width: 600px) {
+    flex-basis: 100%;
+    padding: 20px 70px 20px 15px;
+    margin: 0 0 20px;
+  }
 
   &:hover,
   &:focus,
@@ -422,6 +460,12 @@ p {
     font-size: 32px;
     line-height: 29px;
     letter-spacing: -0.02em;
+    position: relative;
+    z-index: 1;
+
+    @media screen and (max-width: 1800px) {
+      font-size: 22px;
+    }
   }
 
   &__more {
@@ -434,6 +478,12 @@ p {
     &:focus,
     &:active {
       text-decoration: none;
+    }
+    @media screen and (max-width: 1800px) {
+      font-size: 14px;
+    }
+    @media screen and (max-width: 1200px) {
+      margin-top: 20px;
     }
   }
   &__image {
@@ -462,18 +512,40 @@ p {
     display: flex;
     padding: 45px 0;
     justify-content: space-between;
+    @media screen and (max-width: 1024px) {
+      flex-wrap: wrap;
+    }
+    @media screen and (max-width: 600px) {
+      padding: 20px 0;
+    }
   }
 
   &__item {
     display: flex;
     align-items: center;
     padding-right: 50px;
+
+    @media screen and (max-width: 1440px) {
+      flex-direction: column;
+      padding: 20px 30px 20px;
+      text-align: center;
+    }
+    @media screen and (max-width: 1024px) {
+      flex-basis: 50%;
+    }
+    @media screen and (max-width: 600px) {
+      flex-basis: 100%;
+    }
   }
 }
 
 .item-advantage {
   &__icon {
     margin-right: 30px;
+
+    @media screen and (max-width: 1440px) {
+      margin-right: 0;
+    }
   }
 
   &__content {
@@ -484,6 +556,10 @@ p {
     font-size: 22px;
     line-height: 1.125;
     letter-spacing: -0.02em;
+
+    @media screen and (max-width: 1440px) {
+      margin-top: 20px;
+    }
   }
 
   &__text {
@@ -491,6 +567,9 @@ p {
     color: #efefef;
     margin-top: 3px;
     line-height: 1.214;
+    @media screen and (max-width: 1440px) {
+      margin-top: 5px;
+    }
   }
 }
 
@@ -1065,11 +1144,28 @@ p {
   // .bottom-menu__inner
   &__inner {
     max-width: 1470px;
-    padding-top: 40px;
-    padding-bottom: 40px;
+    padding: 40px 0;
     display: flex;
     flex-wrap: wrap;
   }
+
+  // .bottom-menu__link
+  &__item {
+    display: block;
+    margin-bottom: 15px;
+    flex: 0 0 calc(100% / 4);
+
+    @media screen and (max-width: 1024px) {
+      flex-basis: calc(100% / 3);
+    }
+    @media screen and (max-width: 768px) {
+      flex-basis: calc(100% / 2);
+    }
+    @media screen and (max-width: 640px) {
+      flex-basis: 100%;
+    }
+  }
+
   // .bottom-menu__link
   &__link {
     font-size: 16px;
@@ -1078,9 +1174,7 @@ p {
     color: #333333;
     position: relative;
     padding: 0 15px 0 18px;
-    display: block;
-    margin-bottom: 15px;
-    flex: 1 1 calc(100% / 4);
+    display: inline-block;
 
     span {
       color: #eabc7a;

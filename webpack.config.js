@@ -19,7 +19,7 @@ console.log(`production - ${isProd}`);
 
 function generateHtmlPlugins(templateDir) {
   let templateFiles = fs.readdirSync(path.resolve(__dirname, templateDir));
-  templateFiles = ['article.html'];
+  //templateFiles = ['index.html'];
   return templateFiles.map((item) => {
     const parts = item.split('.');
     const name = parts[0];
