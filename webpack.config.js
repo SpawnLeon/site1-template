@@ -14,12 +14,9 @@ const imageminMozjpeg = require('imagemin-mozjpeg');
 const isDev = process.env.NODE_ENV === 'development';
 const isProd = !isDev;
 
-console.log(`development - ${isDev}`);
-console.log(`production - ${isProd}`);
-
 function generateHtmlPlugins(templateDir) {
   let templateFiles = fs.readdirSync(path.resolve(__dirname, templateDir));
-  //templateFiles = ['index.html'];
+  templateFiles = ['index.html'];
   return templateFiles.map((item) => {
     const parts = item.split('.');
     const name = parts[0];
