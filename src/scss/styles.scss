@@ -1,0 +1,32 @@
+@import 'utils/reset';
+
+@import '~/node_modules/@fancyapps/fancybox/dist/jquery.fancybox.css';
+
+@import 'utils/mixins';
+@import 'utils/vars';
+
+
+@import 'common';
+
+
+@import 'utils/buttons';
+@import '_header';
+@import '_footer';
+@import '_forms';
+@import '_main-slider';
+@import '_tabs';
+
+
+@import 'pages/detail';
+@import 'pages/delivery';
+@import 'pages/certificates';
+@import 'pages/materials';
+@import 'pages/reviews';
+@import 'pages/contacts';
+@import 'pages/instruction';
+@import 'pages/our-equipment';
+@import 'pages/cabinet-furniture';
+@import 'pages/articles';
+@import 'pages/works';
+@import 'pages/basket';
+@import 'pages/article';

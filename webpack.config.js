@@ -16,7 +16,7 @@ const isProd = !isDev;
 
 function generateHtmlPlugins(templateDir) {
   let templateFiles = fs.readdirSync(path.resolve(__dirname, templateDir));
-  templateFiles = ['index.html'];
+  //templateFiles = ['index.html'];
   return templateFiles.map((item) => {
     const parts = item.split('.');
     const name = parts[0];
@@ -48,7 +48,7 @@ const optimization = () => {
 const htmlPlugins = generateHtmlPlugins('./src/html/views');
 
 const config = {
-  entry: ['./src/js/index.js', './src/scss/style.scss'],
+  entry: ['./src/js/index.js', './src/scss/styles.scss'],
   output: {
     filename: './js/bundle.js',
     publicPath: '',

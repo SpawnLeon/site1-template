@@ -2,7 +2,7 @@
 import Vue from 'vue';
 window.Vue = Vue;
 
-import '../scss/style.scss';
+import '../scss/styles.scss';
 
 import $ from 'jquery';
 window.jQuery = $;
