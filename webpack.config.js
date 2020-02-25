@@ -17,7 +17,7 @@ const isProd = !isDev;
 
 function generateHtmlPlugins(templateDir) {
   let templateFiles = fs.readdirSync(path.resolve(__dirname, templateDir));
-  templateFiles = ['catalog.html'];
+  templateFiles = ['detail.html'];
   return templateFiles.map((item) => {
     const parts = item.split('.');
     const name = parts[0];
@@ -186,16 +186,16 @@ const config = {
 module.exports = (env, argv) => {
   if (isProd) {
     config.plugins.push(new CleanWebpackPlugin());
-    config.plugins.push(
-      new ImageminPlugin({
-        plugins: [
-          imageminMozjpeg({
-            quality: 80,
-            progressive: true,
-          }),
-        ],
-      }),
-    );
+    // config.plugins.push(
+    //   new ImageminPlugin({
+    //     plugins: [
+    //       imageminMozjpeg({
+    //         quality: 80,
+    //         progressive: true,
+    //       }),
+    //     ],
+    //   }),
+    // );
   }
   return config;
 };

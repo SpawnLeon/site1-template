@@ -91,8 +91,7 @@ p {
 .container {
   width: 100%;
   margin: 0 auto;
-  max-width: 1830px;
-  padding: 0 15px;
+  padding: 0 60px;
 
   @media screen and (max-width: 1440px) {
   }
@@ -149,7 +148,7 @@ p {
   display: flex;
 }
 
-.hidden-menu-items {
+.catalog-menu .hidden-menu-items {
   position: relative;
 
   .hidden-menu {
@@ -160,14 +159,14 @@ p {
     background-color: #fff;
     z-index: 5;
     top: 31px;
-    left: 9999px;
     transform: translateX(-50%);
-    transition: $transition;
+    transition: opacity 0.3s;
+    visibility: hidden;
     display: block;
+    z-index: -100;
 
     &:hover {
-      left: 50%;
-      display: block;
+      z-index: 10;
       opacity: 1;
       visibility: visible;
     }
@@ -201,6 +200,7 @@ p {
     &:hover + .hidden-menu,
     &:focus + .hidden-menu,
     &:active + .hidden-menu {
+      z-index: 10;
       opacity: 1;
       visibility: visible;
     }
@@ -720,8 +720,14 @@ p {
   width: 100%;
 }
 .sidebar + .main-content {
-  max-width: calc(100% - 370px);
+  max-width: calc(100% - 365px);
 
+  @media screen and (max-width: 1760px) {
+    max-width: calc(100% - 310px);
+  }
+  @media screen and (max-width: 1440px) {
+    max-width: calc(100% - 49px);
+  }
   @media screen and (max-width: 1024px) {
     max-width: 768px;
   }
@@ -739,14 +745,22 @@ p {
   box-shadow: 2px 0 3px rgba(0, 0, 0, 0.1);
   background-color: #fff;
   max-width: 340px;
+  min-width: 340px;
   width: 100%;
   position: relative;
   margin-right: 85px;
   z-index: 5;
   font-size: 16px;
+  margin-left: -60px;
 
-  @media screen and (max-width: 1440px) {
-    margin-right: 15px;
+  @media screen and (max-width: 1760px) {
+    margin-right: 30px;
+  }
+
+  @media screen and (max-width: 1440px) and (min-width: 1025px) {
+    max-width: none;
+    min-width: 0;
+    width: auto;
   }
 
   @media screen and (max-width: 1024px) {
@@ -755,6 +769,8 @@ p {
     left: 0;
     transition: $transition;
     transform: translateX(-100%);
+    margin-right: 0;
+    margin-left: 0;
   }
 
   &--open {
@@ -769,11 +785,21 @@ p {
   }
 }
 .sidebar-block {
+  &:not(:first-child) {
+    @media screen and (max-width: 1440px) and (min-width: 1025px) {
+      display: none;
+    }
+  }
+
   &__title {
     font-weight: 600;
     color: #0d0d0d;
-    padding: 16px 15px 17px 40px;
+    padding: 16px 15px 17px 30px;
     letter-spacing: -0.02em;
+
+    @media screen and (max-width: 1440px) and (min-width: 1025px) {
+      display: none;
+    }
   }
 }
 
@@ -791,17 +817,27 @@ p {
 
   &__item {
     border-top: 1px solid #d1d1d1;
+
     &:last-child {
       border-bottom: 1px solid #d1d1d1;
+    }
+    &:first-child {
+      @media screen and (max-width: 1440px) and (min-width: 1025px) {
+        border-top: none;
+      }
     }
   }
 
   &__link {
     display: flex;
     align-items: center;
-    padding: 10px 60px 10px 40px;
+    padding: 10px 60px 10px 30px;
     position: relative;
     line-height: 20px;
+
+    @media screen and (max-width: 1440px) and (min-width: 1025px) {
+      padding: 10px 20px 10px 20px;
+    }
   }
   &__icon {
     width: 38px;
@@ -811,12 +847,19 @@ p {
     justify-content: center;
     margin-right: 20px;
 
+    @media screen and (max-width: 1440px) and (min-width: 1025px) {
+      margin-right: 0;
+    }
+
     .icon {
       width: 38px;
       max-height: 38px;
     }
   }
   &__text {
+    @media screen and (max-width: 1440px) and (min-width: 1025px) {
+      display: none;
+    }
   }
   .menu-catalog-sidebar__btn {
     width: 10px;
@@ -829,6 +872,10 @@ p {
     right: 15px;
     top: 50%;
     margin-top: -5px;
+
+    @media screen and (max-width: 1440px) and (min-width: 1025px) {
+      display: none;
+    }
   }
 }
 .item-menu-catalog {
@@ -882,9 +929,10 @@ p {
 /*------------------------------------*\
     #DELIVERY BLOCK START
 \*------------------------------------*/
-.sidebar__delivery.delivery-block {
+.delivery-block {
   padding-right: 15px;
   font-size: 14px;
+  padding-left: 30px;
 }
 /*------------------------------------*\
     #DELIVERY BLOCK END
@@ -898,17 +946,29 @@ p {
   flex-wrap: wrap;
   margin: 0 -12px 0;
 
-  @media screen and (max-width: 1024px) {
+  @media screen and (max-width: 1760px) {
     margin: 0 -4px 0;
   }
 
+  @media screen and (max-width: 600px) {
+    margin: 0;
+  }
+
   &__item {
-    width: calc(100% / 4 - 24px);
+    flex-basis: calc(100% / 4 - 24px);
     margin: 0 12px 24px;
 
-    @media screen and (max-width: 1024px) {
-      width: calc(100% / 2 - 8px);
+    @media screen and (max-width: 1760px) {
+      flex-basis: calc(100% / 3 - 8px);
       margin: 0 4px 10px;
+    }
+
+    @media screen and (max-width: 1024px) {
+      flex-basis: calc(100% / 2 - 8px);
+    }
+    @media screen and (max-width: 600px) {
+      flex-basis: 100%;
+      margin: 0 0 24px;
     }
   }
 }
@@ -970,6 +1030,10 @@ p {
     letter-spacing: -0.02em;
     color: #0d0d0d;
 
+    @media screen and (max-width: 1140px) {
+      font-size: 20px;
+    }
+
     &--old {
       font-weight: normal;
       font-size: 18px;
@@ -993,6 +1057,10 @@ p {
     line-height: 1.2;
     padding: 8px 20px 10px;
     color: #fff;
+
+    @media screen and (max-width: 1140px) {
+      font-size: 16px;
+    }
 
     &:hover,
     &:focus,
@@ -1047,6 +1115,12 @@ p {
     display: inline-block;
     margin: 0 4px;
 
+    & > span {
+      @media screen and (max-width: 767px) {
+        display: none;
+      }
+    }
+
     &:hover,
     &:focus,
     &:active,
@@ -1072,6 +1146,7 @@ p {
   display: flex;
   margin: 30px 0;
   padding: 0;
+  flex-wrap: wrap;
 
   @media screen and (max-width: 1024px) {
     margin: 15px;
@@ -1144,12 +1219,23 @@ p {
   // .sorting-block__title
   &__title {
     margin-right: 15px;
+
+    @media screen and (max-width: 767px) {
+      margin-bottom: 8px;
+    }
   }
   // .sorting-block__inner
   &__inner {
+    display: flex;
+
+    @media screen and (max-width: 767px) {
+      flex-direction: column;
+      align-items: flex-start;
+    }
   }
   // .sorting-block__btn
   &__btn {
+   
   }
   // .sorting-block__count
   &__count {
@@ -1157,6 +1243,7 @@ p {
     color: #c02d33;
     margin-left: auto;
     font-weight: bold;
+ 
   }
 }
 .button-sorting {
@@ -1165,6 +1252,13 @@ p {
   padding: 0 15px 1px 5px;
   margin-right: 5px;
   position: relative;
+  display: block;
+ 
+  &:not(:last-child) {
+    @media screen and (max-width: 767px) {
+      margin-bottom: 8px;
+    }
+  }
 
   &::after {
     content: '';

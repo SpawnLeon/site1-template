@@ -189,6 +189,7 @@ document.addEventListener('DOMContentLoaded', () => {
       event.preventDefault();
       this.classList.toggle('catalog-menu-btn--open');
       document.querySelector('.sidebar').classList.toggle('sidebar--open');
+      document.body.classList.toggle('has-open-mobile-menu');
     });
 
   document

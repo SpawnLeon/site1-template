@@ -1,5 +1,4 @@
-
-<!DOCTYPE html>
+ <!DOCTYPE html>
 <html lang="ru">
 
 <head>
@@ -10,7 +9,7 @@
   <link href="https://fonts.googleapis.com/css?family=Cormorant+SC:700&display=swap&subset=cyrillic" rel="stylesheet" />
   <link rel="shortcut icon" href="favicon/favicon.ico" />
 
-  <title>Главная страница</title>
+  <title>Каталог</title>
 <link href="./1.template_styles.css" rel="stylesheet"><link href="./template_styles.css" rel="stylesheet"></head>
 
 <body>
@@ -29,7 +28,7 @@
             </button>
 
             <button type="button" aria-label="Форма поиска"
-              class="mobile-block-header__search mobile-search-btn btn--clear mobile-search-btn">
+              class="mobile-block-header__search mobile-search-btn btn--clear mobile-search-btn js__mobile-search-btn">
               <svg class="mobile-search-btn__icon" width="26" height="26">
                 <use xlink:href="#i-mobile-search-btn"></use>
               </svg>
@@ -238,300 +237,545 @@
       </div>
  
     </header>
-
-<div class="main-slider">
-  <div class="swiper-container main-slider__container">
-    <div class="swiper-wrapper main-slider__wrapper">
-
-      <div class="swiper-slide main-slider__slide slide-main-slider">
-
-        <div class="slide-main-slider__inner">
-          <div class="slide-main-slider__content" style="--slider-color: #988F6F;">
-            <div class="slide-main-slider__medium-text">Коллекция</div>
-            <div class="slide-main-slider__big-text">МАРТА</div>
-            <a href="" class="slide-main-slider__button">Подробнее</a>
-          </div>
-          <img src=" uploads/main-slider/1.jpg" title="" alt="" class="slide-main-slider__image">
-        </div>
-      </div>
-
-      <div class="swiper-slide main-slider__slide slide-main-slider">
-        <div class="slide-main-slider__inner slide-main-slider__inner--reverse">
-          <div class="slide-main-slider__content" style="--slider-color: #E88161;">
-            <div class="slide-main-slider__medium-text">Коллекция</div>
-            <div class="slide-main-slider__big-text">БАЛИ</div>
-            <a href="" class="slide-main-slider__button">Подробнее</a>
-          </div>
-          <img src="uploads/main-slider/7.jpg" title="" alt="" class="slide-main-slider__image">
-        </div>
-      </div>
-
-      <div class="swiper-slide main-slider__slide slide-main-slider">
-        <div class="slide-main-slider__inner">
-          <div class="slide-main-slider__content" style="--slider-color: #205B29;">
-            <div class="slide-main-slider__medium-text">Коллекция</div>
-            <div class="slide-main-slider__big-text">БЕРТА</div>
-            <a href="" class="slide-main-slider__button">Подробнее</a>
-          </div>
-          <img src=" uploads/main-slider/2.jpg" title="" alt="" class="slide-main-slider__image">
-        </div>
-      </div>
-
-      <div class="swiper-slide main-slider__slide slide-main-slider">
-        <div class="slide-main-slider__inner slide-main-slider__inner--reverse">
-          <div class="slide-main-slider__content" style="--slider-color:#6EBA32 ;">
-            <div class="slide-main-slider__medium-text">Коллекция</div>
-            <div class="slide-main-slider__big-text">Коллекция</div>
-            <a href="" class="slide-main-slider__button">Подробнее</a>
-          </div>
-          <img src="uploads/main-slider/8.jpg" title="" alt="" class="slide-main-slider__image">
-        </div>
-      </div>
-
-
-    </div>
-  </div>
-</div>
 <div class="container">
-  <div class="catalog-categories">
-    <a href="" title="" class="catalog-categories__item item-catalog-category">
-      <div class="item-catalog-category__content">
-        <div class="item-catalog-category__count">123 товара</div>
-        <div class="item-catalog-category__title">Кровати</div>
-        <div class="item-catalog-category__more">Подробнее</div>
-      </div>
-      <img src="uploads/catalog-categories/1.png" alt="" class="item-catalog-category__image">
-    </a>
-    <a href="" title="" class="catalog-categories__item item-catalog-category">
-      <div class="item-catalog-category__content">
-        <div class="item-catalog-category__count">122 товара</div>
-        <div class="item-catalog-category__title">Матрасы</div>
-        <div class="item-catalog-category__more">Подробнее</div>
-      </div>
-      <img src="uploads/catalog-categories/2.png" alt="" class="item-catalog-category__image">
-    </a>
-    <a href="" title="" class="catalog-categories__item item-catalog-category">
-      <div class="item-catalog-category__content">
-        <div class="item-catalog-category__count">142 товара</div>
-        <div class="item-catalog-category__title">Комоды</div>
-        <div class="item-catalog-category__more">Подробнее</div>
-      </div>
-      <img src="uploads/catalog-categories/3.png" alt="" class="item-catalog-category__image">
-    </a>
-    <a href="" title="" class="catalog-categories__item item-catalog-category">
-      <div class="item-catalog-category__content">
-        <div class="item-catalog-category__count">33 товара</div>
-        <div class="item-catalog-category__title">Тумбы</div>
-        <div class="item-catalog-category__more">Подробнее</div>
-      </div>
-      <img src="uploads/catalog-categories/4.png" alt="" class="item-catalog-category__image">
-    </a>
-    <a href="" title="" class="catalog-categories__item item-catalog-category">
-      <div class="item-catalog-category__content">
-        <div class="item-catalog-category__count">123 товара</div>
-        <div class="item-catalog-category__title">Шкафы</div>
-        <div class="item-catalog-category__more">Подробнее</div>
-      </div>
-      <img src="uploads/catalog-categories/5.png" alt="" class="item-catalog-category__image">
-    </a>
-    <a href="" title="" class="catalog-categories__item item-catalog-category">
-      <div class="item-catalog-category__content">
-        <div class="item-catalog-category__count">123 товара</div>
-        <div class="item-catalog-category__title">Письменные столы</div>
-        <div class="item-catalog-category__more">Подробнее</div>
-      </div>
-      <img src="uploads/catalog-categories/6.png" alt="" class="item-catalog-category__image">
-    </a>
-    <a href="" title="" class="catalog-categories__item item-catalog-category">
-      <div class="item-catalog-category__content">
-        <div class="item-catalog-category__count">123 товара</div>
-        <div class="item-catalog-category__title">Буфеты</div>
-        <div class="item-catalog-category__more">Подробнее</div>
-      </div>
-      <img src="uploads/catalog-categories/7.png" alt="" class="item-catalog-category__image">
-    </a>
-    <a href="" title="" class="catalog-categories__item item-catalog-category">
-      <div class="item-catalog-category__content">
-        <div class="item-catalog-category__count">123 товара</div>
-        <div class="item-catalog-category__title">Мебель в стиле Верди</div>
-        <div class="item-catalog-category__more">Подробнее</div>
-      </div>
-      <img src="uploads/catalog-categories/8.png" alt="" class="item-catalog-category__image">
-    </a>
-    <a href="" title="" class="catalog-categories__item item-catalog-category">
-      <div class="item-catalog-category__content">
-        <div class="item-catalog-category__count">123 товара</div>
-        <div class="item-catalog-category__title">Кровати</div>
-        <div class="item-catalog-category__more">Подробнее</div>
-      </div>
-      <img src="uploads/catalog-categories/9.png" alt="" class="item-catalog-category__image">
-    </a>
-    <a href="" title="" class="catalog-categories__item item-catalog-category">
-      <div class="item-catalog-category__content">
-        <div class="item-catalog-category__count">123 товара</div>
-        <div class="item-catalog-category__title">Прихожие</div>
-        <div class="item-catalog-category__more">Подробнее</div>
-      </div>
-      <img src="uploads/catalog-categories/10.png" alt="" class="item-catalog-category__image">
-    </a>
-    <a href="" title="" class="catalog-categories__item item-catalog-category">
-      <div class="item-catalog-category__content">
-        <div class="item-catalog-category__count">123 товара</div>
-        <div class="item-catalog-category__title">Стенки</div>
-        <div class="item-catalog-category__more">Подробнее</div>
-      </div>
-      <img src="uploads/catalog-categories/11.png" alt="" class="item-catalog-category__image">
-    </a>
-    <a href="" title="" class="catalog-categories__item item-catalog-category">
-      <div class="item-catalog-category__content">
-        <div class="item-catalog-category__count">123 товара</div>
-        <div class="item-catalog-category__title">Резная мебель </div>
-        <div class="item-catalog-category__more">Подробнее</div>
-      </div>
-      <img src="uploads/catalog-categories/12.png" alt="" class="item-catalog-category__image">
-    </a>
-    <a href="" title="" class="catalog-categories__item item-catalog-category">
-      <div class="item-catalog-category__content">
-        <div class="item-catalog-category__count">123 товара</div>
-        <div class="item-catalog-category__title">Кухни</div>
-        <div class="item-catalog-category__more">Подробнее</div>
-      </div>
-      <img src="uploads/catalog-categories/13.png" alt="" class="item-catalog-category__image">
-    </a>
-    <a href="" title="" class="catalog-categories__item item-catalog-category">
-      <div class="item-catalog-category__content">
-        <div class="item-catalog-category__count">123 товара</div>
-        <div class="item-catalog-category__title">Стулья, табуреты</div>
-        <div class="item-catalog-category__more">Подробнее</div>
-      </div>
-      <img src="uploads/catalog-categories/14.png" alt="" class="item-catalog-category__image">
-    </a>
-    <a href="" title="" class="catalog-categories__item item-catalog-category">
-      <div class="item-catalog-category__content">
-        <div class="item-catalog-category__count">123 товара</div>
-        <div class="item-catalog-category__title">Зеркала</div>
-        <div class="item-catalog-category__more">Подробнее</div>
-      </div>
-      <img src="uploads/catalog-categories/15.png" alt="" class="item-catalog-category__image">
-    </a>
+  <div class="main-content-wrapper">
+    <aside class="sidebar">
+  <div class="sidebar__block sidebar-block">
+    <div class="sidebar-block__title">
+      Каталог мебели
+    </div>
+    <ul class="sidebar__menu menu-catalog-sidebar">
+      <li class="menu-catalog-sidebar__item item-menu-catalog">
+        <a href="" class="menu-catalog-sidebar__link">
+          <span class="menu-catalog-sidebar__icon">
+            <svg class="icon">
+              <use xlink:href="#i-catalog-1"></use>
+            </svg>
+          </span>
+          <span class="menu-catalog-sidebar__text">Кровати</span>
+          <div class="menu-catalog-sidebar__btn btn--clear" aria-label="Раскрыть меню каталога"></div>
+        </a>
+        <div class="item-menu-catalog__sub-menu catalog-sub-menu">
+          <div class="catalog-sub-menu__title">Кровати</div>
+          <ul class="catalog-sub-menu__list">
+            <li class="catalog-sub-menu__item">
+              <a href="" class="catalog-sub-menu__link">
+                Односпальные кровати
+              </a>
+            </li>
+            <li class="catalog-sub-menu__item">
+              <a href="" class="catalog-sub-menu__link">
+                Полутороспальные кровати
+              </a>
+
+            </li>
+            <li class="catalog-sub-menu__item">
+              <a href="" class="catalog-sub-menu__link">
+                Двуспальные кровати
+              </a>
+
+            </li>
+            <li class="catalog-sub-menu__item">
+              <a href="" class="catalog-sub-menu__link">
+                Кровати с подъемным механизмом
+              </a>
+
+            </li>
+            <li class="catalog-sub-menu__item">
+              <a href="" class="catalog-sub-menu__link">
+                Кровати с ортопедическим основанием
+              </a>
+
+            </li>
+          </ul>
+        </div>
+      </li>
+      <li class="menu-catalog-sidebar__item item-menu-catalog">
+        <a href="" class="menu-catalog-sidebar__link">
+          <span class="menu-catalog-sidebar__icon">
+            <svg class="icon">
+              <use xlink:href="#i-catalog-2"></use>
+            </svg>
+          </span>
+          <span class="menu-catalog-sidebar__text">Матрасы</span>
+          <div class="menu-catalog-sidebar__btn btn--clear" aria-label="Раскрыть меню каталога"></div>
+        </a>
+        <div class="item-menu-catalog__sub-menu catalog-sub-menu">
+          <div class="catalog-sub-menu__title">Матрасы</div>
+          <ul class="catalog-sub-menu__list">
+            <li class="catalog-sub-menu__item">
+              <a href="" class="catalog-sub-menu__link">
+                Пружинные матрасы
+              </a>
+
+            </li>
+            <li class="catalog-sub-menu__item">
+              <a href="" class="catalog-sub-menu__link">
+                Ортопедические матрасы 256 пр/м
+              </a>
+
+            </li>
+            <li class="catalog-sub-menu__item">
+              <a href="" class="catalog-sub-menu__link">
+                Ортопедические матрасы 500 пр/м
+              </a>
+
+            </li>
+            <li class="catalog-sub-menu__item">
+              <a href="" class="catalog-sub-menu__link">
+                Беспружинные матрасы
+              </a>
+
+            </li>
+            <li class="catalog-sub-menu__item">
+              <a href="" class="catalog-sub-menu__link">
+                Наматрасники
+              </a>
+
+            </li>
+            <li class="catalog-sub-menu__item">
+              <a href="" class="catalog-sub-menu__link">
+                Подушки
+              </a>
+
+            </li>
+          </ul>
+        </div>
+      </li>
+      <li class="menu-catalog-sidebar__item item-menu-catalog">
+        <a href="" class="menu-catalog-sidebar__link">
+          <span class="menu-catalog-sidebar__icon">
+            <svg class="icon">
+              <use xlink:href="#i-catalog-3"></use>
+            </svg>
+          </span>
+          <span class="menu-catalog-sidebar__text">Комоды</span>
+        </a>
+      </li>
+      <li class="menu-catalog-sidebar__item item-menu-catalog">
+        <a href="" class="menu-catalog-sidebar__link">
+          <span class="menu-catalog-sidebar__icon">
+            <svg class="icon">
+              <use xlink:href="#i-catalog-4"></use>
+            </svg>
+          </span>
+          <span class="menu-catalog-sidebar__text">Тумбы</span>
+        </a>
+      </li>
+      <li class="menu-catalog-sidebar__item item-menu-catalog">
+        <a href="" class="menu-catalog-sidebar__link">
+          <span class="menu-catalog-sidebar__icon">
+            <svg class="icon">
+              <use xlink:href="#i-catalog-5"></use>
+            </svg>
+          </span>
+          <span class="menu-catalog-sidebar__text">Шкафы</span>
+        </a>
+      </li>
+      <li class="menu-catalog-sidebar__item item-menu-catalog">
+        <a href="" class="menu-catalog-sidebar__link">
+          <span class="menu-catalog-sidebar__icon">
+            <svg class="icon">
+              <use xlink:href="#i-catalog-6"></use>
+            </svg>
+          </span>
+          <span class="menu-catalog-sidebar__text">Письменные столы</span>
+        </a>
+      </li>
+      <li class="menu-catalog-sidebar__item item-menu-catalog">
+        <a href="" class="menu-catalog-sidebar__link">
+          <span class="menu-catalog-sidebar__icon">
+            <svg class="icon">
+              <use xlink:href="#i-catalog-7"></use>
+            </svg>
+          </span>
+          <span class="menu-catalog-sidebar__text">Буфеты</span>
+        </a>
+      </li>
+      <li class="menu-catalog-sidebar__item item-menu-catalog">
+        <a href="" class="menu-catalog-sidebar__link">
+          <span class="menu-catalog-sidebar__icon">
+            <svg class="icon">
+              <use xlink:href="#i-catalog-8"></use>
+            </svg>
+          </span>
+          <span class="menu-catalog-sidebar__text">Мебель в стиле верди</span>
+        </a>
+      </li>
+      <li class="menu-catalog-sidebar__item item-menu-catalog">
+        <a href="" class="menu-catalog-sidebar__link">
+          <span class="menu-catalog-sidebar__icon">
+            <svg class="icon">
+              <use xlink:href="#i-catalog-9"></use>
+            </svg>
+          </span>
+          <span class="menu-catalog-sidebar__text">Спальные гарнитуры</span>
+        </a>
+      </li>
+      <li class="menu-catalog-sidebar__item item-menu-catalog">
+        <a href="" class="menu-catalog-sidebar__link">
+          <span class="menu-catalog-sidebar__icon">
+            <svg class="icon">
+              <use xlink:href="#i-catalog-10"></use>
+            </svg>
+          </span>
+          <span class="menu-catalog-sidebar__text">Стенки</span>
+        </a>
+      </li>
+      <li class="menu-catalog-sidebar__item item-menu-catalog">
+        <a href="" class="menu-catalog-sidebar__link">
+          <span class="menu-catalog-sidebar__icon">
+            <svg class="icon">
+              <use xlink:href="#i-catalog-11"></use>
+            </svg>
+          </span>
+          <span class="menu-catalog-sidebar__text">Мебель под старину</span>
+        </a>
+      </li>
+      <li class="menu-catalog-sidebar__item item-menu-catalog">
+        <a href="" class="menu-catalog-sidebar__link">
+          <span class="menu-catalog-sidebar__icon">
+            <svg class="icon">
+              <use xlink:href="#i-catalog-12"></use>
+            </svg>
+          </span>
+          <span class="menu-catalog-sidebar__text">Стулья, табуреты</span>
+        </a>
+      </li>
+      <li class="menu-catalog-sidebar__item item-menu-catalog">
+        <a href="" class="menu-catalog-sidebar__link">
+          <span class="menu-catalog-sidebar__icon">
+            <svg class="icon">
+              <use xlink:href="#i-catalog-13"></use>
+            </svg>
+          </span>
+          <span class="menu-catalog-sidebar__text">Столы</span>
+        </a>
+      </li>
+      <li class="menu-catalog-sidebar__item item-menu-catalog">
+        <a href="" class="menu-catalog-sidebar__link">
+          <span class="menu-catalog-sidebar__icon">
+            <svg class="icon">
+              <use xlink:href="#i-catalog-14"></use>
+            </svg>
+          </span>
+          <span class="menu-catalog-sidebar__text">Зеркала</span>
+        </a>
+      </li>
+      <li class="menu-catalog-sidebar__item item-menu-catalog">
+        <a href="" class="menu-catalog-sidebar__link">
+          <span class="menu-catalog-sidebar__icon">
+            <svg class="icon">
+              <use xlink:href="#i-catalog-15"></use>
+            </svg>
+          </span>
+          <span class="menu-catalog-sidebar__text">Подъёмный механизм</span>
+        </a>
+      </li>
+      <li class="menu-catalog-sidebar__item item-menu-catalog">
+        <a href="" class="menu-catalog-sidebar__link">
+          <span class="menu-catalog-sidebar__icon">
+            <svg class="icon">
+              <use xlink:href="#i-catalog-16"></use>
+            </svg>
+          </span>
+          <span class="menu-catalog-sidebar__text">Ортопед. основание</span>
+        </a>
+      </li>
+      <li class="menu-catalog-sidebar__item item-menu-catalog">
+        <a href="" class="menu-catalog-sidebar__link">
+          <span class="menu-catalog-sidebar__icon">
+            <svg class="icon">
+              <use xlink:href="#i-catalog-17"></use>
+            </svg>
+          </span>
+          <span class="menu-catalog-sidebar__text">Резная мебель</span>
+        </a>
+      </li>
+      <li class="menu-catalog-sidebar__item item-menu-catalog">
+        <a href="" class="menu-catalog-sidebar__link">
+          <span class="menu-catalog-sidebar__icon">
+            <svg class="icon">
+              <use xlink:href="#i-catalog-18"></use>
+            </svg>
+          </span>
+          <span class="menu-catalog-sidebar__text">Подкроватный ящик</span>
+        </a>
+      </li>
+      <li class="menu-catalog-sidebar__item item-menu-catalog">
+        <a href="" class="menu-catalog-sidebar__link">
+          <span class="menu-catalog-sidebar__icon">
+            <svg class="icon">
+              <use xlink:href="#i-catalog-19"></use>
+            </svg>
+          </span>
+          <span class="menu-catalog-sidebar__text">Кухни</span>
+        </a>
+      </li>
+      <li class="menu-catalog-sidebar__item item-menu-catalog">
+        <a href="" class="menu-catalog-sidebar__link">
+          <span class="menu-catalog-sidebar__icon">
+            <svg class="icon">
+              <use xlink:href="#i-catalog-20"></use>
+            </svg>
+          </span>
+          <span class="menu-catalog-sidebar__text">Хиты продаж</span>
+        </a>
+      </li>
+    </ul>
   </div>
-</div>
-
-
-<div class="advantages-block">
-  <div class="container advantages-block__container">
-    <div class="advantages-block__item item-advantage">
-      <img src="uploads/advantages/1.svg" alt="" class="item-advantage__icon">
-      <div class="item-advantage__content">
-        <div class="item-advantage__title">Собственное производство</div>
-        <div class="item-advantage__text">На рынке с 2007 года. Низкая стоимость без наценок.</div>
-      </div>
-    </div>
-    <div class="advantages-block__item item-advantage">
-      <img src="uploads/advantages/2.svg" alt="" class="item-advantage__icon">
-      <div class="item-advantage__content">
-        <div class="item-advantage__title">Экологические материалы</div>
-        <div class="item-advantage__text">Только 100% массив сосны и берёзы</div>
-      </div>
-    </div>
-    <div class="advantages-block__item item-advantage">
-      <img src="uploads/advantages/3.svg" alt="" class="item-advantage__icon">
-      <div class="item-advantage__content">
-        <div class="item-advantage__title">Качественное сырье и изготовление</div>
-        <div class="item-advantage__text">Только 100% массив сосны и берёзы</div>
-      </div>
-    </div>
-    <div class="advantages-block__item item-advantage">
-      <img src="uploads/advantages/4.svg" alt="" class="item-advantage__icon">
-      <div class="item-advantage__content">
-        <div class="item-advantage__title">Работаем без предоплат</div>
-        <div class="item-advantage__text">Оплата по факту доставки и сборки мебели</div>
-      </div>
-    </div>
-  </div>
-</div>
-
-
-<div class="factory">
-  <div class="container factory__container">
-    <div class="factory__video-container" style="--aspect-ratio: 1.5084;">
-      <iframe class="factory__video" width="890" height="590" src="https://www.youtube.com/embed/0ZJkvMsaAWU?rel=0"
-        frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
-        allowfullscreen></iframe>
-    </div>
-    <div class="factory__body">
-      <div class="factory__title">Покупайте подлинную мебель фабрики «Дейсус-М»</div>
-      <div class="factory__text">
-        <p> Красивая деревянная мебель обладает особым статусом и стоит вне конкуренции. Она популярна и на сегодняшний
-          момент, спрос на такую продукцию с годами только возрастает.</p>
-        <p>Мебель известных производителей активно подделывают. Современный рынок пестрит многочисленными предложениями,
-          среди которых есть немало фальсифицированной продукции.</p>
-        <p>Чтобы не стать жертвой обмана, заказывайте подлинную мебель на официальном сайте фабрики "Дейсус-М",
-          отмеченную
-          фирменным знаком. </p>
-        <a href="" title="" class="factory__more">Подробнее</a>
-      </div>
+  <div class="sidebar__block sidebar-block">
+    <div class="sidebar-block__title">
+      Доставка
     </div>
 
-
-  </div>
-</div>
-
-<div class="container container--promo-blocks">
-  <div class="promo-blocks">
-    <div class="promo-blocks__item item-promo item-promo--delivery">
-      <header class="item-promo__header">
-        <div class="item-promo__title">Доставка и сборка</div>
-        <div class="item-promo__text">Собственным транспортом фабрики “Дейсус-М”</div>
-      </header>
-      <a href="Подробнее" class="item-promo__more" title="">Подробнее</a>
-    </div>
-    <div class="promo-blocks__item item-promo item-promo--sizes">
-      <header class="item-promo__header">
-        <div class="item-promo__title">Наша продукция по вашим размерам</div>
-      </header>
-      <a href="Подробнее" class="item-promo__more" title="">Подробнее</a>
-    </div>
-    <div class="promo-blocks__item item-promo item-promo--night">
-      <header class="item-promo__header">
-        <div class="item-promo__title">Ночью дешевле</div>
-        <div class="item-promo__text">Скидка 2% с 21:00 до 06:00</div>
-      </header>
-      <a href="Подробнее" class="item-promo__more" title="">Подробнее</a>
-    </div>
-  </div>
-
-</div>
-
-<section class="about-block">
-  <div class="container">
-    <h1 class="about-block__title">
-      Дейсус-М — производитель мебели из массива сосны и берёзы
-    </h1>
-    <div class="about-block__text">
+    <div class="sidebar__delivery delivery-block">
       <p>
-        Компания «Дейсус-М» изготавливает качественную и стильную мебель из натурального массива дерева, которую
-        предлагает приобрести по низким ценам. Доставляем заказы по Москве и Подмосковью. Сотрудничаем с оптовиками.
-        Ассортимент включает классические и современные модели, которые подойдут обстановки уютной квартиры, просторного
-        коттеджа, загородного дома или дачи. В каталоге Вы найдете добротную деревянную мебель: кровати, шкафы, комоды,
-        тумбы, столы, стулья и др. Каждый товар доступен в типовом варианте или по заданным покупателем параметрам
-        (размер, цвет, комплектация, декор).
+        <b>По Москве</b> (внутри МКАД и снаружи МКАД — не более 10км):
+        <br />
       </p>
       <p>
-        Предоставляем сертификаты качества и гарантию производителя. Предлагаемая продукция изготовлена из природного
-        сырья — древесины сосны. Выбор этой породы обоснован ее свойствами: прочность, износостойкость, экологичность,
-        простой уход, сравнительно низкие расценки. Конечная стоимость изделия зависит от выбранной древесины,
-        габаритов,
-        расцветки и дополнительных элементов. Для постоянных клиентов предусмотрены бонусы, которые делают покупку еще
-        выгоднее и экономит бюджет. Нашли такой же товар дешевле в другом интернет-магазине? Сообщите нам об этом, а мы
-        при оформлении заявки сделаем на него скидку 2% от наименьшей найденной цены.
+        До подъезда от 1000₽ до 1500₽. <br />
+        Ближайшее подмосковье — 1300₽ <br />
+        Подмосковье — 1500₽ + 25 ₽/км
+      </p>
+      <p>
+        <b>По России:</b> <br />
+        1. ТК Деловые Линии <br />
+        2. ТК ПЭК
       </p>
     </div>
   </div>
+</aside>
+    <main class="main-content">
 
-</section>
+      <div class="catalog-slider">
+	<div class="swiper-container catalog-slider__container">
+		<div class="swiper-wrapper catalog-slider__wrapper">
+			<div class="swiper-slide catalog-slider__slide slide-catalog-slider">
+				<div class="slide-catalog-slider__inner">
+					<img src="uploads/catalog-slider/1.jpg" title="" alt="" class="slide-catalog-slider__image">
+				</div>
+			</div>
+			<div class="swiper-slide catalog-slider__slide slide-catalog-slider">
+				<div class="slide-catalog-slider__inner">
+					<img src="uploads/catalog-slider/1.jpg" title="" alt="" class="slide-catalog-slider__image">
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+      <ul class="breadcrumbs" itemscope itemtype="http://schema.org/BreadcrumbList">
+    <li class="breadcrumbs__item" itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem">
+        <a class="breadcrumbs__link" itemprop="item" href="https://example.com/dresses">
+            <span class="breadcrumbs__name" itemprop="name">Кровати и матрасы </span></a>
+        <meta itemprop="position" content="1" />
+    </li>
+    <li class="breadcrumbs__item" itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem">
+        <a class="breadcrumbs__link" itemprop="item" href="https://example.com/dresses">
+            <span class="breadcrumbs__name" itemprop="name">Двуспальные матрасы</span></a>
+        <meta itemprop="position" content="2" />
+    </li>
+</ul>
 
+      <h1 class="page__title">Двуспальные кровати</h1>
+      <div class="catalog-list__sorting sorting-block">
+        <div class="sorting-block__title">
+          Сортировать по:
+        </div>
+        <div class="sorting-block__inner">
+          <button class="sorting-block__btn button-sorting button-sorting--active">
+            цене
+          </button>
+          <button class="sorting-block__btn button-sorting button-sorting--asc">
+            названию
+          </button>
+          <button class="sorting-block__btn button-sorting button-sorting--desc">
+            новизне
+          </button>
+        </div>
+        <div class="sorting-block__count">
+          Товаров: 105
+        </div>
+      </div>
+      <div class="catalog-list">
 
+        <article class="catalog-list__item product-teaser">
+          <div class="product-teaser__inner">
+            <a href="" title="Кровать Велина-М" class="product-teaser__header">
+              <div class="product-teaser__sticker sticker sticker--sale">
+                -10%
+              </div>
+              <div class="product-teaser__image">
+                <img src="../../uploads/catalog-list/1.png" alt="" />
+              </div>
+              <h3 class="product-teaser__title">Кровать Велина-М</h3>
+            </a>
+            <footer class="product-teaser__footer">
+              <div class="product-teaser__prices">
+                <div class="product-teaser__price">9330 ₽</div>
+                <div class="product-teaser__price product-teaser__price--old">
+                  10330 ₽
+                </div>
+              </div>
+              <button type="button" class="product-teaser__add-to-cart">
+                В корзину
+              </button>
+            </footer>
+          </div>
+        </article>
+
+        <article class="catalog-list__item product-teaser">
+          <div class="product-teaser__inner">
+            <a href="" title="Кровать Велина-М" class="product-teaser__header">
+              <div class="product-teaser__sticker sticker sticker--sale">
+                -10%
+              </div>
+              <div class="product-teaser__image">
+                <img src="../../uploads/catalog-list/1.png" alt="" />
+              </div>
+              <h3 class="product-teaser__title">Кровать Велина-М</h3>
+            </a>
+            <footer class="product-teaser__footer">
+              <div class="product-teaser__prices">
+                <div class="product-teaser__price">9330 ₽</div>
+                <div class="product-teaser__price product-teaser__price--old">
+                  10330 ₽
+                </div>
+              </div>
+              <button type="button" class="product-teaser__add-to-cart">
+                В корзину
+              </button>
+            </footer>
+          </div>
+        </article>
+        <article class="catalog-list__item product-teaser">
+          <div class="product-teaser__inner">
+            <a href="" title="Кровать Велина-М" class="product-teaser__header">
+              <div class="product-teaser__sticker sticker sticker--sale">
+                -10%
+              </div>
+              <div class="product-teaser__image">
+                <img src="../../uploads/catalog-list/1.png" alt="" />
+              </div>
+              <h3 class="product-teaser__title">Кровать Велина-М</h3>
+            </a>
+            <footer class="product-teaser__footer">
+              <div class="product-teaser__prices">
+                <div class="product-teaser__price">9330 ₽</div>
+                <div class="product-teaser__price product-teaser__price--old">
+                  10330 ₽
+                </div>
+              </div>
+              <button type="button" class="product-teaser__add-to-cart">
+                В корзину
+              </button>
+            </footer>
+          </div>
+        </article>
+        <article class="catalog-list__item product-teaser">
+          <div class="product-teaser__inner">
+            <a href="" title="Кровать Велина-М" class="product-teaser__header">
+              <div class="product-teaser__sticker sticker sticker--sale">
+                -10%
+              </div>
+              <div class="product-teaser__image">
+                <img src="../../uploads/catalog-list/1.png" alt="" />
+              </div>
+              <h3 class="product-teaser__title">Кровать Велина-М</h3>
+            </a>
+            <footer class="product-teaser__footer">
+              <div class="product-teaser__prices">
+                <div class="product-teaser__price">9330 ₽</div>
+                <div class="product-teaser__price product-teaser__price--old">
+                  10330 ₽
+                </div>
+              </div>
+              <button type="button" class="product-teaser__add-to-cart">
+                В корзину
+              </button>
+            </footer>
+          </div>
+        </article>
+        <article class="catalog-list__item product-teaser">
+          <div class="product-teaser__inner">
+            <a href="" title="Кровать Велина-М" class="product-teaser__header">
+              <div class="product-teaser__sticker sticker sticker--sale">
+                -10%
+              </div>
+              <div class="product-teaser__image">
+                <img src="../../uploads/catalog-list/1.png" alt="" />
+              </div>
+              <h3 class="product-teaser__title">Кровать Велина-М</h3>
+            </a>
+            <footer class="product-teaser__footer">
+              <div class="product-teaser__prices">
+                <div class="product-teaser__price">9330 ₽</div>
+                <div class="product-teaser__price product-teaser__price--old">
+                  10330 ₽
+                </div>
+              </div>
+              <button type="button" class="product-teaser__add-to-cart">
+                В корзину
+              </button>
+            </footer>
+          </div>
+        </article>
+        <article class="catalog-list__item product-teaser">
+          <div class="product-teaser__inner">
+            <a href="" title="Кровать Велина-М" class="product-teaser__header">
+              <div class="product-teaser__sticker sticker sticker--sale">
+                -10%
+              </div>
+              <div class="product-teaser__image">
+                <img src="../../uploads/catalog-list/1.png" alt="" />
+              </div>
+              <h3 class="product-teaser__title">Кровать Велина-М</h3>
+            </a>
+            <footer class="product-teaser__footer">
+              <div class="product-teaser__prices">
+                <div class="product-teaser__price">9330 ₽</div>
+                <div class="product-teaser__price product-teaser__price--old">
+                  10330 ₽
+                </div>
+              </div>
+              <button type="button" class="product-teaser__add-to-cart">
+                В корзину
+              </button>
+            </footer>
+          </div>
+        </article>
+      </div>
+
+      <div class="pagination">
+  <a href="" class="pagination__item">&lt;&lt; <span>Первая</span></a>
+  <a href="" class="pagination__item">&lt; <span>Предыдущая</span></a>
+  <span class="pagination__item pagination__item--current">1</span>
+  <a href="" class="pagination__item">2</a>
+  <a href="" class="pagination__item">3</a>
+  <a href="" class="pagination__item"><span>Следующая</span> &gt;</a>
+  <a href="" class="pagination__item"><span>Последняя</span> &gt;&gt;</a>
+</div>
+
+      <div class="catalog__description catalog-description">
+        <div class="catalog-description__title">
+          Двуспальные кровати
+        </div>
+        <p>
+          Далеко-далеко за словесными горами в стране гласных и согласных живут рыбные тексты. Необходимыми снова, раз
+          текст власти мир силуэт сбить свое они. Это оксмокс последний которое заглавных. Раз обеспечивает коварных но
+          великий!
+
+        </p>
+        <p>
+          Далеко-далеко, за словесными горами в стране гласных и согласных живут рыбные тексты. Встретил путь заглавных
+          букв lorem правилами, по всей подпоясал большой они ipsum рекламных первую диких заголовок! Она заглавных
+          пунктуация они залетают.
+        </p>
+      </div>
+    </main>
+  </div>
+</div>
 
 <!-- на главной нет -->
 <div class="page__bottom">

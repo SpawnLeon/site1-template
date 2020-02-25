@@ -3,6 +3,7 @@
   &__title {
   }
 }
+
 .rating {
   display: flex;
   align-items: center;
@@ -11,6 +12,7 @@
   &__inner {
     display: flex;
   }
+
   // .rating__item
   &__item {
     cursor: pointer;
@@ -19,6 +21,7 @@
     svg {
       fill: #fff;
     }
+
     // .rating__item--active
     &:hover,
     &--active {
@@ -27,11 +30,13 @@
       }
     }
   }
+
   // .rating__icon
   &__icon {
     width: 25px;
     height: 25px;
   }
+
   // .rating__text
   &__text {
     font-size: 14px;
@@ -41,6 +46,7 @@
 }
 
 .information-detail-card {
+  margin-left: 20px;
   // .information-detail-card__prices
   &__prices {
   }
@@ -49,6 +55,7 @@
   &__options {
   }
 }
+
 .card-prices {
   background-color: #ffc800;
   padding: 10px 20px;
@@ -68,6 +75,7 @@
     flex: 1 1 0;
   }
 }
+
 .card-price {
   font-weight: bold;
   font-size: 38px;
@@ -91,11 +99,13 @@
     display: flex;
     flex-wrap: wrap;
   }
+
   // .catalog-detail__image
   &__image {
     flex: 1 1 auto;
     max-width: 674px;
   }
+
   // .catalog-detail__info
   &__info {
   }
@@ -105,9 +115,11 @@
   // .catalog-detail-nav-slider__container
   &__container {
   }
+
   // .catalog-detail-nav-slider__wrapper
   &__wrapper {
   }
+
   // .catalog-detail-nav-slider__slide
   &__slide {
     border: 2px solid #d1d1d1;
@@ -127,9 +139,11 @@
   // .information-detail-card__header
   &__header {
   }
+
   // .information-detail-card__title
   &__title {
   }
+
   // .information-detail-card__rating
   &__rating {
   }
@@ -152,6 +166,7 @@
       background-color: #ffc800;
       font-size: 14px;
     }
+
     &--header {
       div {
         flex-basis: calc(100% / 2 - 27px);
@@ -159,6 +174,7 @@
       }
     }
   }
+
   // .card-sizes-table__col
   &__col {
     flex: 1 1 0;
@@ -177,11 +193,13 @@
 
       color: #0d0d0d;
     }
+
     // .card-sizes-table__col--custom-size
     &--custom-size {
       flex-basis: 100%;
     }
   }
+
   // .card-sizes-table__btn
   &__btn {
     text-decoration-line: underline;
@@ -227,6 +245,7 @@
     display: flex;
     align-items: center;
   }
+
   // .collections-block__title
   &__title {
     font-weight: 600;
@@ -234,6 +253,7 @@
     letter-spacing: -0.02em;
     text-transform: uppercase;
   }
+
   // .collections-block__more
   &__more {
     font-size: 14px;
@@ -243,17 +263,20 @@
     position: relative;
     top: 3px;
   }
+
   // .collections-block__inner
   &__inner {
     margin-top: 30px;
   }
 }
+
 .collections-slider {
   // .collections-slider__nav
   &__nav {
     margin-left: auto;
     display: flex;
   }
+
   // .collections-slider__button
   &__button {
     background-color: #ffffff;
@@ -283,6 +306,7 @@
         border-right: none;
       }
     }
+
     // .collections-slider__button--next
     &--next {
       &::before {
@@ -292,16 +316,20 @@
       }
     }
   }
+
   // .collections-slider__container
   &__container {
   }
+
   // .collections-slider__wrapper
   &__wrapper {
   }
+
   // .collections-slider__slide
   &__slide {
   }
 }
+
 /*------------------------------------*\
     #COLLECTIONS BLOCK END 
 \*------------------------------------*/
@@ -316,14 +344,17 @@
     margin-top: 35px;
   }
 }
+
 .card-promo-blocks {
   display: flex;
   margin-left: -5px;
   margin-right: -5px;
   margin-bottom: -10px;
 }
+
 .card-promo-blocks__item {
 }
+
 .card-promo-block {
   margin: 0 5px 10px;
   flex: 0 0 calc(100% / 4 - 10px);
@@ -364,6 +395,7 @@
     display: inline-block;
     margin-top: 17px;
   }
+
   // .card-promo-block__title
   &__title {
     font-weight: 500;
@@ -386,6 +418,7 @@
     margin-top: 35px;
   }
 }
+
 .consultation-block {
   display: flex;
   align-items: center;
@@ -403,6 +436,7 @@
     font-size: 24px;
     margin: 5px 25px;
   }
+
   // .consultation-block__btn
   &__btn {
     font-size: 14px;
@@ -427,12 +461,14 @@
     margin-top: 35px;
   }
 }
+
 .card-tabs {
   // .card-tabs__header
   &__header {
     display: flex;
     margin: 0 -5px;
   }
+
   // .card-tabs__tab
   &__tab {
     margin: 0 5px;
@@ -453,33 +489,40 @@
     background-color: $primaryColor;
     color: #fff;
   }
+
   // .card-tabs__contents
   &__contents {
   }
+
   // .card-tabs__content
   &__content {
     padding-top: 25px;
     display: none;
   }
+
   [data-content-active='true'] {
     display: block;
   }
+
   // .card-tabs__title
   &__title {
     font-weight: 600;
     font-size: 24px;
     letter-spacing: -0.02em;
   }
+
   // .card-tabs__inner
   &__inner {
     font-size: 14px;
     margin-top: 25px;
   }
+
   // .card-tabs__reviews
   &__reviews {
     display: flex;
   }
 }
+
 /*------------------------------------*\
     #TABS BLOCK END 
 \*------------------------------------*/
@@ -501,11 +544,13 @@
     flex: 0 0 calc(100% / 2 - 20px);
   }
 }
+
 .card-equipments {
   // .card-equipments__item
   &__item {
   }
 }
+
 .equipment-card-block {
   margin-bottom: 15px;
 
@@ -514,20 +559,23 @@
     font-weight: bold;
     font-size: 16px;
   }
+
   // .equipment-card-block__in ner
   &__inner {
     display: flex;
     margin: 10px -5px 0;
   }
+
   // .equipment-card-block__item
   &__item {
   }
 
   // .equipment-card-block--mattress
   &--mattress {
-    cursor: pointer; 
+    cursor: pointer;
   }
 }
+
 .equipment-card {
   background: #fff;
   opacity: 0.5;
@@ -567,6 +615,7 @@
     transform: scale(0.8);
     margin-top: 12px;
   }
+
   // .equipment-card__title
   &__title {
     font-size: 9px;
@@ -589,6 +638,7 @@
       transform: scale(1);
       margin-top: 0;
     }
+
     // .equipment-card__title
     .equipment-card__title {
       font-size: 12px;
@@ -610,6 +660,7 @@
   &__image {
     flex: 0 0 auto;
   }
+
   // .equipment-mattress-card__title
   &__title {
     margin-left: 15px;
@@ -620,6 +671,7 @@
 
     color: #333333;
   }
+
   // .equipment-mattress-card__help
   &__help {
     margin-left: auto;
@@ -639,10 +691,12 @@
   &__actions {
   }
 }
+
 .detail-card-actions {
   display: flex;
   margin: 0 -10px;
 }
+
 .action-detail-card {
   display: flex;
   align-items: center;
@@ -653,6 +707,7 @@
   // .action-detail-card--buy-1-click
   &--buy-1-click {
   }
+
   // .action-detail-card--buy
   &--buy {
   }
@@ -662,6 +717,115 @@
     margin-right: 5px;
   }
 }
+
 /*------------------------------------*\
     #ACTIONS BLOCK START 
+\*------------------------------------*/
+
+/*------------------------------------*\
+    #CARD SELECT MATERIALS START 
+\*------------------------------------*/
+
+.card-select-materials {
+  margin-top: 20px;
+}
+.select-materials {
+  // .select-materials__item
+  &__item {
+    margin-bottom: 10px;
+  }
+}
+.select-material {
+  position: relative;
+
+  // .select-material__header
+  &__header {
+    display: flex;
+    margin-bottom: 10px;
+  }
+  // .select-material__title
+  &__title {
+  }
+  // .select-material__more
+  &__more {
+    text-decoration-line: underline;
+    color: #c02d33;
+    margin-left: auto;
+  }
+  // .select-material__inner
+  &__inner {
+  }
+  // .select-material__field
+  &__field {
+  }
+  // .select-material__drop
+  &__drop {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 100%;
+    border: 1px solid #d1d1d1;
+    border-radius: 1px;
+    border-top: none;
+    z-index: 1;
+    display: none;
+  }
+}
+.field-select-material {
+  border: 1px solid #d1d1d1;
+  border-radius: 1px;
+  display: flex;
+  align-items: center;
+
+  // .field-select-material__image
+  &__image {
+    width: 36px;
+    height: 36px;
+    flex: 0 0 36px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  // .field-select-material__title
+  &__title {
+    padding: 4px 15px;
+    max-height: 20px;
+    overflow: hidden;
+    line-height: 1;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    max-width: calc(100% - 45px);
+  }
+}
+.drop-select-material {
+  // .drop-select-material__item
+  &__item {
+    display: flex;
+    align-items: center;
+  }
+  // .drop-select-material__image
+  &__image {
+    width: 36px;
+    height: 36px;
+    flex: 0 0 36px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  // .drop-select-material__title
+  &__title {
+    padding: 4px 15px;
+    max-height: 20px;
+    overflow: hidden;
+    line-height: 1;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    max-width: calc(100% - 45px);
+  }
+}
+
+/*------------------------------------*\
+    #CARD SELECT MATERIALS START 
 \*------------------------------------*/
