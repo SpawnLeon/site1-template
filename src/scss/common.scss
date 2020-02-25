@@ -98,7 +98,7 @@ p {
   }
 
   @media screen and (max-width: 1024px) {
-    max-width: 768px;
+    max-width: 848px;
     padding: 0 40px;
   }
 
@@ -717,9 +717,14 @@ p {
 .main-content {
   flex: 1 1 auto;
   padding-bottom: 50px;
+  width: 100%;
 }
 .sidebar + .main-content {
-  max-width: calc(100% - 398px);
+  max-width: calc(100% - 370px);
+
+  @media screen and (max-width: 1024px) {
+    max-width: 768px;
+  }
 }
 /*------------------------------------*\
     #MAIN END
@@ -740,10 +745,20 @@ p {
   z-index: 5;
   font-size: 16px;
 
+  @media screen and (max-width: 1440px) {
+    margin-right: 15px;
+  }
+
   @media screen and (max-width: 1024px) {
     position: absolute;
     top: 70px;
+    left: 0;
+    transition: $transition;
+    transform: translateX(-100%);
+  }
 
+  &--open {
+    transform: translateX(0);
   }
 
   &__menu {
@@ -883,11 +898,21 @@ p {
   flex-wrap: wrap;
   margin: 0 -12px 0;
 
+  @media screen and (max-width: 1024px) {
+    margin: 0 -4px 0;
+  }
+
   &__item {
     width: calc(100% / 4 - 24px);
     margin: 0 12px 24px;
+
+    @media screen and (max-width: 1024px) {
+      width: calc(100% / 2 - 8px);
+      margin: 0 4px 10px;
+    }
   }
 }
+
 .product-teaser {
   border: 1px solid #d1d1d1;
   transition: $transition;
@@ -921,6 +946,8 @@ p {
 
   &__image {
     margin-top: 15px;
+    display: flex;
+    justify-content: center;
   }
 
   &__title {
@@ -1045,6 +1072,10 @@ p {
   display: flex;
   margin: 30px 0;
   padding: 0;
+
+  @media screen and (max-width: 1024px) {
+    margin: 15px;
+  }
 
   &__item {
     color: #c02d33;

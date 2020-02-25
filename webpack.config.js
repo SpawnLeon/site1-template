@@ -1,5 +1,6 @@
 const path = require('path');
 const fs = require('fs');
+const webpack = require('webpack');
 
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const { CleanWebpackPlugin } = require('clean-webpack-plugin');
@@ -16,7 +17,7 @@ const isProd = !isDev;
 
 function generateHtmlPlugins(templateDir) {
   let templateFiles = fs.readdirSync(path.resolve(__dirname, templateDir));
-  //templateFiles = ['index.html'];
+  templateFiles = ['catalog.html'];
   return templateFiles.map((item) => {
     const parts = item.split('.');
     const name = parts[0];
@@ -57,15 +58,14 @@ const config = {
   mode: 'development',
   optimization: optimization(),
   devServer: {
-    contentBase: './dist',
     hot: true,
     port: 8080,
   },
   module: {
     rules: [
       {
-        test: /\.(sass|scss)$/,
-        include: path.resolve(__dirname, 'src/scss'),
+        test: /\.(sa|sc)ss$/,
+        //include: path.resolve(__dirname, 'src/scss'),
         use: [
           {
             loader: MiniCssExtractPlugin.loader,
@@ -107,6 +107,45 @@ const config = {
           },
         ],
       },
+
+      {
+        test: /\.css$/,
+        use: [
+          {
+            loader: MiniCssExtractPlugin.loader,
+            options: {
+              hmr: isDev,
+            },
+          },
+          {
+            loader: 'css-loader',
+            options: {
+              sourceMap: true,
+              url: false,
+            },
+          },
+          {
+            loader: 'postcss-loader',
+            options: {
+              ident: 'postcss',
+              sourceMap: true,
+              plugins: () => [
+                require('cssnano')({
+                  preset: [
+                    'default',
+                    {
+                      discardComments: {
+                        removeAll: true,
+                      },
+                    },
+                  ],
+                }),
+              ],
+            },
+          },
+        ],
+      },
+
       {
         test: /\.html$/,
         include: path.resolve(__dirname, 'src/html/includes'),
@@ -136,6 +175,11 @@ const config = {
         to: './uploads',
       },
     ]),
+    new webpack.ProvidePlugin({
+      $: 'jquery',
+      jQuery: 'jquery',
+      'window.jQuery': 'jquery',
+    }),
   ].concat(htmlPlugins),
 };
 

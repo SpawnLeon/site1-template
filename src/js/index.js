@@ -1,12 +1,15 @@
 'use strict';
+
+import '../../node_modules/@fancyapps/fancybox/dist/jquery.fancybox.css';
+
 import Vue from 'vue';
 window.Vue = Vue;
 
 import '../scss/styles.scss';
 
-import $ from 'jquery';
-window.jQuery = $;
-require('@fancyapps/fancybox');
+import 'jquery';
+import '@fancyapps/fancybox';
+
 import Swiper from 'swiper';
 
 const responseMenu = (menuSelector) => {
@@ -185,6 +188,16 @@ document.addEventListener('DOMContentLoaded', () => {
     .addEventListener('click', function() {
       event.preventDefault();
       this.classList.toggle('catalog-menu-btn--open');
+      document.querySelector('.sidebar').classList.toggle('sidebar--open');
+    });
+
+  document
+    .querySelector('.js__mobile-search-btn')
+    .addEventListener('click', function() {
+      event.preventDefault();
+      document
+        .querySelector('.search-block')
+        .classList.toggle('search-block--open');
     });
 
   responseMenu('.main-menu');
