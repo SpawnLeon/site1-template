@@ -207,6 +207,61 @@ p {
   }
 }
 
+.main-menu .hidden-menu-items {
+  position: relative;
+  display: flex;
+  align-items: center;
+  margin-left: 5px;
+
+  .hidden-menu {
+    opacity: 0;
+    visibility: hidden;
+    position: absolute;
+    padding: 15px 20px;
+    background-color: #fff;
+    z-index: 5;
+    top: 31px;
+    transform: translateX(-50%);
+    transition: opacity 0.3s;
+    visibility: hidden;
+    display: block;
+    z-index: -100;
+
+    &:hover {
+      z-index: 10;
+      opacity: 1;
+      visibility: visible;
+    }
+  }
+
+  &__btn {
+    width: 20px;
+    height: 16px;
+    position: relative;
+    top: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    & > span {
+      width: 4px;
+      height: 4px;
+      background-color: #000;
+      display: inline;
+      border-radius: 50%;
+    }
+
+    &--open + .hidden-menu,
+    &:hover + .hidden-menu,
+    &:focus + .hidden-menu,
+    &:active + .hidden-menu {
+      z-index: 10;
+      opacity: 1;
+      visibility: visible;
+    }
+  }
+}
+
 /*------------------------------------*\
     #SWIPER START
 \*------------------------------------*/
@@ -752,6 +807,7 @@ p {
   z-index: 5;
   font-size: 16px;
   margin-left: -60px;
+  margin-top: -84px;
 
   @media screen and (max-width: 1760px) {
     margin-right: 30px;
@@ -765,12 +821,13 @@ p {
 
   @media screen and (max-width: 1024px) {
     position: absolute;
-    top: 70px;
+    top: 71px;
     left: 0;
     transition: $transition;
     transform: translateX(-100%);
     margin-right: 0;
     margin-left: 0;
+    margin-top: 0;
   }
 
   &--open {
@@ -1235,7 +1292,6 @@ p {
   }
   // .sorting-block__btn
   &__btn {
-   
   }
   // .sorting-block__count
   &__count {
@@ -1243,7 +1299,6 @@ p {
     color: #c02d33;
     margin-left: auto;
     font-weight: bold;
- 
   }
 }
 .button-sorting {
@@ -1253,7 +1308,7 @@ p {
   margin-right: 5px;
   position: relative;
   display: block;
- 
+
   &:not(:last-child) {
     @media screen and (max-width: 767px) {
       margin-bottom: 8px;
