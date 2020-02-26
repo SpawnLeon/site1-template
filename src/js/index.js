@@ -137,12 +137,26 @@ document.addEventListener('DOMContentLoaded', () => {
 
   const collectionsSlider = new Swiper('.collections-slider__container', {
     loop: true,
-    slidesPerView: 4,
+    slidesPerView: 1,
     spaceBetween: 24,
     // Navigation arrows
     navigation: {
       prevEl: '.collections-slider__button--prev',
       nextEl: '.collections-slider__button--next',
+    },
+    breakpoints: {
+      // when window width is >= 320px
+      600: {
+        slidesPerView: 2,
+      },
+      // when window width is >= 480px
+      1024: {
+        slidesPerView: 3,
+      },
+      // when window width is >= 640px
+      1760: {
+        slidesPerView: 4,
+      },
     },
   });
 
@@ -206,4 +220,12 @@ document.addEventListener('DOMContentLoaded', () => {
   cachingSvgSprite();
 
   createTabs("[data-is-tab='true']");
+
+  // TODO: remove this on production
+  if (
+    'ontouchstart' in document.documentElement &&
+    !document.body.classList.contains('bx-touch')
+  ) {
+    document.body.classList.add('bx-touch');
+  }
 });

@@ -1,5 +1,5 @@
-<% var data = { title: "Кровать Амина-М", }; %> <%=
-_.template(require('./../includes/header.html').default)(data) %>
+<% var data = { title: "Кровать Амина-М", 'classes': 'catalog'}; %>
+<%=_.template(require('./../includes/header.html').default)(data) %>
 <div class="container">
   <div class="main-content-wrapper">
     <%= _.template(require('./../includes/sidebar.html').default)() %>
@@ -280,7 +280,7 @@ _.template(require('./../includes/header.html').default)(data) %>
 
                   <div class="select-materials__item select-material">
                     <div class="select-material__header">
-                      <div class="select-material__title">Цвет:</div>                   
+                      <div class="select-material__title">Цвет:</div>
                     </div>
                     <div class="select-material__inner">
 
