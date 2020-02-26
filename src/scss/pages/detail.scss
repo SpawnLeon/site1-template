@@ -398,19 +398,19 @@
 
   &--factory {
     border-color: #ffc800;
-    background-image: url(../../img/i-card-promo-blocks-1.png);
+    background-image: url(img/i-card-promo-blocks-1.png);
   }
 
   &--standard {
-    background-image: url(../../img/i-card-promo-blocks-2.png);
+    background-image: url(img/i-card-promo-blocks-2.png);
   }
 
   &--video {
-    background-image: url(../../img/i-card-promo-blocks-3.png);
+    background-image: url(img/i-card-promo-blocks-3.png);
   }
 
   &--instruction {
-    background-image: url(../../img/i-card-promo-blocks-4.png);
+    background-image: url(img/i-card-promo-blocks-4.png);
   }
 
   // .card-promo-block__text
@@ -478,7 +478,7 @@
   align-items: center;
   justify-content: center;
   background-color: #f1f1f1;
-  background-image: url(../../img/bg-consultation.svg);
+  background-image: url(img/bg-consultation.svg);
   background-repeat: no-repeat;
   background-position: -15px center;
   padding: 24px 0;
@@ -531,7 +531,7 @@
   &__header {
     display: flex;
     margin: 0 -5px;
-    overflow-x: scroll;
+    overflow-x: auto;
   }
 
   // .card-tabs__tab

@@ -17,7 +17,9 @@ const isProd = !isDev;
 
 function generateHtmlPlugins(templateDir) {
   let templateFiles = fs.readdirSync(path.resolve(__dirname, templateDir));
+  //if (isDev) {
   templateFiles = ['detail.html'];
+  //}
   return templateFiles.map((item) => {
     const parts = item.split('.');
     const name = parts[0];
@@ -64,6 +66,34 @@ const config = {
   module: {
     rules: [
       {
+        test: /\.css$/,
+        //include: path.resolve(__dirname, 'src/scss'),
+        use: [
+          {
+            loader: MiniCssExtractPlugin.loader,
+            options: {
+              hmr: isDev,
+            },
+          },
+          {
+            loader: 'css-loader',
+            options: {
+              sourceMap: true,
+              url: false,
+            },
+          },
+          {
+            loader: 'postcss-loader',
+            options: {
+              config: {
+                path: `./postcss.config.js`,
+              },
+            },
+          },
+        ],
+      },
+
+      {
         test: /\.(sa|sc)ss$/,
         //include: path.resolve(__dirname, 'src/scss'),
         use: [
@@ -83,64 +113,15 @@ const config = {
           {
             loader: 'postcss-loader',
             options: {
-              ident: 'postcss',
-              sourceMap: true,
-              plugins: () => [
-                require('cssnano')({
-                  preset: [
-                    'default',
-                    {
-                      discardComments: {
-                        removeAll: true,
-                      },
-                    },
-                  ],
-                }),
-              ],
+              config: {
+                path: `./postcss.config.js`,
+              },
             },
           },
           {
             loader: 'sass-loader',
             options: {
               sourceMap: true,
-            },
-          },
-        ],
-      },
-
-      {
-        test: /\.css$/,
-        use: [
-          {
-            loader: MiniCssExtractPlugin.loader,
-            options: {
-              hmr: isDev,
-            },
-          },
-          {
-            loader: 'css-loader',
-            options: {
-              sourceMap: true,
-              url: false,
-            },
-          },
-          {
-            loader: 'postcss-loader',
-            options: {
-              ident: 'postcss',
-              sourceMap: true,
-              plugins: () => [
-                require('cssnano')({
-                  preset: [
-                    'default',
-                    {
-                      discardComments: {
-                        removeAll: true,
-                      },
-                    },
-                  ],
-                }),
-              ],
             },
           },
         ],
