@@ -1,0 +1,694 @@
+
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+  <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,500,600,700,900&display=swap&subset=cyrillic"
+    rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css?family=Cormorant+SC:700&display=swap&subset=cyrillic" rel="stylesheet" />
+  <link rel="shortcut icon" href="favicon/favicon.ico" />
+
+  <title>Каталог</title>
+<link href="./1.template_styles.css" rel="stylesheet"><link href="./template_styles.css" rel="stylesheet"></head>
+
+<body class="">
+
+  <div class="page" id="app">
+    <header class="page__header header">
+      <div class="header__row header__row--top">
+        <div class="container container-header-top">
+          <div class="header__mobile-block mobile-block-header mobile-block-header--menu-search">
+            <button type="button" aria-label="Меню каталога"
+              class="mobile-block-header__menu catalog-menu-btn btn--clear js__catalog-menu-btn">
+              <span></span>
+            </button>
+
+            <button type="button" aria-label="Форма поиска"
+              class="mobile-block-header__search mobile-search-btn btn--clear mobile-search-btn js__mobile-search-btn">
+              <svg class="mobile-search-btn__icon" width="26" height="26">
+                <use xlink:href="#i-mobile-search-btn"></use>
+              </svg>
+            </button>
+          </div>
+
+          <a href="/" class="header__logo logo" title="Дейсус-М. Фабрика производитель">
+            <div class="logo__image">
+              <img width="86" height="155" src="img/logo.png" alt="Дейсус-М. Фабрика производитель" />
+            </div>
+            <div class="logo__text">
+              <div class="logo__brand">Дейсус-М</div>
+              <div class="logo__promo">Фабрика производитель</div>
+            </div>
+          </a>
+          <div class="header__mobile-block mobile-block-header mobile-block-header--callback-cart">
+            <button type="button" class="mobile-block-header__callback callback-mobile-header-btn btn--clear">
+              <svg class="callback-mobile-header__icon" width="26" height="26">
+                <use xlink:href="#i-callback-mobile-header-btn">
+              </svg>
+            </button>
+            <a href="" class="mobile-block-header__cart cart-mobile-header btn--clear">
+              <svg class="cart-mobile-header__icon" width="30" height="26">
+                <use xlink:href="#i-cart-header">
+              </svg>
+            </a>
+          </div>
+
+
+          <nav class="header__nav header__nav--main-menu">
+            <ul class="header__menu main-menu">
+              <li class="main-menu__item">
+                <a href="buyers.html" class="main-menu__link">Покупателям</a>
+              </li>
+              <li class="main-menu__item main-menu__item--active">
+                <a href="delivery.html" class="main-menu__link main-menu__link--active">Доставка и оплата</a>
+              </li>
+              <li class="main-menu__item">
+                <a href="certificates.html" class="main-menu__link">Сертификаты</a>
+              </li>
+              <li class="main-menu__item">
+                <a href="materials.html" class="main-menu__link">Материалы</a>
+              </li>
+              <li class="main-menu__item">
+                <a href="reviews.html" class="main-menu__link">Отзывы</a>
+              </li>
+              <li class="main-menu__item">
+                <a href="contacts.html" class="main-menu__link">Контакты</a>
+              </li>
+              <li class="main-menu__item">
+                <a href="" class="main-menu__link">Фотокаталог</a>
+              </li>
+            </ul>
+          </nav>
+          <div class="header__contacts">
+            <div class="contacts-block contacts-block--1">
+              <div class="contacts-block__area">
+                <svg width="16" height="19" fill='#0D0D0D'>
+                  <use xlink:href="#i-address"></use>
+                </svg>
+                Москва и московская область
+              </div>
+              <div class="contacts-block__time header-time">
+                Ежедневно
+                <span class="header-time__bold">с 8:00 до 21:00</span>
+              </div>
+              <a href="tel:+74993481164" class="contacts-block__phone">
+                +7 (499)348-11-64
+              </a>
+            </div>
+            <div class="contacts-block contacts-block--2">
+              <button type="button" class="contacts-block__callback btn--clear callback-btn">
+                Заказать звонок
+              </button>
+              <div class="contacts-block__phone-item">
+                <a href="viber://add?number=79051424422" class="contacts-block__icon contacts-block__icon--viber"></a>
+                <a href="whatsapp://send/?phone=+79051424422" class="contacts-block__icon contacts-block__icon--wa"></a>
+                <a href="tel:+79051424422" class="contacts-block__phone">
+                  +7 (905)142-44-22
+                </a>
+              </div>
+
+              <div class="contacts-block__phone-item">
+                <a href="viber://add?number=79607358151" class="contacts-block__icon contacts-block__icon--viber"></a>
+                <a href="whatsapp://send/?phone=+79607358151" class="contacts-block__icon contacts-block__icon--wa"></a>
+                <a href="tel:+79607358151" class="contacts-block__phone">
+                  +7 (960)735-81-51
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="header__row header__row--catalog-menu">
+        <div class="container">
+          <ul class="header__catalog-menu catalog-menu">
+            <li class="catalog-menu__item">
+              <a href="catalog.html" class="catalog-menu__link">Кровати</a>
+            </li>
+            <li class="catalog-menu__item catalog-menu__item--active">
+              <a href="catalog.html" class="catalog-menu__link catalog-menu__link--active">Матрасы</a>
+            </li>
+            <li class="catalog-menu__item">
+              <a href="catalog.html" class="catalog-menu__link">Комоды</a>
+            </li>
+            <li class="catalog-menu__item">
+              <a href="catalog.html" class="catalog-menu__link">Тумбы</a>
+            </li>
+            <li class="catalog-menu__item">
+              <a href="catalog.html" class="catalog-menu__link">Шкафы</a>
+            </li>
+            <li class="catalog-menu__item">
+              <a href="catalog.html" class="catalog-menu__link">Письменные столы</a>
+            </li>
+            <li class="catalog-menu__item">
+              <a href="catalog.html" class="catalog-menu__link">Буфеты</a>
+            </li>
+            <li class="catalog-menu__item">
+              <a href="catalog.html" class="catalog-menu__link">Мебель в стиле Верди</a>
+            </li>
+            <li class="catalog-menu__item">
+              <a href="catalog.html" class="catalog-menu__link">Спальные гарнитуры</a>
+            </li>
+            <li class="catalog-menu__item">
+              <a href="catalog.html" class="catalog-menu__link">Стенки</a>
+            </li>
+            <li class="catalog-menu__item">
+              <a href="catalog.html" class="catalog-menu__link">Мебель под старину</a>
+            </li>
+            <li class="catalog-menu__item">
+              <a href="catalog.html" class="catalog-menu__link">Прихожие</a>
+            </li>
+            <li class="catalog-menu__item">
+              <a href="catalog.html" class="catalog-menu__link">Стулья, табуреты</a>
+            </li>
+            <li class="catalog-menu__item">
+              <a href="catalog.html" class="catalog-menu__link">Столы</a>
+            </li>
+            <li class="catalog-menu__item">
+              <a href="catalog.html" class="catalog-menu__link">Зеркала</a>
+            </li>
+            <li class="catalog-menu__item">
+              <a href="catalog.html" class="catalog-menu__link">Подъёмный механизм</a>
+            </li>
+            <li class="catalog-menu__item">
+              <a href="catalog.html" class="catalog-menu__link">Ортопедическое основание</a>
+            </li>
+            <li class="catalog-menu__item">
+              <a href="catalog.html" class="catalog-menu__link">Резная мебель</a>
+            </li>
+            <li class="catalog-menu__item">
+              <a href="catalog.html" class="catalog-menu__link">Подкроватный ящик</a>
+            </li>
+            <li class="catalog-menu__item">
+              <a href="catalog.html" class="catalog-menu__link">Кухни</a>
+            </li>
+            <li class="catalog-menu__item">
+              <a href="catalog.html" class="catalog-menu__link">Хиты продаж</a>
+            </li>
+
+          </ul>
+        </div>
+      </div>
+      <div class="header__row header__row--bottom">
+        <div class="container header__bottom">
+          <div class="header__search search-block">
+            <input type="text" class="search-block__input" placeholder="Поиск по сайту" />
+            <button type="submit" class="search-block__submit btn--clear"></button>
+          </div>
+          <div class="header__links header-links">
+            <a href="works.html" class="header-links__item header-link" title="Наши работы">
+              <svg width="30" height="30" xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M29.9397 19.0725l-3.3023-5.2282V4.2269l-1.3442-1.3442H4.7068L3.3625 4.2269v9.6174L.0602 19.0725h29.8795zM23.949 5.5712v6.7105c-1.7324-.4481-4.7251-1.0007-8.949-1.0007-4.2239 0-7.2166.5526-8.949 1.0007V5.5712h17.898zM0 20.7267v2.6885h3.1323v3.7021h2.6885v-3.7021h18.3584v3.7021h2.6884v-3.7021H30v-2.6885H0z" />
+                <path
+                  d="M13.909 9.8823V8.316c0-.9296-1.3492-1.6834-3.0134-1.6834-1.6643 0-3.0133.7538-3.0133 1.6834v2.3508s1.7774-.4475 2.9991-.5632c1.0999-.1042 3.0276-.2214 3.0276-.2214zM22.1176 10.6669V8.3161c0-.9296-1.3492-1.6834-3.0134-1.6834-1.6643 0-3.0134.7538-3.0134 1.6834v1.5662s1.9277.1171 3.0276.2214c1.2218.1157 2.9992.5632 2.9992.5632z" />
+              </svg>
+              Наши работы
+            </a>
+            <a href="sale.html" class="header-links__item header-link" title="Распродажа">
+              <svg width="30" height="30" xmlns=" http://www.w3.org/2000/svg">
+                <path
+                  d="M26.7673 0h-6.9418c-1.5239 0-3.5618.8441-4.6392 1.9217L.9439 16.1639C.3351 16.7725 0 17.5841 0 18.4495c0 .8654.3353 1.677.944 2.2856l8.3207 8.321c.6086.6086 1.4204.9439 2.2856.9439.8654 0 1.677-.3353 2.2858-.9439l14.2422-14.2424C29.1559 13.7363 30 11.6984 30 10.1745V3.2323C29.9998 1.45 28.5496 0 26.7673 0zM12.423 22.579c-.872.8722-1.9771 1.0986-2.3632.7125-.1863-.1866-.293-.6393-.0865-.8457.2728-.2726.9652.0599 1.6443-.6189.3994-.3997.5658-.9254.1664-1.3248-.9986-.9986-2.8292 1.4445-4.4071-.1332-.9918-.992-.4793-2.1836.2863-2.9492.3927-.3927 1.358-1.1716 1.7974-.7322.1531.1529.353.5658.1133.8055-.2065.2062-.6125.1064-1.1719.6656-.479.4795-.559.9455-.2394 1.2648.8254.8258 2.6761-1.5976 4.4003.1265.9519.952.7789 2.1106-.1399 3.0291zm4.9393-5.059c-.1463.1465-.306.2128-.466.1199l-1.1382-.6326-1.5246 1.5246.6326 1.1382c.0932.1598.0263.3198-.1202.466-.2327.233-.6921.3994-.9052.1865-.0133-.0135-.0334-.0466-.0533-.0798l-2.9025-5.4721c-.1398-.2598.0135-.5995.2598-.8455.2529-.2529.5924-.4063.8519-.2664l5.4723 2.9024c.0332.0201.06.0334.0797.0533.2065.2063.0469.6725-.1863.9055zm3.4948-3.495l-2.1103 2.1105c-.1932.1932-.4726.2863-.6525.1064l-4.3271-4.327c-.1865-.1865-.0531-.4795.1664-.6992.2131-.2129.5127-.3527.699-.1664l3.8411 3.8413 1.6244-1.6244c.1733-.1732.4461-.0732.6393.12.1863.1863.2927.466.1197.6388zm3.4815-3.4813l-2.3698 2.3698c-.1932.1932-.4727.2863-.6526.1064l-4.3204-4.3203c-.1799-.1797-.0867-.4594.1065-.6523l2.3698-2.3701c.1866-.1863.466-.0797.6459.1.2062.2065.2861.486.1131.6592L18.3469 8.32l1.3317 1.3314 1.0119-1.0117c.173-.173.4394-.1064.6191.073.1531.1532.2463.4196.0597.6059l-1.0119 1.0119 1.3381 1.338 1.8839-1.8839c.1733-.173.453-.0932.6592.1133.1799.1797.2863.4594.1.6457zm.7439-4.3328a.8862.8862 0 01-.6217.2573.8844.8844 0 01-.6212-.2573.8827.8827 0 01-.2577-.6216.8825.8825 0 01.2577-.6212.8841.8841 0 01.6212-.257.886.886 0 01.6217.257.885.885 0 01.2572.6212.8852.8852 0 01-.2572.6216z" />
+              </svg>
+              Распродажа
+            </a>
+          </div>
+          <a href="basket.html" class=" header__cart cart-block" title="Перейти в корзину">
+            <div class="cart-block__count">1</div>
+            <svg class="cart-block__icon" width="30" height="26">
+              <use xlink:href="#i-cart-header">
+            </svg>
+            <div class="cart-block__title">
+              Корзина
+            </div>
+            <div class="cart-block__total">
+              Сумма: 8780₽
+            </div>
+          </a>
+        </div>
+      </div>
+
+    </header>
+<div class="container">
+  <div class="main-content-wrapper">
+    <main class="main-content">
+      <ul class="breadcrumbs" itemscope itemtype="http://schema.org/BreadcrumbList">
+    <li class="breadcrumbs__item" itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem">
+        <a class="breadcrumbs__link" itemprop="item" href="https://example.com/dresses">
+            <span class="breadcrumbs__name" itemprop="name">Кровати и матрасы </span></a>
+        <meta itemprop="position" content="1" />
+    </li>
+    <li class="breadcrumbs__item" itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem">
+        <a class="breadcrumbs__link" itemprop="item" href="https://example.com/dresses">
+            <span class="breadcrumbs__name" itemprop="name">Двуспальные матрасы</span></a>
+        <meta itemprop="position" content="2" />
+    </li>
+</ul>
+      <h1 class="page__title">Контакты</h1>
+
+
+      <div class="page-contacts">
+        <div class="page-contacts__row page-contacts__row--top">
+
+          <div class="page-contacts__block-wrapper">
+            <div class="page-contacts__contacts page-contacts-block">
+              <div class="page-contacts__title">
+                Телефоны:
+              </div>
+              <div class="page-contacts-block__item">
+                +7 (499) 348-11-64
+              </div>
+              <div class="page-contacts-block__item">
+                +7 (960) 735-81-51 - <span>отдел продаж</span>
+              </div>
+              <div class="page-contacts-block__item">
+                +7 (499) 348-11-64 - <span>организационные вопросы</span>
+              </div>
+              <div class="page-contacts-block__item">
+                +7 (905) 142-44-22 - <span>организационные вопросы</span>
+                <a href="viber://add?number=74993481164"
+                  class="page-contacts-block__icon page-contacts-block__icon--viber"></a>
+                <a href="whatsapp://send/?phone=+74993481164"
+                  class="page-contacts-block__icon page-contacts-block__icon--wa"></a>
+              </div>
+              <div class="page-contacts-block__item">
+                +7 (960) 735-81-51
+                <a href="viber://add?number=79051424422"
+                  class="page-contacts-block__icon page-contacts-block__icon--viber"></a>
+                <a href="whatsapp://send/?phone=+79051424422"
+                  class="page-contacts-block__icon page-contacts-block__icon--wa"></a>
+              </div>
+            </div>
+
+            <div class="page-contacts__contacts page-contacts-block ">
+              <div class="page-contacts__title">
+                E-mail:
+              </div>
+              <div class="page-contacts-block__item">
+                main@deisus-m.ru
+              </div>
+            </div>
+
+            <div class="page-contacts__contacts page-contacts-block page-contacts-block--bottom">
+
+              <div class="page-contacts-block__item">
+                Внимание! <span> Цены в магазинах наших партнеров могут отличаться от цен, представленных на
+                  сайте</span>
+                <span class="page-contacts-block__link">deisus-m.ru</span>
+              </div>
+            </div>
+          </div>
+          <div class="page-contacts__form">
+            <div class="form">
+
+              <form action="">
+                <div class="form__inner">
+
+                  <div class="form__body">
+
+
+
+                    <div class="form__cols">
+                      <div class="form__col form__col--6">
+                        <div class="form__item item-form item-form--text">
+                          <label class="item-form__label">
+                            <span class="item-form__name">Тема:</span> <span class="item-form__required">*</span>
+                            <input name="" c required type="text" class="item-form__field item-form__field--text">
+                          </label>
+                        </div>
+                      </div>
+                      <div class="form__col form__col--6">
+                        <div class="form__item item-form item-form--text">
+                          <label class="item-form__label">
+                            <span class="item-form__name">Имя:</span> <span class="item-form__required">*</span>
+                            <input name="" c required type="text" class="item-form__field item-form__field--text">
+                          </label>
+                        </div>
+                      </div>
+                    </div>
+
+
+                    <div class="form__cols">
+                      <div class="form__col form__col--6">
+                        <div class="form__item item-form item-form--email">
+                          <label class="item-form__label">
+                            <span class="item-form__name">E-mail:</span> <span class="item-form__required">*</span>
+                            <input name="" value="" type="email" class="item-form__field item-form__field--email">
+                          </label>
+                        </div>
+                      </div>
+                      <div class="form__col form__col--6">
+                        <div class="form__item item-form item-form--email">
+                          <label class="item-form__label">
+                            <span class="item-form__name">Телефон:</span> <span class="item-form__required">*</span>
+                            <input name="" value="" type="text" class="item-form__field item-form__field--email">
+                          </label>
+                        </div>
+                      </div>
+                    </div>
+
+
+                    <div class="form__cols">
+                      <div class="form__col form__col--6">
+                        <div class="form__item item-form item-form--textarea">
+                          <label class="item-form__label">
+                            <span class="item-form__name">Сообщение:</span> <span class="item-form__required">*</span>
+                            <textarea name="" class="item-form__field item-form__field--textarea"></textarea>
+                          </label>
+                        </div>
+                      </div>
+                      <div class="form__col form__col--6">
+                        <div class="form__item item-form item-form--agree">
+                          <label class="item-form__label item-form__label--agree">
+                            <input type="checkbox" checked="checked"
+                              class="item-form__field item-form__field--checkbox item-form--agree visually-hidden">
+                            <span class="item-form__custom-checkbox"></span>
+                            Я даю своё согласие на обработку моих персональных данных, в соответствии с Федеральным
+                            законом от 27.07.2006 года №152-ФЗ «О персональных данных», на условиях и для целей,
+                            определенных Политикой конфиденциальности.
+                          </label>
+                        </div>
+
+
+
+                        <div class="form__actions">
+                          <button type="button" class="form__submit btn">Отправить</button>
+                        </div>
+                      </div>
+                    </div>
+
+
+                  </div>
+
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+
+        <div class="page-contacts__row page-contacts__row--addresses">
+
+          <div class="page-contacts__addresses addresses-contacts">
+            <div class="addresses-contacts__detail">
+
+              <div class="addresses-contacts__item">
+                <div class="addresses-contacts__title">
+                  Москва и область
+                </div>
+                <div class="addresses-contacts__inner">
+                  <div class="addresses-contacts__address address-contacts">
+                    <svg width="27" height="33" fill="C02D33" class="address-contacts__icon">
+                      <use xlink:href="#i-address"></use>
+                    </svg>
+                    <div class="address-contacts__title">
+                      Москва, бульвар Маршала Рокоссовского, д. 6, 1 этаж ТЦ
+                    </div>
+                  </div>
+                  <div class="addresses-contacts__address address-contacts">
+                    <svg width="27" height="33" fill="C02D33" class="address-contacts__icon">
+                      <use xlink:href="#i-address"></use>
+                    </svg>
+                    <div class="address-contacts__title">
+                      МО, Сергиев-Посадский район, г. Хотьково, ул. Михеенко, дом №23А
+                    </div>
+                  </div>
+                  <div class="addresses-contacts__address address-contacts">
+                    <svg width="27" height="33" fill="C02D33" class="address-contacts__icon">
+                      <use xlink:href="#i-address"></use>
+                    </svg>
+                    <div class="address-contacts__title">
+                      МО, Сергиев-Посадский район, г. Хотьково, ул. Больничная, д. 18, магазин "Комфортино"
+                    </div>
+                  </div>
+                  <div class="addresses-contacts__address address-contacts">
+                    <svg width="27" height="33" fill="C02D33" class="address-contacts__icon">
+                      <use xlink:href="#i-address"></use>
+                    </svg>
+                    <div class="address-contacts__title">
+                      МО, г. Электросталь, ул. Красная, д. 31, ТЦ "Интерьер", цокольный этаж
+                    </div>
+
+                  </div>
+                </div>
+              </div>
+              <div class="addresses-contacts__item">
+                <div class="addresses-contacts__title">
+                  Нижний Новгород
+                </div>
+                <div class="addresses-contacts__inner">
+                  <div class="addresses-contacts__address address-contacts">
+                    <svg width="27" height="33" fill="C02D33" class="address-contacts__icon">
+                      <use xlink:href="#i-address"></use>
+                    </svg>
+                    <div class="address-contacts__title">
+                      г. Нижний Новгород, ул.Гордеевская, д.7а, Торговый центр "Мебельный Базар", 1-ый этаж.
+                    </div>
+                  </div>
+                  <div class="addresses-contacts__address address-contacts">
+                    <svg width="27" height="33" fill="C02D33" class="address-contacts__icon">
+                      <use xlink:href="#i-address"></use>
+                    </svg>
+                    <div class="address-contacts__title">
+                      г. Нижний Новгород, ул.Бекетова, д.13К, Мебельный центр "БУМ", 4-ый, этаж
+                    </div>
+                  </div>
+                  <div class="addresses-contacts__address address-contacts">
+                    <svg width="27" height="33" fill="C02D33" class="address-contacts__icon">
+                      <use xlink:href="#i-address"></use>
+                    </svg>
+                    <div class="address-contacts__title">
+                      г. Нижний Новгород, ул.Ларина, д.7, Гипермаркет мебели "Открытый Материк", 3-ий этаж
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+
+            <div class="addresses-contacts__maps">
+              <div class="addresses-contacts__map">
+                <script type="text/javascript" charset="utf-8" async=""
+                  src="https://api-maps.yandex.ru/services/constructor/1.0/js/?sid=Enxfki8RJuqtY5u8xtEeAoqzFkTTWEqw&amp;height=354&amp;lang=ru_RU&amp;sourceType=constructor&amp;scroll=true">
+                </script>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="page-contacts__row page-contacts__row--factory">
+
+
+
+
+
+
+          <div class="page-contacts__row page-contacts__row--factory">
+            <div class="page-contacts__addresses addresses-contacts">
+              <div class="addresses-contacts__factory factory-contacts">
+                <div class="factory-contacts__title">
+                  Производственная база
+                </div>
+                <div class="factory-contacts__inner">
+                  <div class="factory-contacts__cols">
+                    <div class="factory-contacts__col factory-contacts__col--6">
+
+                      <div class="factory-contacts__item item-factory-contacts">
+                        <div class="item-factory-contacts__title">Адрес:</div>
+                        <div class="item-factory-contacts__text">
+                          Владимирская обл., г Муром, проезд Куйбышева, дом 6 а
+                        </div>
+                      </div>
+                      <div class="factory-contacts__item item-factory-contacts">
+                        <div class="item-factory-contacts__title">Телефоны:</div>
+                        <div class="item-factory-contacts__text">
+                          +7 (499) 348-11-64 <br> <br>
+                          +7 (49234) 7-70-32
+                        </div>
+                      </div>
+                    </div>
+                    <div class="factory-contacts__col factory-contacts__col--6">
+
+                      <div class="factory-contacts__item item-factory-contacts">
+                        <div class="item-factory-contacts__title">Реквизиты:</div>
+                        <div class="item-factory-contacts__text">
+                          Наименование юридического лица: ИП Долгушин Петр Алексеевич br
+                          ОГРН: 310333425200057 <br>
+                          ИНН: 470379068652 br
+                        </div>
+                      </div>
+                      <div class="factory-contacts__item item-factory-contacts">
+                        <div class="item-factory-contacts__title">Наши координаты:</div>
+                        <div class="item-factory-contacts__text">
+                          55.564765, 42.034204
+                        </div>
+                      </div>
+
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="addresses-contacts__maps">
+                <div class="addresses-contacts__map">
+                  <script type="text/javascript" charset="utf-8" async=""
+                    src="https://api-maps.yandex.ru/services/constructor/1.0/js/?sid=8cGIJvAv6ogxf8W3LMqVuQbRqfDqem_L&amp;height=354&amp;lang=ru_RU&amp;sourceType=constructor&amp;scroll=true">
+                  </script>
+                </div>
+              </div>
+            </div>
+
+
+
+          </div>
+        </div>
+
+
+    </main>
+  </div>
+</div>
+
+<!-- на главной нет -->
+<div class="page__bottom">
+    <div class="bottom-slider">
+        <div class="swiper-container bottom-slider__container">
+            <div class="swiper-wrapper bottom-slider__wrapper">
+                <div class="swiper-slide bottom-slider__slide slide-bottom-slider">
+                    <div class="slide-bottom-slider__inner">
+                        <img src="uploads/bottom-slider/1.jpg" alt="">
+
+                    </div>
+                </div>
+                <div class="swiper-slide bottom-slider__slide slide-bottom-slider">
+                    <div class="slide-bottom-slider__inner">
+                        <img src="uploads/bottom-slider/2.jpg" alt="">
+
+                    </div>
+                </div>
+
+            </div>
+            <!-- If we need navigation buttons -->
+            <div class="swiper-button-prev bottom-slider__button bottom-slider__button--prev"></div>
+            <div class="swiper-button-next bottom-slider__button bottom-slider__button--next"></div>
+        </div>
+    </div>
+</div>
+<!-- на главной нет -->
+<div class="bottom-menu">
+    <ul class="bottom-menu__inner container">
+        <li class="bottom-menu__item"><a href="" class="bottom-menu__link"><span>🠆</span> Кровати из дерева</a></li>
+        <li class="bottom-menu__item"><a href="" class="bottom-menu__link"><span>🠆</span> Кровати из массива</a></li>
+        <li class="bottom-menu__item"><a href="" class="bottom-menu__link"><span>🠆</span> Деревянные кровати</a></li>
+        <li class="bottom-menu__item"><a href="" class="bottom-menu__link"><span>🠆</span> Кровати из сосны</a></li>
+        <li class="bottom-menu__item"><a href="" class="bottom-menu__link"><span>🠆</span> Ортопедические кровати</a>
+        </li>
+        <li class="bottom-menu__item"><a href="" class="bottom-menu__link"><span>🠆</span> Кровати 140x200</a></li>
+        <li class="bottom-menu__item"><a href="" class="bottom-menu__link"><span>🠆</span> Кровати 160x200</a></li>
+        <li class="bottom-menu__item"><a href="" class="bottom-menu__link"><span>🠆</span> Кровати 180x200</a></li>
+        <li class="bottom-menu__item"><a href="" class="bottom-menu__link"><span>🠆</span> Кровати 200x200</a></li>
+        <li class="bottom-menu__item"><a href="" class="bottom-menu__link"><span>🠆</span> Большие кровати </a></li>
+        <li class="bottom-menu__item"><a href="" class="bottom-menu__link"><span>🠆</span> Дачные кровати</a></li>
+        <li class="bottom-menu__item"><a href="" class="bottom-menu__link"><span>🠆</span> Дешёвые кровати</a></li>
+        <li class="bottom-menu__item"><a href="" class="bottom-menu__link"><span>🠆</span> Кровати на заказ</a></li>
+        <li class="bottom-menu__item"><a href="" class="bottom-menu__link"><span>🠆</span> Кровати в спальню</a></li>
+        <li class="bottom-menu__item"><a href="" class="bottom-menu__link"><span>🠆</span> Кровати с ящиками</a></li>
+        <li class="bottom-menu__item"><a href="" class="bottom-menu__link"><span>🠆</span> Кровати с матрасом</a></li>
+        <li class="bottom-menu__item"><a href="" class="bottom-menu__link"><span>🠆</span> Кровати от производителя</a>
+        </li>
+        <li class="bottom-menu__item"><a href="" class="bottom-menu__link"><span>🠆</span> Кровати из Мурома</a></li>
+        <li class="bottom-menu__item"><a href="" class="bottom-menu__link"><span>🠆</span> Недорогие кровати</a></li>
+        <li class="bottom-menu__item"><a href="" class="bottom-menu__link"><span>🠆</span> Белые кровати</a></li>
+    </ul>
+</div>
+<footer class="page__footer footer">
+    <div class="footer__container container">
+        <div class="footer__information info-footer">
+            <a href="/" class="footer__logo logo" title="Дейсус-М. Фабрика производитель">
+                <div class="logo__image">
+                    <img width="90" height="104" src="img/logo.svg" alt="Дейсус-М. Фабрика производитель" />
+                </div>
+                <div class="logo__text">
+                    <div class="logo__brand">Дейсус-М</div>
+                    <div class="logo__promo">Фабрика производитель</div>
+                </div>
+            </a>
+            <div class="info-footer__copyright">
+                © 2002 - 2020 «Дейсус-М» - Все права защищены
+            </div>
+            <div class="info-footer__offer-cookie">
+                <div class="info-footer__offer">
+                    Информация и цены, представленные на сайте носят ознакомительный характер и не являются публичной
+                    офертой
+                </div>
+                <div class="info-footer__cookie">
+                    Работая с этим сайтом, вы даете свое согласие на использование файлов cookie.
+                </div>
+            </div>
+
+            <a href="https://beehive.ru" target="_blank" title="Создание а поддержка сайтов"
+                class="info-footer__development">
+                Создание сайта - <img src="img/i-beehive.png" alt="Бихайв"> Бихайв
+            </a>
+        </div>
+
+        <ul class="footer__menu footer-menu">
+            <li class="footer-menu__item">
+                <a href="buyers.html" class="footer-menu__link">Покупателям</a>
+            </li>
+            <li class="footer-menu__item">
+                <a href="delivery.html" class="footer-menu__link">Доставка и оплата</a>
+            </li>
+            <li class="footer-menu__item">
+                <a href="certificates.html" class="footer-menu__link">Сертификаты</a>
+            </li>
+            <li class="footer-menu__item">
+                <a href="materials.html" class="footer-menu__link">Материалы</a>
+            </li>
+            <li class="footer-menu__item">
+                <a href="catalog.html" class="footer-menu__link">Корпусная мебель</a>
+            </li>
+
+            <li class="footer-menu__item">
+                <a href="articles.html" class="footer-menu__link">Статьи</a>
+            </li>
+            <li class="footer-menu__item">
+                <a href="reviews.html" class="footer-menu__link">Отзывы</a>
+            </li>
+            <li class="footer-menu__item">
+                <a href="contacts.html" class="footer-menu__link">Контакты</a>
+            </li>
+            <li class="footer-menu__item">
+                <a href="" class="footer-menu__link">Фотокаталог</a>
+            </li>
+            <li class="footer-menu__item">
+                <a href="" class="footer-menu__link">Как выбрать матрас</a>
+            </li>
+        </ul>
+
+        <address class="footer__contacts contacts-footer">
+            <div class="contacts-footer__title">Контакты:</div>
+            <div class="contacts-footer__inner">
+                <div class="contacts-footer__phones phone-footer">
+                    <a href="+74993481164" class="phone-footer">+7 (499) 348-11-64</a>
+                    <a href="+79051424422" class="phone-footer">+7 (905) 142-44-22</a>
+                    <a href="+79607358151" class="phone-footer">+7 (960) 735-81-51</a>
+                </div>
+                <div class="contacts-footer__email-address">
+                    <a href="mailto:main@deisus-m.ru" class="contacts-footer__email">main@deisus-m.ru</a>
+                    <div class="contacts-footer__address">г. Москва, б-р Маршала Рокоссовского, д. 6, 1 этаж ТЦ</div>
+                </div>
+
+            </div>
+            <a href="" class="contacts-footer__privacy-policy">Политика конфиденциальности</a>
+        </address>
+    </div>
+
+
+
+
+
+</footer>
+</div> <!-- end .page -->
+
+
+<script type="text/javascript" src="./js/1.bundle.js"></script><script type="text/javascript" src="./js/bundle.js"></script></body>
+
+</html>

@@ -151,6 +151,9 @@ p {
 
 .catalog-menu .hidden-menu-items {
   position: relative;
+  display: flex;
+  align-items: center;
+  height: 40px;
 
   .hidden-menu {
     opacity: 0;
@@ -159,8 +162,8 @@ p {
     padding: 15px 20px;
     background-color: #fff;
     z-index: 5;
-    top: 31px;
-    transform: translateX(-50%);
+    top: 30px;
+    right: 0px;
     transition: opacity 0.3s;
     visibility: hidden;
     display: block;
@@ -954,7 +957,7 @@ p {
 }
 .catalog-sub-menu {
   max-width: 340px;
-  width: 100%;
+  min-width: 290px;  
   box-shadow: 2px 0 3px rgba(0, 0, 0, 0.1);
   background-color: #fff;
 

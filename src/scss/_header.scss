@@ -228,6 +228,12 @@
   }
 }
 .header-time {
+  margin-top: 9px; 
+
+@media screen and (max-width: 1440px) {
+  margin-top: 6px;
+}
+
   &__bold {
   }
 }
