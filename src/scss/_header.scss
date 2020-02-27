@@ -138,6 +138,10 @@
     display: inline-block;
     padding: 10px 10px;
 
+    @media screen and (max-width: 1440px) {
+      font-size: 14px;
+    }
+
     &:hover,
     &:focus,
     &:active,
@@ -150,7 +154,14 @@
   font-size: 14px;
   display: flex;
   flex-direction: column;
-  padding: 0 20px;
+
+  &:not(:last-child) {
+    margin-right: 40px;
+
+    @media screen and (max-width: 1440px) {
+      margin-right: 20px;
+    }
+  }
 
   &--1 {
     text-align: right;
@@ -176,8 +187,6 @@
     svg {
       margin-right: 6px;
       flex-shrink: 0;
-     
-     
     }
   }
 
@@ -194,6 +203,10 @@
     font-weight: 600;
     font-size: 20px;
     white-space: nowrap;
+
+    @media screen and (max-width: 1440px) {
+      font-size: 18px;
+    }
   }
 
   &__callback {
@@ -392,7 +405,6 @@
 
   &__icon {
     flex-shrink: 0;
-   
   }
 
   &__count {

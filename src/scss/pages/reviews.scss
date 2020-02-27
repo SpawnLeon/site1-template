@@ -2,6 +2,11 @@
   // .page-reviews__inner
   &__inner {
     display: flex;
+    align-items: flex-start;
+
+    @media screen and (max-width: 1024px) {
+      flex-direction: column;
+    }
   }
 }
 
@@ -43,5 +48,34 @@
     margin-top: 10px;
   }
 }
+
 .reviews-form {
+  background-color: #f1f1f1;
+  padding: 25px 30px;
+
+  @media screen and (max-width: 1024px) {
+    margin-top: 40px;
+  }
+
+  .form {
+    padding: 0;
+    // .form__title
+    &__title {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      @media screen and (max-width: 640px) {
+        font-size: 22px;
+      }
+
+      svg {
+        margin-right: 7px;
+
+        @media screen and (max-width: 1024px) {
+          display: none;
+        }
+      }
+    }
+  }
 }

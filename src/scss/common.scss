@@ -1174,7 +1174,7 @@ p {
     margin: 0 4px;
 
     & > span {
-      @media screen and (max-width: 767px) {
+      @media screen and (max-width: 1440px) {
         display: none;
       }
     }
@@ -1207,7 +1207,7 @@ p {
   flex-wrap: wrap;
 
   @media screen and (max-width: 1024px) {
-    margin: 15px;
+    margin: 15px 0;
   }
 
   &__item {

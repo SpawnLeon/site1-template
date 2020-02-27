@@ -1,0 +1,187 @@
+<% var data = { title: "Каталог",'classes': 'catalog' }; %>
+<%=_.template(require('./../includes/header.html').default)(data) %>
+<div class="container">
+  <div class="main-content-wrapper">
+    <%= _.template(require('./../includes/sidebar.html').default)() %>
+    <main class="main-content">
+    
+      <%= _.template(require('./../includes/breadcrumbs.html').default)() %>
+
+      <h1 class="page__title">Распродажа</h1>
+      <div class="catalog-list__sorting sorting-block">
+        <div class="sorting-block__inner">
+          <div class="sorting-block__title">
+            Сортировать по:
+          </div>
+
+          <button class="sorting-block__btn button-sorting button-sorting--active">
+            цене
+          </button>
+          <button class="sorting-block__btn button-sorting button-sorting--asc">
+            названию
+          </button>
+          <button class="sorting-block__btn button-sorting button-sorting--desc">
+            новизне
+          </button>
+        </div>
+        <div class="sorting-block__count">
+          Товаров: 105
+        </div>
+      </div>
+      <div class="catalog-list">
+
+        <article class="catalog-list__item product-teaser">
+          <div class="product-teaser__inner">
+            <a href="" title="Кровать Велина-М" class="product-teaser__header">
+              <div class="product-teaser__sticker sticker sticker--sale">
+                -10%
+              </div>
+              <div class="product-teaser__image">
+                <img src="uploads/catalog-list/1.png" alt="" />
+              </div>
+              <h3 class="product-teaser__title">Кровать Велина-М</h3>
+            </a>
+            <footer class="product-teaser__footer">
+              <div class="product-teaser__prices">
+                <div class="product-teaser__price">9330 ₽</div>
+                <div class="product-teaser__price product-teaser__price--old">
+                  10330 ₽
+                </div>
+              </div>
+              <button type="button" class="product-teaser__add-to-cart">
+                В корзину
+              </button>
+            </footer>
+          </div>
+        </article>
+
+        <article class="catalog-list__item product-teaser">
+          <div class="product-teaser__inner">
+            <a href="" title="Кровать Велина-М" class="product-teaser__header">
+              <div class="product-teaser__sticker sticker sticker--sale">
+                -10%
+              </div>
+              <div class="product-teaser__image">
+                <img src="uploads/catalog-list/1.png" alt="" />
+              </div>
+              <h3 class="product-teaser__title">Кровать Велина-М</h3>
+            </a>
+            <footer class="product-teaser__footer">
+              <div class="product-teaser__prices">
+                <div class="product-teaser__price">9330 ₽</div>
+                <div class="product-teaser__price product-teaser__price--old">
+                  10330 ₽
+                </div>
+              </div>
+              <button type="button" class="product-teaser__add-to-cart">
+                В корзину
+              </button>
+            </footer>
+          </div>
+        </article>
+        <article class="catalog-list__item product-teaser">
+          <div class="product-teaser__inner">
+            <a href="" title="Кровать Велина-М" class="product-teaser__header">
+              <div class="product-teaser__sticker sticker sticker--sale">
+                -10%
+              </div>
+              <div class="product-teaser__image">
+                <img src="uploads/catalog-list/1.png" alt="" />
+              </div>
+              <h3 class="product-teaser__title">Кровать Велина-М</h3>
+            </a>
+            <footer class="product-teaser__footer">
+              <div class="product-teaser__prices">
+                <div class="product-teaser__price">9330 ₽</div>
+                <div class="product-teaser__price product-teaser__price--old">
+                  10330 ₽
+                </div>
+              </div>
+              <button type="button" class="product-teaser__add-to-cart">
+                В корзину
+              </button>
+            </footer>
+          </div>
+        </article>
+        <article class="catalog-list__item product-teaser">
+          <div class="product-teaser__inner">
+            <a href="" title="Кровать Велина-М" class="product-teaser__header">
+              <div class="product-teaser__sticker sticker sticker--sale">
+                -10%
+              </div>
+              <div class="product-teaser__image">
+                <img src="uploads/catalog-list/1.png" alt="" />
+              </div>
+              <h3 class="product-teaser__title">Кровать Велина-М</h3>
+            </a>
+            <footer class="product-teaser__footer">
+              <div class="product-teaser__prices">
+                <div class="product-teaser__price">9330 ₽</div>
+                <div class="product-teaser__price product-teaser__price--old">
+                  10330 ₽
+                </div>
+              </div>
+              <button type="button" class="product-teaser__add-to-cart">
+                В корзину
+              </button>
+            </footer>
+          </div>
+        </article>
+        <article class="catalog-list__item product-teaser">
+          <div class="product-teaser__inner">
+            <a href="" title="Кровать Велина-М" class="product-teaser__header">
+              <div class="product-teaser__sticker sticker sticker--sale">
+                -10%
+              </div>
+              <div class="product-teaser__image">
+                <img src="uploads/catalog-list/1.png" alt="" />
+              </div>
+              <h3 class="product-teaser__title">Кровать Велина-М</h3>
+            </a>
+            <footer class="product-teaser__footer">
+              <div class="product-teaser__prices">
+                <div class="product-teaser__price">9330 ₽</div>
+                <div class="product-teaser__price product-teaser__price--old">
+                  10330 ₽
+                </div>
+              </div>
+              <button type="button" class="product-teaser__add-to-cart">
+                В корзину
+              </button>
+            </footer>
+          </div>
+        </article>
+        <article class="catalog-list__item product-teaser">
+          <div class="product-teaser__inner">
+            <a href="" title="Кровать Велина-М" class="product-teaser__header">
+              <div class="product-teaser__sticker sticker sticker--sale">
+                -10%
+              </div>
+              <div class="product-teaser__image">
+                <img src="uploads/catalog-list/1.png" alt="" />
+              </div>
+              <h3 class="product-teaser__title">Кровать Велина-М</h3>
+            </a>
+            <footer class="product-teaser__footer">
+              <div class="product-teaser__prices">
+                <div class="product-teaser__price">9330 ₽</div>
+                <div class="product-teaser__price product-teaser__price--old">
+                  10330 ₽
+                </div>
+              </div>
+              <button type="button" class="product-teaser__add-to-cart">
+                В корзину
+              </button>
+            </footer>
+          </div>
+        </article>
+      </div>
+
+      <%= _.template(require('./../includes/pagination.html').default)() %>
+
+    
+    </main>
+  </div>
+</div>
+
+<%= _.template(require('./../includes/footer.html').default)(data) %>
