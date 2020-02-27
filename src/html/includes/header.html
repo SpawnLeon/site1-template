@@ -12,7 +12,7 @@
   <title><%=title%></title>
 </head>
 
-<body class="<%=classes%>">
+<body class="<% if (typeof(classes) !== "undefined") { %><%= classes %><% } %>">
 
   <div class="page" id="app">
     <header class="page__header header">
@@ -58,7 +58,7 @@
           <nav class="header__nav header__nav--main-menu">
             <ul class="header__menu main-menu">
               <li class="main-menu__item">
-                <a href="" class="main-menu__link">Покупателям</a>
+                <a href="buyers.html" class="main-menu__link">Покупателям</a>
               </li>
               <li class="main-menu__item main-menu__item--active">
                 <a href="delivery.html" class="main-menu__link main-menu__link--active">Доставка и оплата</a>
@@ -83,13 +83,8 @@
           <div class="header__contacts">
             <div class="contacts-block contacts-block--1">
               <div class="contacts-block__area">
-                <svg width="21" height="24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <path
-                    d="M10.7519 2.4c-4.3484 0-7.8861 3.3962-7.8861 7.5707 0 1.5385.4781 3.0196 1.3828 4.2831.835 1.1662 1.9786 2.0764 3.3187 2.6443l2.5673 4.3563c.1258.2136.3617.3456.6172.3456.2556 0 .4914-.132.6172-.3456l2.5673-4.3563c1.3401-.5679 2.4838-1.4781 3.3187-2.6443.9048-1.2634 1.383-2.7446 1.383-4.2831 0-4.1745-3.5377-7.5707-7.8861-7.5707zm2.4205 13.33a.7013.7013 0 00-.3516.296l-2.0689 3.5106-2.069-3.5106a.7017.7017 0 00-.3515-.296c-2.4587-.9534-4.0473-3.214-4.0473-5.7593 0-3.4237 2.9014-6.209 6.4678-6.209 3.5663 0 6.4677 2.7853 6.4677 6.209 0 2.5453-1.5886 4.8059-4.0472 5.7593z"
-                    fill="#0D0D0D" />
-                  <path
-                    d="M10.752 7.071c-1.6424 0-2.9786 1.2826-2.9786 2.8594 0 1.5767 1.3362 2.8594 2.9786 2.8594s2.9785-1.2827 2.9785-2.8594c0-1.5768-1.3361-2.8595-2.9785-2.8595zm0 4.3571c-.8604 0-1.5602-.6718-1.5602-1.4977 0-.826.6998-1.4978 1.5602-1.4978.8603 0 1.5602.6718 1.5602 1.4977 0 .826-.6999 1.4978-1.5602 1.4978z"
-                    fill="#0D0D0D" />
+                <svg width="16" height="19" fill='#0D0D0D'>
+                  <use xlink:href="#i-address"></use>
                 </svg>
                 Москва и московская область
               </div>

@@ -1,5 +1,5 @@
-<% var data = { title: "Каталог", }; %> <%=
-_.template(require('./../includes/header.html').default)(data) %>
+<% var data = { title: "Каталог", }; %>
+<%=_.template(require('./../includes/header.html').default)(data) %>
 <div class="container">
   <div class="main-content-wrapper">
     <main class="main-content">
@@ -8,9 +8,9 @@ _.template(require('./../includes/header.html').default)(data) %>
 
 
       <div class="page-contacts">
-        <div class="page-contacts__row">
+        <div class="page-contacts__row page-contacts__row--top">
 
-          <div class="page-contacts-block-wrapper">
+          <div class="page-contacts__block-wrapper">
             <div class="page-contacts__contacts page-contacts-block">
               <div class="page-contacts__title">
                 Телефоны:
@@ -52,25 +52,253 @@ _.template(require('./../includes/header.html').default)(data) %>
             <div class="page-contacts__contacts page-contacts-block page-contacts-block--bottom">
 
               <div class="page-contacts-block__item">
-                Внимание! <span> Цены в магазинах наших партнеров могут отличаться от цен, представленных на сайте</span>
+                Внимание! <span> Цены в магазинах наших партнеров могут отличаться от цен, представленных на
+                  сайте</span>
                 <span class="page-contacts-block__link">deisus-m.ru</span>
               </div>
             </div>
           </div>
           <div class="page-contacts__form">
-            form here
+            <div class="form">
+
+              <form action="">
+                <div class="form__inner">
+
+                  <div class="form__body">
+
+
+
+                    <div class="form__cols">
+                      <div class="form__col form__col--6">
+                        <div class="form__item item-form item-form--text">
+                          <label class="item-form__label">
+                            <span class="item-form__name">Тема:</span> <span class="item-form__required">*</span>
+                            <input name="" c required type="text" class="item-form__field item-form__field--text">
+                          </label>
+                        </div>
+                      </div>
+                      <div class="form__col form__col--6">
+                        <div class="form__item item-form item-form--text">
+                          <label class="item-form__label">
+                            <span class="item-form__name">Имя:</span> <span class="item-form__required">*</span>
+                            <input name="" c required type="text" class="item-form__field item-form__field--text">
+                          </label>
+                        </div>
+                      </div>
+                    </div>
+
+
+                    <div class="form__cols">
+                      <div class="form__col form__col--6">
+                        <div class="form__item item-form item-form--email">
+                          <label class="item-form__label">
+                            <span class="item-form__name">E-mail:</span> <span class="item-form__required">*</span>
+                            <input name="" value="" type="email" class="item-form__field item-form__field--email">
+                          </label>
+                        </div>
+                      </div>
+                      <div class="form__col form__col--6">
+                        <div class="form__item item-form item-form--email">
+                          <label class="item-form__label">
+                            <span class="item-form__name">Телефон:</span> <span class="item-form__required">*</span>
+                            <input name="" value="" type="text" class="item-form__field item-form__field--email">
+                          </label>
+                        </div>
+                      </div>
+                    </div>
+
+
+                    <div class="form__cols">
+                      <div class="form__col form__col--6">
+                        <div class="form__item item-form item-form--textarea">
+                          <label class="item-form__label">
+                            <span class="item-form__name">Сообщение:</span> <span class="item-form__required">*</span>
+                            <textarea name="" class="item-form__field item-form__field--textarea"></textarea>
+                          </label>
+                        </div>
+                      </div>
+                      <div class="form__col form__col--6">
+                        <div class="form__item item-form item-form--agree">
+                          <label class="item-form__label item-form__label--agree">
+                            <input type="checkbox" checked="checked"
+                              class="item-form__field item-form__field--checkbox item-form--agree visually-hidden">
+                            <span class="item-form__custom-checkbox"></span>
+                            Я даю своё согласие на обработку моих персональных данных, в соответствии с Федеральным
+                            законом от 27.07.2006 года №152-ФЗ «О персональных данных», на условиях и для целей,
+                            определенных Политикой конфиденциальности.
+                          </label>
+                        </div>
+
+
+
+                        <div class="form__actions">
+                          <button type="button" class="form__submit btn">Отправить</button>
+                        </div>
+                      </div>
+                    </div>
+
+
+                  </div>
+
+                </div>
+              </form>
+            </div>
           </div>
         </div>
 
-        <div class="page-contacts__row">
+        <div class="page-contacts__row page-contacts__row--addresses">
 
-          22222222222222222222222 
-        </div>
-        <div class="page-contacts__row">
+          <div class="page-contacts__addresses addresses-contacts">
+            <div class="addresses-contacts__detail">
 
-          3333333333333333
+              <div class="addresses-contacts__item">
+                <div class="addresses-contacts__title">
+                  Москва и область
+                </div>
+                <div class="addresses-contacts__inner">
+                  <div class="addresses-contacts__address address-contacts">
+                    <svg width="27" height="33" fill="C02D33" class="address-contacts__icon">
+                      <use xlink:href="#i-address"></use>
+                    </svg>
+                    <div class="address-contacts__title">
+                      Москва, бульвар Маршала Рокоссовского, д. 6, 1 этаж ТЦ
+                    </div>
+                  </div>
+                  <div class="addresses-contacts__address address-contacts">
+                    <svg width="27" height="33" fill="C02D33" class="address-contacts__icon">
+                      <use xlink:href="#i-address"></use>
+                    </svg>
+                    <div class="address-contacts__title">
+                      МО, Сергиев-Посадский район, г. Хотьково, ул. Михеенко, дом №23А
+                    </div>
+                  </div>
+                  <div class="addresses-contacts__address address-contacts">
+                    <svg width="27" height="33" fill="C02D33" class="address-contacts__icon">
+                      <use xlink:href="#i-address"></use>
+                    </svg>
+                    <div class="address-contacts__title">
+                      МО, Сергиев-Посадский район, г. Хотьково, ул. Больничная, д. 18, магазин "Комфортино"
+                    </div>
+                  </div>
+                  <div class="addresses-contacts__address address-contacts">
+                    <svg width="27" height="33" fill="C02D33" class="address-contacts__icon">
+                      <use xlink:href="#i-address"></use>
+                    </svg>
+                    <div class="address-contacts__title">
+                      МО, г. Электросталь, ул. Красная, д. 31, ТЦ "Интерьер", цокольный этаж
+                    </div>
+
+                  </div>
+                </div>
+              </div>
+              <div class="addresses-contacts__item">
+                <div class="addresses-contacts__title">
+                  Нижний Новгород
+                </div>
+                <div class="addresses-contacts__inner">
+                  <div class="addresses-contacts__address address-contacts">
+                    <svg width="27" height="33" fill="C02D33" class="address-contacts__icon">
+                      <use xlink:href="#i-address"></use>
+                    </svg>
+                    <div class="address-contacts__title">
+                      г. Нижний Новгород, ул.Гордеевская, д.7а, Торговый центр "Мебельный Базар", 1-ый этаж.
+                    </div>
+                  </div>
+                  <div class="addresses-contacts__address address-contacts">
+                    <svg width="27" height="33" fill="C02D33" class="address-contacts__icon">
+                      <use xlink:href="#i-address"></use>
+                    </svg>
+                    <div class="address-contacts__title">
+                      г. Нижний Новгород, ул.Бекетова, д.13К, Мебельный центр "БУМ", 4-ый, этаж
+                    </div>
+                  </div>
+                  <div class="addresses-contacts__address address-contacts">
+                    <svg width="27" height="33" fill="C02D33" class="address-contacts__icon">
+                      <use xlink:href="#i-address"></use>
+                    </svg>
+                    <div class="address-contacts__title">
+                      г. Нижний Новгород, ул.Ларина, д.7, Гипермаркет мебели "Открытый Материк", 3-ий этаж
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+
+            <div class="addresses-contacts__maps">
+              <div class="addresses-contacts__map">
+                <script type="text/javascript" charset="utf-8" async=""
+                  src="https://api-maps.yandex.ru/services/constructor/1.0/js/?sid=Enxfki8RJuqtY5u8xtEeAoqzFkTTWEqw&amp;height=354&amp;lang=ru_RU&amp;sourceType=constructor&amp;scroll=true">
+                </script>
+              </div>
+            </div>
+          </div>
         </div>
-      </div>
+        <div class="page-contacts__row page-contacts__row--factory">
+
+
+
+
+
+
+          <div class="page-contacts__row page-contacts__row--factory">
+            <div class="page-contacts__addresses addresses-contacts">
+              <div class="addresses-contacts__factory factory-contacts">
+                <div class="factory-contacts__title">
+                  Производственная база
+                </div>
+                <div class="factory-contacts__inner">
+                  <div class="factory-contacts__cols">
+                    <div class="factory-contacts__col factory-contacts__col--6">
+
+                      <div class="factory-contacts__item item-factory-contacts">
+                        <div class="item-factory-contacts__title">Адрес:</div>
+                        <div class="item-factory-contacts__text">
+                          Владимирская обл., г Муром, проезд Куйбышева, дом 6 а
+                        </div>
+                      </div>
+                      <div class="factory-contacts__item item-factory-contacts">
+                        <div class="item-factory-contacts__title">Телефоны:</div>
+                        <div class="item-factory-contacts__text">
+                          +7 (499) 348-11-64 <br> <br>
+                          +7 (49234) 7-70-32
+                        </div>
+                      </div>
+                    </div>
+                    <div class="factory-contacts__col factory-contacts__col--6">
+
+                      <div class="factory-contacts__item item-factory-contacts">
+                        <div class="item-factory-contacts__title">Реквизиты:</div>
+                        <div class="item-factory-contacts__text">
+                          Наименование юридического лица: ИП Долгушин Петр Алексеевич br
+                          ОГРН: 310333425200057 <br>
+                          ИНН: 470379068652 br
+                        </div>
+                      </div>
+                      <div class="factory-contacts__item item-factory-contacts">
+                        <div class="item-factory-contacts__title">Наши координаты:</div>
+                        <div class="item-factory-contacts__text">
+                          55.564765, 42.034204
+                        </div>
+                      </div>
+
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="addresses-contacts__maps">
+                <div class="addresses-contacts__map">
+                  <script type="text/javascript" charset="utf-8" async=""
+                    src="https://api-maps.yandex.ru/services/constructor/1.0/js/?sid=8cGIJvAv6ogxf8W3LMqVuQbRqfDqem_L&amp;height=354&amp;lang=ru_RU&amp;sourceType=constructor&amp;scroll=true">
+                  </script>
+                </div>
+              </div>
+            </div>
+
+
+
+          </div>
+        </div>
 
 
     </main>

@@ -18,7 +18,7 @@ const isProd = !isDev;
 function generateHtmlPlugins(templateDir) {
   let templateFiles = fs.readdirSync(path.resolve(__dirname, templateDir));
   //if (isDev) {
-  templateFiles = ['detail.html'];
+  //templateFiles = ['contacts.html'];
   //}
   return templateFiles.map((item) => {
     const parts = item.split('.');
@@ -110,14 +110,14 @@ const config = {
               url: false,
             },
           },
-          {
-            loader: 'postcss-loader',
-            options: {
-              config: {
-                path: `./postcss.config.js`,
-              },
-            },
-          },
+          // {
+          //   loader: 'postcss-loader',
+          //   options: {
+          //     config: {
+          //       path: `./postcss.config.js`,
+          //     },
+          //   },
+          // },
           {
             loader: 'sass-loader',
             options: {

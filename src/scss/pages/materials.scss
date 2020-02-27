@@ -2,6 +2,7 @@
   // .materials__tab
   &__tab {
     margin-bottom: 40px;
+    flex: 1 1 auto;
   }
 }
 .tab-material {
@@ -45,21 +46,32 @@
   }
   // .tab-material__content-inner
   &__content-inner {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 -34px;
+
+    @media screen and (max-width: 1760px) {
+      margin: 0 -15px;
+    }
   }
   // .tab-material__item
   &__item {
   }
 }
 .materials {
-  display: flex;
-  flex-wrap: wrap;
-  margin: 0 -34px;
+
+
+
 }
 .material {
   margin: 0 34px 30px;
   flex: 1 1 auto;
   display: block;
-  max-width: 169px;
+  max-width: 163px;
+
+  @media screen and (max-width: 1760px) {
+    margin: 0 15px 30px;
+  }
 
   img {
     margin-bottom: 15px;
