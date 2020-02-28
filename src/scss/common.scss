@@ -94,12 +94,17 @@ p {
   padding: 0 60px;
   max-width: 1920px;
 
+  @media screen and (max-width: 1760px) {
+    padding: 0 60px;
+  }
+
+
   @media screen and (max-width: 1440px) {
   }
 
   @media screen and (max-width: 1024px) {
     max-width: 848px;
-    padding: 0 40px;
+  
   }
 
   @media screen and (max-width: 768px) {
@@ -162,7 +167,7 @@ p {
     padding: 15px 20px;
     background-color: #fff;
     z-index: 5;
-    top: 30px;
+    top: 28px;
     right: 0px;
     transition: opacity 0.3s;
     visibility: hidden;
@@ -224,7 +229,7 @@ p {
     padding: 15px 20px;
     background-color: #fff;
     z-index: 5;
-    top: 31px;
+    top: 28px;
     transform: translateX(-50%);
     transition: opacity 0.3s;
     visibility: hidden;
@@ -957,7 +962,7 @@ p {
 }
 .catalog-sub-menu {
   max-width: 340px;
-  min-width: 290px;  
+  min-width: 290px;
   box-shadow: 2px 0 3px rgba(0, 0, 0, 0.1);
   background-color: #fff;
 
@@ -980,6 +985,13 @@ p {
     padding: 10px 60px 10px 40px;
     position: relative;
     line-height: 20px;
+
+    &--active,
+    &:hover,
+    &:focus,
+    &:active {
+      background-color: rgb(241, 241, 241);
+    }
   }
 }
 

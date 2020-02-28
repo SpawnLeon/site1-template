@@ -6,9 +6,11 @@
 
 .header {
   font-size: 16px;
-
+  position: relative;
+  z-index: 2;
   // .header__row
   &__row {
+
     // .header__row--top
     &--top {
       position: relative;

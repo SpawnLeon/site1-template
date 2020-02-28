@@ -123,7 +123,7 @@
   display: flex;
   // .addresses-contacts__detail
   &__detail {
-    flex: 0 0 758px;
+    flex: 0 1 758px;
     border: 1px solid #d1d1d1;
   }
   // .addresses-contacts__item
@@ -151,6 +151,7 @@
   // .addresses-contacts__maps
   &__maps {
     flex: 1 1 auto;
+    min-width: 50%;
   }
   // .addresses-contacts__map
   &__map {
@@ -184,7 +185,7 @@
   }
 }
 .factory-contacts {
-  flex: 0 0 758px;
+  flex: 0 1 758px;
   // .factory-contacts__title
   &__title {
     font-weight: 900;

@@ -14,17 +14,24 @@
   }
 }
 
-
 .delivery-info {
   margin-top: 30px;
   column-count: 2;
   column-gap: 25px;
+  min-width: 50%;
+
+  @media screen and (max-width: 1760px) {
+  }
+  @media screen and (max-width: 1440px) {
+    column-count: 1;
+  }
 }
 
 .add-info-delivery {
   margin-bottom: 30px;
   position: relative;
   padding-left: 50px;
+  break-inside: avoid;
 
   // .add-info-delivery__icon
   &__icon {

@@ -11,10 +11,16 @@
   // .page-basket__info
   &__info {
     margin-left: 100px;
+    flex: 0 1 946px;
+
+    @media screen and (max-width: 1760px) { 
+      margin-left: 30px;
+    }
   }
   // .page-basket__form
   &__form {
     flex: 0 0 auto;
+    flex: 0 1 737px;
   }
 }
 .basket-items {
@@ -66,6 +72,13 @@
 .col-basket-item {
   &:not(:first-child) {
     flex: 0 0 200px;
+
+    @media screen and (max-width: 1760px) {
+      flex: 0 0 120px;
+      text-align: center;
+      display: flex;
+      justify-content: center;
+    }
   }
 
   // .col-basket-item--info
@@ -104,6 +117,7 @@
     border: 1px solid #d1d1d1;
     background-color: #fff;
     margin-right: 40px;
+    flex-shrink: 0;
   }
   // .basket-product__info
   &__info {
@@ -128,6 +142,7 @@
 }
 .prop-basket-product {
   display: flex;
+  flex-wrap: wrap;
 
   > * {
     margin-right: 5px;
