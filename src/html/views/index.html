@@ -2,6 +2,7 @@
   title: "Главная страница", 
 }; %>
 <%= _.template(require('./../includes/header.html').default)(data) %>
+<%= _.template(require('./../includes/sidebar.html').default)() %>
 
 <div class="main-slider">
   <div class="swiper-container main-slider__container">

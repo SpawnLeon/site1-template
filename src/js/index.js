@@ -166,12 +166,25 @@ document.addEventListener('DOMContentLoaded', () => {
       loop: true,
       slidesPerView: 3,
       loopedSlides: 3,
-      spaceBetween: 5,
+      spaceBetween: 5, 
 
       freeMode: true,
       navigation: {
         prevEl: '.catalog-detail-slide__btn--prev',
         nextEl: '.catalog-detail-slide__btn--next',
+      },
+
+      breakpoints: {
+        1281: {
+          direction: 'horizontal',
+        },
+        992: {
+          direction: 'vertical',
+          
+        },
+        320: {
+          direction: 'horizontal',
+        },
       },
     },
   );

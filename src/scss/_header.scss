@@ -10,7 +10,6 @@
   z-index: 2;
   // .header__row
   &__row {
-
     // .header__row--top
     &--top {
       position: relative;
@@ -230,11 +229,11 @@
   }
 }
 .header-time {
-  margin-top: 9px; 
+  margin-top: 9px;
 
-@media screen and (max-width: 1440px) {
-  margin-top: 6px;
-}
+  @media screen and (max-width: 1440px) {
+    margin-top: 6px;
+  }
 
   &__bold {
   }
@@ -282,8 +281,6 @@
   }
 }
 
-.container {
-}
 .header {
   &__bottom {
     display: flex;
@@ -459,6 +456,10 @@
 
     & > *:not(:last-child) {
       padding-right: 15px;
+
+      @media screen and (max-width: 640px) {
+        padding-right: 10px;
+      }
     }
 
     @media screen and (max-width: 1024px) {
