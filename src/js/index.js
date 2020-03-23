@@ -166,7 +166,7 @@ document.addEventListener('DOMContentLoaded', () => {
       loop: true,
       slidesPerView: 3,
       loopedSlides: 3,
-      spaceBetween: 5, 
+      spaceBetween: 5,
 
       freeMode: true,
       navigation: {
@@ -180,7 +180,6 @@ document.addEventListener('DOMContentLoaded', () => {
         },
         992: {
           direction: 'vertical',
-          
         },
         320: {
           direction: 'horizontal',
@@ -210,14 +209,15 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   });
 
-  document
-    .querySelector('.js__catalog-menu-btn')
-    .addEventListener('click', function() {
+  const catalogMenuBtn = document.querySelector('.js__catalog-menu-btn');
+  if (catalogMenuBtn) {
+    catalogMenuBtn.addEventListener('click', function() {
       event.preventDefault();
       this.classList.toggle('catalog-menu-btn--open');
       document.querySelector('.sidebar').classList.toggle('sidebar--open');
       document.body.classList.toggle('has-open-mobile-menu');
     });
+  }
 
   document
     .querySelector('.js__mobile-search-btn')

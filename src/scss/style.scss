@@ -1,0 +1,10 @@
+.content-image {
+  &--right {
+    margin: 15px 0 15px 15px;
+    float: right;
+  }
+  &--left {
+    margin: 15px 0 15px 15px;
+    float: left;
+  }
+}
