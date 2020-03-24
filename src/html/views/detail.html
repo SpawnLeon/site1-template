@@ -711,8 +711,57 @@
                   </div>
                   <%= _.template(require('./../includes/pagination.html').default)() %>
                 </div>
-                <div class="reviews-form">
-                  form here
+                <div class="catalog-detail__reviews-form reviews-form">
+                  <div class="form">
+
+                    <form action="">
+                      <div class="form__inner">
+                        <header class="form__header">
+                          <div class="form__title">
+                            <svg class="" width="26" height="26">
+                              <use xlink:href="#i-review-form">
+                            </svg>
+                            Оставить отзыв
+                          </div>
+                        </header>
+                        <div class="form__body">
+                          <div class="form__item item-form item-form--text">
+                            <label class="item-form__label">
+                              <span class="item-form__name">Имя:</span> <span class="item-form__required">*</span>
+                              <input name="" c required type="text" class="item-form__field item-form__field--text">
+                            </label>
+                          </div>
+                          <div class="form__item item-form item-form--textarea">
+                            <label class="item-form__label">
+                              <span class="item-form__name">Отзыв:</span> <span class="item-form__required">*</span>
+                              <textarea name="" class="item-form__field item-form__field--textarea"></textarea>
+                            </label>
+                          </div>
+                        </div>
+                        <footer class="form__footer">
+                          <div class="form__item item-form item-form--agree">
+                            <label class="item-form__label item-form__label--agree">
+                              <input type="checkbox" checked="checked"
+                                class="item-form__field item-form__field--checkbox item-form--agree visually-hidden">
+                              <span class="item-form__custom-checkbox"></span>
+                              Я даю своё согласие на обработку моих персональных данных, в соответствии с Федеральным
+                              законом
+                              от
+                              27.07.2006 года №152-ФЗ «О персональных данных», на условиях и для целей, определенных
+                              Политикой
+                              конфиденциальности.
+                            </label>
+                          </div>
+
+
+
+                          <div class="form__actions">
+                            <button type="button" class="form__submit btn">Отправить</button>
+                          </div>
+                        </footer>
+                      </div>
+                    </form>
+                  </div>
                 </div>
               </div>
 

@@ -650,6 +650,12 @@
   &__reviews {
     display: flex;
   }
+
+  .materials {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 -34px;
+  }
 }
 
 /*------------------------------------*\
