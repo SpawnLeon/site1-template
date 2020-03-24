@@ -13,7 +13,7 @@
     margin-left: 100px;
     flex: 0 1 946px;
 
-    @media screen and (max-width: 1760px) { 
+    @media screen and (max-width: 1760px) {
       margin-left: 30px;
     }
   }
@@ -188,11 +188,7 @@
     text-align: center;
   }
 }
-
 .form {
-  max-width: 740px;
-  background-color: transparent;
-
   &__title--basket {
     font-weight: 900;
     font-size: 26px;
@@ -203,6 +199,10 @@
   &__actions--basket {
     display: flex;
   }
+}
+.form-basket {
+  max-width: 740px;
+  background-color: transparent;
 }
 
 .delivery-info {

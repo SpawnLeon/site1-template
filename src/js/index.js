@@ -248,7 +248,6 @@ document.addEventListener('DOMContentLoaded', () => {
           menuSidebar.scrollTop = 0;
           event.preventDefault();
           event.stopPropagation();
-          console.log(121212)
         });
       });
     }
@@ -289,6 +288,13 @@ document.addEventListener('DOMContentLoaded', () => {
   ) {
     document.body.classList.add('bx-touch');
   }
+
+  /////////////////////
+  $('.form__add-file').click(function() {
+    $(this)
+      .next()
+      .trigger('click');
+  });
 });
 
 window.addEventListener('resize', resizeThrottler, false);

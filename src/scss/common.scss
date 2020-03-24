@@ -896,6 +896,11 @@ p {
     display: block;
   }
 
+  @media screen and (max-width: 374px) {
+    min-width: 320px;
+    max-width: 320px;
+  }
+
   &--open {
     transform: translateX(0);
   }
@@ -937,12 +942,21 @@ p {
   // transform: translateX(-100%);
   margin-left: -339px;
   margin-right: 339px;
+  @media screen and (max-width: 374px) {
+    margin-left: -320px;
+    margin-right: 320px;
+  }
 }
 
 .menu-catalog-sidebar--open .catalog-sub-menu {
   // transform: translateX(-100%);
   margin-left: -339px;
   margin-right: 339px;
+
+  @media screen and (max-width: 374px) {
+    margin-left: -320px;
+    margin-right: 320px;
+  }
 }
 
 .menu-catalog-sidebar {
