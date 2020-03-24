@@ -933,13 +933,32 @@ p {
 /*------------------------------------*\
     #CATALOG SIDEBAR START
 \*------------------------------------*/
+.menu-catalog-sidebar--open > li {
+  // transform: translateX(-100%);
+  margin-left: -339px;
+  margin-right: 339px;
+}
+
+.menu-catalog-sidebar--open .catalog-sub-menu {
+  // transform: translateX(-100%);
+  margin-left: -339px;
+  margin-right: 339px;
+}
 
 .menu-catalog-sidebar {
   padding: 0;
   margin: 0;
 
+  @media screen and (max-width: 1024px) {
+    max-height: calc(100vh - 127px);
+    overflow-y: auto;
+    overflow-x: hidden;
+    position: relative;
+  }
+
   &__item {
     border-top: 1px solid #d1d1d1;
+    transition: $transition;
 
     &:last-child {
       border-bottom: 1px solid #d1d1d1;
@@ -1008,25 +1027,44 @@ p {
     opacity: 0;
     position: absolute;
     left: calc(100% + 1px);
-    top: 0;
-    bottom: 0;
     overflow-y: visible;
+    margin-top: -58px;
+
+    @media screen and (max-width: 1024px) {
+      top: 58px;
+    }
   }
 }
+.item-menu-catalog--open .item-menu-catalog__sub-menu,
 .item-menu-catalog:hover .item-menu-catalog__sub-menu {
   opacity: 1;
   visibility: visible;
 }
 .catalog-sub-menu {
-  max-width: 340px;
-  min-width: 290px;
+  width: 339px;
   box-shadow: 2px 0 3px rgba(0, 0, 0, 0.1);
   background-color: #fff;
 
+  transition: $transition;
+
+  @media screen and (max-width: 1024px) {
+    box-shadow: none;
+  }
+
   &__title {
     font-weight: 600;
-    padding: 16px 15px 17px 40px;
+    padding: 10px 60px 10px 30px;
     letter-spacing: -0.02em;
+
+    @media screen and (max-width: 1024px) {
+      display: flex;
+      align-items: center;
+      padding: 17px 60px 16px 30px;
+      position: relative;
+      border-top: 1px solid #d1d1d1;
+      border-bottom: 1px solid #d1d1d1;
+      margin-bottom: 19px;
+    }
   }
 
   &__list {
@@ -1039,7 +1077,7 @@ p {
   &__link {
     display: flex;
     align-items: center;
-    padding: 10px 60px 10px 40px;
+    padding: 10px 60px 10px 30px;
     position: relative;
     line-height: 20px;
 
