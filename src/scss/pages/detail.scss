@@ -977,10 +977,16 @@
   }
 }
 .drop-select-material {
+  background-color: #fff;
+  // .drop-select-material--open
+  &--open {
+    display: block;
+  }
   // .drop-select-material__item
   &__item {
     display: flex;
     align-items: center;
+    cursor: pointer;
   }
   // .drop-select-material__image
   &__image {

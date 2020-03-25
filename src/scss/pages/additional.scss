@@ -9,8 +9,6 @@
   padding: 35px 55px 30px;
 }
 .cheaper-at-night {
- 
-
   // .cheaper-at-night__title
   &__title {
     font-weight: 600;
@@ -28,7 +26,7 @@
   }
   // .cheaper-at-night__footer
   &__footer {
-    background-color: #ffc800; 
+    background-color: #ffc800;
     font-style: italic;
     font-size: 14px;
     line-height: 1.214;
@@ -36,5 +34,109 @@
     color: #0d0d0d;
     padding: 10px 15px;
     margin-top: 15px;
+  }
+}
+
+.popup-materials {
+  text-align: center;
+  background-color: #f1f1f1;
+  max-width: 984px;
+  padding: 30px 30px 5px;
+
+  // .popup-materials__title
+  &__title {
+    font-weight: 600;
+    font-size: 30px;
+    line-height: 1.2333;
+    color: #0d0d0d;
+  }
+  // .popup-materials__icon
+  &__icon {
+    display: inline-block;
+    margin-right: 10px;
+    background-image: url(img/material-title.svg);
+    height: 37px;
+    width: 37px;
+    vertical-align: middle;
+  }
+  // .popup-materials__materials
+  &__materials {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 40px -10px 0;
+  }
+  .material {
+    margin: 0 10px 40px;
+  }
+}
+
+.popup-select-mattress {
+  background-color: #f1f1f1;
+  max-width: 1010px;
+  padding: 30px 30px 5px;
+
+  // .popup-select-mattress__title
+  &__title {
+    font-weight: 600;
+    font-size: 30px;
+    line-height: 1.2333;
+    color: #0d0d0d;
+    text-align: center;
+  }
+  // .popup-select-mattress__icon
+  &__icon {
+    display: inline-block;
+    margin-right: 10px;
+    background-image: url(img/select-mattress-title.svg);
+    height: 37px;
+    width: 37px;
+    vertical-align: middle;
+  }
+  // .popup-select-mattress__inner
+  &__inner {
+  }
+  // .popup-select-mattress__item
+  &__item {
+  }
+}
+.item-select-mattress {
+  display: flex;
+  margin: 0 -10px 30px;
+
+  // .item-select-mattress__image
+  &__image {
+    min-width: 184px;
+  }
+  // .item-select-mattress__btn
+  &__btn {
+    width: 100%;
+    margin-top: 8px;
+  }
+  // .item-select-mattress__block
+  &__block {
+    margin: 40px 10px 0;
+  }
+  // .item-select-mattress__title
+  &__title {
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 1.25;
+    color: #0d0d0d;
+  }
+  // .item-select-mattress__price
+  &__price {
+    display: inline-block;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 1.2222;
+    margin-left: 10px;
+  }
+  // .item-select-mattress__description
+  &__description {
+    margin-top: 7px;
+    font-size: 12px;
+    line-height: 1.25;
+    letter-spacing: -0.02em;
+    color: #333333;
   }
 }
