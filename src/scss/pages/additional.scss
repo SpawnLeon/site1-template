@@ -1,0 +1,40 @@
+.popup {
+  position: relative;
+  display: inline-block;
+}
+.cheaper-at-night-wrapper {
+  text-align: center;
+  background-color: #f1f1f1;
+  max-width: 700px;
+  padding: 35px 55px 30px;
+}
+.cheaper-at-night {
+ 
+
+  // .cheaper-at-night__title
+  &__title {
+    font-weight: 600;
+    font-size: 30px;
+    line-height: 1.2333;
+    color: #0d0d0d;
+  }
+  // .cheaper-at-night__text
+  &__text {
+    font-size: 14px;
+    line-height: 1.214;
+    text-align: center;
+    color: #333333;
+    margin-top: 25px;
+  }
+  // .cheaper-at-night__footer
+  &__footer {
+    background-color: #ffc800; 
+    font-style: italic;
+    font-size: 14px;
+    line-height: 1.214;
+    text-align: center;
+    color: #0d0d0d;
+    padding: 10px 15px;
+    margin-top: 15px;
+  }
+}

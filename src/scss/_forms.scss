@@ -6,7 +6,7 @@
 
   // .form--gift
   &--gift {
-    background-image: url(../img/form-500rub.png);
+    background-image: url(img/form-500rub.png);
     background-position: right top;
     background-repeat: no-repeat;
   }
@@ -73,6 +73,11 @@
   // .form__item
   &__item {
     margin: 15px 0;
+
+    // .form__item--hidden
+    &--hidden {
+      display: none;
+    }
   }
   // .form__footer
   &__footer {
@@ -143,7 +148,7 @@
     text-decoration-line: underline;
     color: #6a6a6a;
     padding-left: 27px;
-    background-image: url(../img/i-add-file.svg);
+    background-image: url(img/i-add-file.svg);
     background-repeat: no-repeat;
 
     & + input[type='file'] {
@@ -203,6 +208,17 @@
 
     &--agree {
       font-weight: 400;
+    }
+
+    // .item-form__label a
+    a {
+      text-decoration: underline;
+
+      &:hover,
+      &:focus,
+      &:active {
+        text-decoration: none;
+      }
     }
   }
   // .item-form__name

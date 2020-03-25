@@ -1,0 +1,276 @@
+<% var data = { title: "Дополнительно", }; %>
+<%= _.template(require('./../includes/header.html').default)(data) %>
+<div class="container">
+  <div class="main-content-wrapper">
+    <%= _.template(require('./../includes/sidebar.html').default)() %>
+    <main class="main-content">
+      <%= _.template(require('./../includes/breadcrumbs.html').default)() %>
+      <h1 class="page__title">Дополнительно </h1>
+      <div class="additional-page">
+        <div class="forms">
+          <!-- use a separate template for this form -->
+          <div class="popup popup--form">
+            <button type="button" class="form__close btn--clear" aria-label="Закрыть форму">
+              <svg class="icon">
+                <use xlink:href="#i-form-close"></use>
+              </svg>
+            </button>
+            <div class="form form--communication-methods">
+
+              <form action="">
+
+
+
+
+                <div class="form__inner">
+                  <div class="form__communication-method communication-method">
+                    <div class="communication-method__title">
+                      Куда вам отправить XXXX?
+                    </div>
+                    <div class="communication-method__inner">
+                      <div data-communication-method="whatsapp"
+                        class="communication-method__item item-communication-method item-communication-method--whantsapp ">
+                        <div class="item-communication-method__title">
+                          WhatsApp
+                        </div>
+                        <img src="../../img/communication-method--whatsapp.svg" alt=""
+                          class="item-communication-method__image">
+                        <div class="item-communication-method__footer">
+                          Очень быстро
+                        </div>
+                      </div>
+                      <div data-communication-method="phone"
+                        class="communication-method__item item-communication-method item-communication-method--phone">
+                        <div class="item-communication-method__title">
+                          Мобильный
+                        </div>
+                        <img src="../../img/communication-method--phone.svg" alt=""
+                          class="item-communication-method__image">
+                        <div class="item-communication-method__footer">
+                          Быстро
+                        </div>
+                      </div>
+                      <div data-communication-method="email"
+                        class="communication-method__item item-communication-method item-communication-method--email">
+                        <div class="item-communication-method__title">
+                          Email
+                        </div>
+                        <img src="../../img/communication-method--email.svg" alt=""
+                          class="item-communication-method__image">
+                        <div class="item-communication-method__footer">
+                          Умеренно
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="form__body">
+                    <div class="form__item item-form item-form--email form__item--hidden">
+                      <label class="item-form__label">
+                        <span class="item-form__name">Email адрес:</span> <span class="item-form__required">*</span>
+                        <input name="" required type="email" class="item-form__field item-form__field--text">
+                      </label>
+                    </div>
+                    <div class="form__cols">
+                      <div class="form__col form__col--6">
+                        <div class="form__item item-form item-form--text">
+                          <label class="item-form__label">
+                            <span class="item-form__name">Мобильный телефон :</span> <span
+                              class="item-form__required">*</span>
+                            <input name="" required type="text" class="item-form__field item-form__field--text">
+                          </label>
+                        </div>
+                      </div>
+                      <div class="form__col form__col--6">
+                        <div class="form__item item-form item-form--text">
+                          <label class="item-form__label">
+                            <span class="item-form__name">Имя:</span>
+                            <input name="" value="" type="email" class="item-form__field item-form__field--email">
+                          </label>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="form__cols">
+                      <div class="form__col form__col--6">
+                        <button type="button" class="btn--clear form__add-comment">Добавить комментарий</button>
+                      </div>
+                      <div class="form__col form__col--6">
+                        <button type="button" class="btn--clear form__add-file">Прикрепить файлы</button>
+                        <input type="file">
+                      </div>
+                    </div>
+
+
+
+                    <div class="form__item item-form item-form--textarea item-form--message form__item--hidden">
+                      <label class="item-form__label">
+                        <textarea name="" class="item-form__field item-form__field--textarea"></textarea>
+                      </label>
+                    </div>
+                  </div>
+                  <footer class="form__footer">
+                    <div class="form__item item-form item-form--agree">
+                      <label class="item-form__label item-form__label--agree">
+                        <input type="checkbox" checked="checked"
+                          class="item-form__field item-form__field--checkbox item-form--agree visually-hidden">
+                        <span class="item-form__custom-checkbox"></span>
+                        Я даю своё согласие на обработку моих персональных данных, в соответствии с Федеральным законом
+                        от
+                        27.07.2006 года №152-ФЗ «О персональных данных», на условиях и для целей, определенных
+                        <a href="">Политикой конфиденциальности</a>.
+                      </label>
+                    </div>
+
+
+
+                    <div class="form__actions">
+                      <button type="button" class="form__submit btn">Отправить</button>
+                    </div>
+                  </footer>
+                </div>
+              </form>
+            </div>
+          </div>
+          <br>
+          <br>
+          <div class="popup popup--form">
+            <button type="button" class="form__close btn--clear" aria-label="Закрыть форму">
+              <svg class="icon">
+                <use xlink:href="#i-form-close"></use>
+              </svg>
+            </button>
+            <div class="form">
+
+              <form action="">
+
+                <div class="form__inner">
+                  <header class="form__header">
+                    <div class="form__title">Закажите по своему размеру</div>
+                    <div class="form__description">
+                      Укажите интересующие вас размеры и тип мебели
+                    </div>
+                  </header>
+                  <div class="form__body">
+                    <div class="form__item item-form item-form--text">
+                      <label class="item-form__label">
+                        <span class="item-form__name">Товар:</span> <span class="item-form__required">*</span>
+                        <input name="" c required type="text" class="item-form__field item-form__field--text">
+                      </label>
+                    </div>
+                    <div class="form__item item-form item-form--email">
+                      <label class="item-form__label">
+                        <span class="item-form__name">Телефон:</span>
+                        <input name="" value="" type="email" class="item-form__field item-form__field--email">
+                      </label>
+                    </div>
+                    <div class="form__item item-form item-form--textarea">
+                      <label class="item-form__label">
+                        <span class="item-form__name">Сообщение:</span> <span class="item-form__required">*</span>
+                        <textarea name="" class="item-form__field item-form__field--textarea"></textarea>
+                      </label>
+                    </div>
+                  </div>
+                  <footer class="form__footer">
+                    <div class="form__item item-form item-form--agree">
+                      <label class="item-form__label item-form__label--agree">
+                        <input type="checkbox" checked="checked"
+                          class="item-form__field item-form__field--checkbox item-form--agree visually-hidden">
+                        <span class="item-form__custom-checkbox"></span>
+                        Я даю своё согласие на обработку моих персональных данных, в соответствии с Федеральным законом
+                        от
+                        27.07.2006 года №152-ФЗ «О персональных данных», на условиях и для целей, определенных
+                        <a href="">Политикой конфиденциальности</a>.
+                      </label>
+                    </div>
+
+
+
+                    <div class="form__actions">
+                      <button type="button" class="form__submit btn">Отправить</button>
+                    </div>
+                  </footer>
+                </div>
+              </form>
+            </div>
+          </div>
+
+          <br><br>
+          <div class="form form--gift">
+            <form action="">
+              <div class="form__inner">
+                <header class="form__header">
+                  <div class="form__title form__title--gift">500 рублей</div>
+                  <div class="form__description form__description--gift">
+                    В подарок за <br> подписку
+                  </div>
+                </header>
+                <div class="form__body">
+
+                  <div class="form__item item-form item-form--email">
+                    <label class="item-form__label">
+                      <span class="item-form__name">E-Mail:</span> <span class="item-form__required">*</span>
+                      <input name="" value="" type="email" class="item-form__field item-form__field--email">
+                    </label>
+                  </div>
+                </div>
+                <footer class="form__footer">
+                  <div class="form__item item-form item-form--agree">
+                    <label class="item-form__label item-form__label--agree">
+                      <input type="checkbox" checked="checked"
+                        class="item-form__field item-form__field--checkbox item-form--agree visually-hidden">
+                      <span class="item-form__custom-checkbox"></span>
+                      Я даю своё согласие на обработку моих персональных данных, в соответствии с Федеральным законом от
+                      27.07.2006 года №152-ФЗ «О персональных данных», на условиях и для целей, определенных
+                      <a href="">Политикой конфиденциальности</a>.
+                    </label>
+                  </div>
+
+
+
+                  <div class="form__actions">
+                    <button type="button" class="form__submit btn">Получить скидку</button>
+                  </div>
+                </footer>
+              </div>
+            </form>
+          </div>
+        </div>
+        <br><br>
+        <div class="additional">
+          <div class="popup">
+            <button type="button" class="form__close btn--clear" aria-label="Закрыть форму">
+              <svg class="icon">
+                <use xlink:href="#i-form-close"></use>
+              </svg>
+            </button>
+            <div class="cheaper-at-night-wrapper">
+              <div class="cheaper-at-night">
+                <div class="cheaper-at-night__title">Ночью дешевле!</div>
+                <div class="cheaper-at-night__text">
+                  Оформите заказ на сайте через "корзину" с <b>21-00 до 06-00</b> (по Московскому времени) и <b>получите
+                    скидку 2%</b> от стоимости заказа.
+                </div>
+                <div class="cheaper-at-night__footer">
+                  В комментарии к заказу пометьте, пожалуйста, что хотите получить "ночную скидку".
+                </div>
+
+              </div>
+
+            </div>
+          </div>
+
+          <br> <br>
+
+
+        </div>
+      </div>
+
+
+
+    </main>
+  </div>
+</div>
+
+
+<%= _.template(require('./../includes/footer.html').default)(data) %>

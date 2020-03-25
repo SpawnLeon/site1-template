@@ -66,8 +66,9 @@ const createTabs = (tabsSelector) => {
 const cachingSvgSprite = () => {
   // Storing SVG Sprite in localStorage
 
-  var file = 'img/sprite.svg',
-    revision = 6;
+  const file = 'img/sprite.svg';
+  //const file = '/local/templates/main/img/sprite.svg';
+  const revision = 6;
 
   if (
     !document.createElementNS ||
@@ -295,6 +296,47 @@ document.addEventListener('DOMContentLoaded', () => {
       .next()
       .trigger('click');
   });
+
+  const communicationMethodsForm = document.querySelector(
+    '.form--communication-methods',
+  );
+
+  if (communicationMethodsForm) {
+    const communicationMethodItems = communicationMethodsForm.querySelectorAll(
+      '[data-communication-method]',
+    );
+
+    if (communicationMethodItems) {
+      communicationMethodItems.forEach((el) => {
+        el.addEventListener('click', () => {
+          event.preventDefault();
+          const communicationMethod = el.dataset.communicationMethod;
+          const emailFormItem = document.querySelector('.item-form--email');
+          if (communicationMethod === 'email') {
+            emailFormItem.classList.remove('form__item--hidden');
+          } else {
+            emailFormItem.classList.add('form__item--hidden');
+          }
+          communicationMethodItems.forEach((el) => {
+            el.classList.remove('item-communication-method--active');
+          });
+          el.classList.add('item-communication-method--active');
+        });
+      });
+    }
+
+    const addCommentBtn = communicationMethodsForm.querySelector(
+      '.form__add-comment',
+    );
+    if (addCommentBtn) {
+      addCommentBtn.addEventListener('click', (el) => {
+        event.preventDefault();
+        communicationMethodsForm
+          .querySelector('.item-form--message')
+          .classList.toggle('form__item--hidden');
+      });
+    } 
+  }
 });
 
 window.addEventListener('resize', resizeThrottler, false);

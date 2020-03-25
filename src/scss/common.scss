@@ -705,15 +705,15 @@ p {
     min-height: 250px;
   }
   &--delivery {
-    background-image: url(../img/bg-promo-1.jpg);
+    background-image: url(img/bg-promo-1.jpg);
   }
 
   &--sizes {
-    background-image: url(../img/bg-promo-2.jpg);
+    background-image: url(img/bg-promo-2.jpg);
   }
 
   &--night {
-    background-image: url(../img/bg-promo-3.jpg);
+    background-image: url(img/bg-promo-3.jpg);
   }
 
   &__header {
@@ -768,7 +768,7 @@ p {
 
 .about-block {
   background-repeat: no-repeat;
-  background-image: url(../img/bg-about.jpg);
+  background-image: url(img/bg-about.jpg);
   background-position: 960px center;
   margin: 105px 0 60px;
   padding-bottom: 42px;
@@ -1029,6 +1029,10 @@ p {
     top: 50%;
     margin-top: -5px;
 
+    &--back {
+      transform: rotate(-45deg);
+    }
+
     @media screen and (min-width: 1025px) and (max-width: 1760px) {
       display: none;
     }
@@ -1278,6 +1282,63 @@ p {
   }
 }
 
+.product-teaser-promo {
+  padding: 28px 14px;
+  min-height: 390px;
+  background-size: cover;
+  text-align: center;
+  color: #0d0d0d;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  background-position: center;
+
+  &--delivery {
+    background-image: url(img/product-teaser-delivery.jpg);
+  }
+  &--assembly {
+    background-image: url(img/product-teaser-assembly.jpg);
+  }
+  &--chipper {
+    background-image: url(img/product-teaser-chipper.jpg);
+  }
+
+  // .product-teaser-promo__title
+  &__title {
+    font-weight: bold;
+    font-size: 25px;
+    line-height: 1.24;
+    letter-spacing: -0.02em;
+    text-transform: uppercase;
+
+    &--reverse {
+      color: #fff;
+    }
+  }
+  // .product-teaser-promo__more
+  &__more {
+    margin-top: auto;
+    font-size: 17px;
+    line-height: 1.24;
+    text-decoration-line: underline;
+    display: inline-block;
+
+    &--reverse {
+      color: #fff;
+    }
+
+    &:hover,
+    &:focus,
+    &:active {
+      text-decoration: none;
+    }
+  }
+}
+.product-teaser {
+  &--promo {
+    border: none;
+  }
+}
 /*------------------------------------*\
     #CATALOG LIST END 
 \*------------------------------------*/
@@ -1656,7 +1717,7 @@ p {
   // .factory__text
   &__text {
     background-color: #ffffff;
-    background-image: url(../img/bg-factory.png);
+    background-image: url(img/bg-factory.png);
     background-repeat: no-repeat;
     background-position: right -50px bottom -40px;
     box-shadow: 0px 10px 50px rgba(0, 0, 0, 0.05);
